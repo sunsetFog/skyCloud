@@ -1,9 +1,9 @@
 import axios from 'axios'
-import { Message, MessageBox } from 'element-ui'
-import router from '@/explore/router' // 用于路由跳转 router.push({path: '/login'})
+// import { Message, MessageBox } from 'element-ui'
+import { ElMessage } from 'element-plus'
+
+import router from '@/router' // 用于路由跳转 router.push({path: '/login'})
 import VueCookies from 'vue-cookies'
-
-
 // 创建axios实例
 const service = axios.create({
     baseURL: process.env.mock_url, // 请求域名设置
@@ -31,14 +31,14 @@ service.interceptors.request.use(config => {
 service.interceptors.response.use(response => {
     // console.log('后台返回的数据', response);
     if (response.data.data === 'checkToken') {
-        Message.error('登陆过期！');
+        ElMessage.error('登陆过期！');
         return Promise.reject(response); // 失败回调,捕捉异常
     } else {
         return response.data; // 成功回调
     }
 
     // if (!response.data.code) {//判断code是否为null,或undefined,是就返回false,所以要加非！
-    //     Message({ message: '返回的code值找不到', type: 'error', duration: 3000 });
+    //     ElMessage({ message: '返回的code值找不到', type: 'error', duration: 3000 });
     //     return Promise.reject(response);// 失败回调,捕捉异常
     // } else {
     //     let code = response.data.code;// code码 1001会话过期, 1002无权限, 1003其他客户端登录了
@@ -51,14 +51,14 @@ service.interceptors.response.use(response => {
     //         })
     //         return Promise.reject(response)
     //     } else if ([1002].indexOf(code) > -1) {
-    //         Message({ message: '无权限', type: 'error', duration: 3000 })
+    //         ElMessage({ message: '无权限', type: 'error', duration: 3000 })
     //         return Promise.reject(response)
     //     } else {
     //         return response.data;//成功回调
     //     }
     // }
 }, error => {
-    Message({ message: error.message, type: 'error', duration: 5000 })
+    ElMessage({ message: error.message, type: 'error', duration: 5000 })
     return Promise.reject(error)
 })
 

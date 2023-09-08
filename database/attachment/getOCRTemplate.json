@@ -1,0 +1,72 @@
+{
+    "resultCode": "ISC-000",
+    "resultMsg": "",
+    "data": [
+        {
+            "recordId": 1,
+            "moduleType": "iEC",
+            "orgId": 746,
+            "tableName": "iexp_ocr_results",
+            "columnName": "attribute1",
+            "columnTitle": "*仕入先名",
+            "columnType": "VARCHAR",
+            "columnMapping": "Name",
+            "required": "0"
+        },
+        {
+            "recordId": 2,
+            "moduleType": "iEC",
+            "orgId": 746,
+            "tableName": "iexp_ocr_results",
+            "columnName": "attribute2",
+            "columnTitle": "*請求書番号",
+            "columnType": "VARCHAR",
+            "columnMapping": "InvoiceNumber",
+            "required": "0"
+        },
+        {
+            "recordId": 3,
+            "moduleType": "iEC",
+            "orgId": 746,
+            "tableName": "iexp_ocr_results",
+            "columnName": "attribute3",
+            "columnTitle": "*請求書日付",
+            "columnType": "DATE",
+            "columnMapping": "InvoiceDate",
+            "required": "0"
+        },
+        {
+            "recordId": 4,
+            "moduleType": "iEC",
+            "orgId": 746,
+            "tableName": "iexp_ocr_results",
+            "columnName": "attribute4",
+            "columnTitle": "請求書金額(税込)",
+            "columnType": "NUMBER",
+            "columnMapping": "Total",
+            "required": "0"
+        },
+        {
+            "recordId": 5,
+            "moduleType": "iEC",
+            "orgId": 746,
+            "tableName": "iexp_ocr_results",
+            "columnName": "attribute5",
+            "columnTitle": "税額",
+            "columnType": "NUMBER",
+            "columnMapping": "TaxAmount1",
+            "required": "0"
+        },
+        {
+            "recordId": 6,
+            "moduleType": "iEC",
+            "orgId": 746,
+            "tableName": "iexp_ocr_results",
+            "columnName": "attribute6",
+            "columnTitle": "摘要",
+            "columnType": "VARCHAR",
+            "columnMapping": "Description",
+            "required": "1"
+        }
+    ]
+}

@@ -1,0 +1,693 @@
+{
+    "resultCode": "ISC-000",
+    "resultMsg": "",
+    "data": {
+        "description": null,
+        "fileId": 614,
+        "projectName": null,
+        "batchId": "9ffe79d24dbe4ae2b8f599ba1d037a8c",
+        "fileBase64": [
+            1,
+            2
+        ],
+        "content": [
+            [
+                {
+                    "pageIndex": 0,
+                    "word": "DEXWELL",
+                    "position": "158,231,337,231,158,258,337,258",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "5962 LA PLACE COURT, STE 195",
+                    "position": "156,272,730,272,156,305,730,305",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "CARLSBAD, CA 92008",
+                    "position": "157,313,541,313,157,347,541,347",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "PH: (714) 582-5182",
+                    "position": "158,355,483,355,158,391,483,391",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "BILL TO: MIDEA",
+                    "position": "166,702,515,702,166,730,515,730",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "5 SYLVAN WAY, SUITE1 00",
+                    "position": "398,743,861,743,398,777,861,777",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "PARSIPPANY, NJ3 3178",
+                    "position": "400,785,806,785,400,818,806,818",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "INVOICE",
+                    "position": "1573,250,2137,250,1573,359,2137,359",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "SHIP TO:",
+                    "position": "1327,702,1485,702,1327,730,1485,730",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "INVOICE NO:",
+                    "position": "1580,461,1808,461,1580,489,1808,489",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "910000161",
+                    "position": "1917,462,2096,462,1917,489,2096,489",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "DATE:",
+                    "position": "1581,537,1689,537,1581,564,1689,564",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "01/31/2020",
+                    "position": "1917,536,2102,536,1917,564,2102,564",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "MIDEA",
+                    "position": "1572,702,1688,702,1572,729,1688,729",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "5 SYLVAN WAY, SUITE1 00",
+                    "position": "1571,743,2033,743,1571,777,2033,777",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "PARSIPPANY, NJ 33178",
+                    "position": "1573,785,1979,785,1573,818,1979,818",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "PO NUMBER:",
+                    "position": "166,1117,402,1117,166,1146,402,1146",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "SHIPPED VIA:",
+                    "position": "867,1117,1112,1117,867,1146,1112,1146",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "TERMS: 7 Days",
+                    "position": "1579,1117,1868,1117,1579,1153,1868,1153",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "QTY     ITEM DESCRIPTION                                          RATE         AMOUNT",
+                    "position": "264,1213,2330,1213,264,1243,2330,1243",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1297,304,1297,294,1324,304,1324",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Labor",
+                    "position": "466,1297,559,1297,466,1324,559,1324",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "4,420.00",
+                    "position": "1795,1297,1938,1297,1795,1329,1938,1329",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "4,420.00",
+                    "position": "2186,1297,2329,1297,2186,1329,2329,1329",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1374,304,1374,294,1400,304,1400",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Parts",
+                    "position": "466,1373,549,1373,466,1401,549,1401",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "380.45",
+                    "position": "1826,1374,1938,1374,1826,1401,1938,1401",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "380.45",
+                    "position": "2217,1374,2329,1374,2217,1401,2329,1401",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1451,304,1451,294,1477,304,1477",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Shipping",
+                    "position": "465,1449,607,1449,465,1485,607,1485",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "46.55",
+                    "position": "1847,1451,1938,1451,1847,1478,1938,1478",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "46.55",
+                    "position": "2238,1451,2329,1451,2238,1478,2329,1478",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1527,304,1527,294,1554,304,1554",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Mileage",
+                    "position": "466,1527,593,1527,466,1562,593,1562",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1,219.18",
+                    "position": "1797,1527,1938,1527,1797,1559,1938,1559",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1,219.18",
+                    "position": "2188,1527,2329,1527,2188,1559,2329,1559",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1604,304,1604,294,1630,304,1630",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Tax",
+                    "position": "464,1603,525,1603,464,1631,525,1631",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "59.43",
+                    "position": "1847,1604,1938,1604,1847,1631,1938,1631",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "59.43",
+                    "position": "2238,1604,2329,1604,2238,1631,2329,1631",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1681,304,1681,294,1707,304,1707",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Extra Person",
+                    "position": "466,1680,677,1680,466,1708,677,1708",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "40.00",
+                    "position": "1847,1681,1938,1681,1847,1708,1938,1708",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "40.00",
+                    "position": "2238,1681,2329,1681,2238,1708,2329,1708",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1",
+                    "position": "294,1757,304,1757,294,1784,304,1784",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Hourly",
+                    "position": "466,1757,571,1757,466,1792,571,1792",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "345.00",
+                    "position": "1826,1757,1938,1757,1826,1784,1938,1784",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "345.00",
+                    "position": "2217,1757,2329,1757,2217,1784,2329,1784",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "22",
+                    "position": "281,1834,320,1834,281,1860,320,1860",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Warranty Payments Fee",
+                    "position": "464,1833,866,1833,464,1868,866,1868",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "1.60",
+                    "position": "1871,1834,1938,1834,1871,1861,1938,1861",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "35.20",
+                    "position": "2238,1834,2329,1834,2238,1861,2329,1861",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "TOTAL",
+                    "position": "1819,1915,1942,1915,1819,1944,1942,1944",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "6,545.81",
+                    "position": "2186,1916,2324,1916,2186,1949,2324,1949",
+                    "key": null
+                },
+                {
+                    "pageIndex": 0,
+                    "word": "Thank you for your business!",
+                    "position": "984,3166,1515,3166,984,3205,1515,3205",
+                    "key": null
+                }
+            ],
+            [
+                {
+                    "pageIndex": 1,
+                    "word": "WARRANTY CLOSING SUMMARY",
+                    "position": "869,212,1673,212,869,250,1673,250",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "CLOSING NO: 910000161",
+                    "position": "124,370,594,370,124,399,594,399",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "CLOSING DATE: 01/31/2020",
+                    "position": "1617,370,2137,370,1617,399,2137,399",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "CHARGES BY DIVISION",
+                    "position": "118,506,539,506,118,535,539,535",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Division",
+                    "position": "119,585,244,585,119,610,244,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Labor",
+                    "position": "730,586,819,586,730,610,819,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Shipping",
+                    "position": "886,585,1025,585,886,617,1025,617",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Mileage",
+                    "position": "1113,585,1232,585,1113,617,1232,617",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Tax",
+                    "position": "1383,586,1440,586,1383,610,1440,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Extra Person",
+                    "position": "1473,586,1674,586,1473,610,1674,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Subtotal",
+                    "position": "1781,585,1911,585,1781,610,1911,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Parts",
+                    "position": "2069,586,2148,586,2069,610,2148,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Total",
+                    "position": "2337,586,2414,586,2337,610,2414,610",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "CAC - Commercial AC",
+                    "position": "118,656,448,656,118,681,448,681",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "680.00",
+                    "position": "719,657,819,657,719,681,819,681",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "393.08",
+                    "position": "1132,657,1232,657,1132,681,1232,681",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "1,103.08",
+                    "position": "1787,657,1912,657,1787,685,1912,685",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "1,103.08",
+                    "position": "2290,657,2415,657,2290,685,2415,685",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "KWH - Kitchen & Water Heater",
+                    "position": "119,716,574,716,119,741,574,741",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "105.00",
+                    "position": "721,717,819,717,721,741,819,741",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "105.00",
+                    "position": "1815,717,1912,717,1815,741,1912,741",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "105.00",
+                    "position": "2318,717,2415,717,2318,741,2415,741",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "LAD - Laundry Appliance",
+                    "position": "119,776,485,776,119,808,485,808",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "1,640.00",
+                    "position": "693,777,818,777,693,805,818,805",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "612.60",
+                    "position": "1133,777,1232,777,1133,801,1232,801",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "40.00",
+                    "position": "1594,777,1675,777,1594,801,1675,801",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "2,492.60",
+                    "position": "1784,777,1912,777,1784,805,1912,805",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "2,492.60",
+                    "position": "2287,777,2415,777,2287,805,2415,805",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "MOA - Microwave & Oven",
+                    "position": "119,836,499,836,119,861,499,861",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "NO SET",
+                    "position": "119,896,240,896,119,921,240,921",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "85.00",
+                    "position": "1831,897,1912,897,1831,921,1912,921",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "85.00",
+                    "position": "2334,897,2415,897,2334,921,2415,921",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "RAC - Residential AC",
+                    "position": "119,956,435,956,119,981,435,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "170.00",
+                    "position": "721,957,819,957,721,981,819,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "8.95",
+                    "position": "963,957,1026,957,963,981,1026,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "55.00",
+                    "position": "1151,957,1232,957,1151,981,1232,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "263.95",
+                    "position": "1812,957,1912,957,1812,981,1912,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "225.85",
+                    "position": "2048,957,2148,957,2048,981,2148,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "489.80",
+                    "position": "2315,957,2415,957,2315,981,2415,981",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "REF - Refrigeration",
+                    "position": "119,1016,401,1016,119,1048,401,1048",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "1,825.00",
+                    "position": "693,1017,818,1017,693,1045,818,1045",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "37.60",
+                    "position": "945,1017,1026,1017,945,1041,1026,1041",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "158.50",
+                    "position": "1135,1017,1232,1017,1135,1041,1232,1041",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "59.43",
+                    "position": "1358,1017,1439,1017,1358,1041,1439,1041",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "2,080.53",
+                    "position": "1784,1017,1912,1017,1784,1045,1912,1045",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "154.60",
+                    "position": "2051,1017,2148,1017,2051,1041,2148,1041",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "2,235.13",
+                    "position": "2287,1017,2415,1017,2287,1045,2415,1045",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "SDA - Small Appliance",
+                    "position": "118,1076,452,1076,118,1107,452,1107",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "Grand Total",
+                    "position": "118,1136,301,1136,118,1161,301,1161",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "4,420.00",
+                    "position": "691,1137,819,1137,691,1166,819,1166",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "46.55",
+                    "position": "944,1137,1026,1137,944,1161,1026,1161",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "1,219.18",
+                    "position": "1106,1137,1232,1137,1106,1166,1232,1166",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "59.43",
+                    "position": "1358,1137,1439,1137,1358,1161,1439,1161",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "40.00",
+                    "position": "1594,1137,1675,1137,1594,1161,1675,1161",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "6,130.16",
+                    "position": "1785,1137,1912,1137,1785,1166,1912,1166",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "380.45",
+                    "position": "2048,1137,2148,1137,2048,1161,2148,1161",
+                    "key": null
+                },
+                {
+                    "pageIndex": 1,
+                    "word": "6,510.61",
+                    "position": "2288,1137,2410,1137,2288,1166,2410,1166",
+                    "key": null
+                }
+            ]
+        ],
+        "data": null
+    }
+}

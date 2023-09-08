@@ -1,0 +1,285 @@
+{
+    "resultCode": "ISC-000",
+    "resultMsg": "",
+    "data": {
+        "description": "succ",
+        "fileId": null,
+        "projectName": null,
+        "batchId": null,
+        "fileBase64": null,
+        "imageBase64": null,
+        "content": null,
+        "data": [
+            {
+                "pageIndex": 0,
+                "word": "UNKNOWN [ID:1]",
+                "position": "",
+                "key": "BUId"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "Street"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "PostalCode"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "City"
+            },
+            {
+                "pageIndex": 0,
+                "word": "JP",
+                "position": "",
+                "key": "Country"
+            },
+            {
+                "pageIndex": 0,
+                "word": "東芝コンシューママーケティング株式会社様",
+                "position": "",
+                "key": "Name"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "State"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "VendorId"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "VATID"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "NationalVAT"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "IBAN"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "BankCode"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "BankAccount"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "Street1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "ZIP"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "City1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "JP",
+                "position": "",
+                "key": "Country1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "DEXWELL",
+                "position": "156,227,339,227,156,262,339,262",
+                "key": "Name1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "State1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "910000161",
+                "position": "1915,458,2098,458,1915,493,2098,493",
+                "key": "InvoiceNumber"
+            },
+            {
+                "pageIndex": 0,
+                "word": "2020-01-31T00:00:00Z",
+                "position": "1915,532,2104,532,1915,568,2104,568",
+                "key": "InvoiceDate"
+            },
+            {
+                "pageIndex": 0,
+                "word": "660",
+                "position": "",
+                "key": "Total"
+            },
+            {
+                "pageIndex": 0,
+                "word": "JPY",
+                "position": "",
+                "key": "Currency"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TotalTaxAmount"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TotalNetAmount"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "NetAmount0"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "NetAmount1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "NetAmount2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount2_2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "550",
+                "position": "",
+                "key": "TaxAmount1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate1"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount1_2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate1_2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate2_2"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount1_3"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount1_4"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate1_3"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate1_4"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount2_3"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxAmount2_4"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate2_3"
+            },
+            {
+                "pageIndex": 0,
+                "word": "",
+                "position": "",
+                "key": "TaxRate2_4"
+            },
+            {
+                "pageIndex": 0,
+                "word": "Invoice",
+                "position": "",
+                "key": "InvoiceType"
+            }
+        ]
+    }
+}

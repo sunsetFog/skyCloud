@@ -1,0 +1,29 @@
+{
+    "result": "S",
+    "msg": null,
+    "data": [
+        {
+            "yoy_RATE": -2.2,
+            "is_late": "否",
+            "ORG_NAME": "川渝区域公司",
+            "REMOVAL_RATE_YTD": 55.60000000,
+            "project_lat": 30.93020023007514400000,
+            "deal_PRICE_lm": 7565.58000000,
+            "ORG_CITY_NAME": "川中公司",
+            "W_INSERT_DT": 1606699905000,
+            "REMOVAL_RATE_ALL": 36.70000000,
+            "period_mth": "202011",
+            "mom_rate": 0.4,
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "ORG_CITY_ID": "A0000000021",
+            "project_SALEname": "成都彭州美的碧桂园观澜府",
+            "project_id": "541CC9D0-B2C9-4898-9B8F-D7340164F5EA",
+            "org_id": "A7319161253",
+            "CITY_NAME": "成都市",
+            "price_type": "ACT_AVG",
+            "deal_PRICE": 7596.50000000,
+            "deal_PRICE_ly": 7764.05000000,
+            "project_long": 103.94580360002918000000
+        }
+    ]
+}

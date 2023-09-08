@@ -1,0 +1,64 @@
+[
+    {
+        "id": "shipin",
+        "label": "食品",
+        "children": [
+            {
+                "id": "yinpin",
+                "label": "饮品"
+            },
+            {
+                "id": "shuiguo",
+                "label": "水果"
+            },
+            {
+                "id": "lingshi",
+                "label": "零食"
+            },
+            {
+                "id": "cha",
+                "label": "茶"
+            }
+        ]
+    },
+    {
+        "id": "shengxian",
+        "label": "生鲜",
+        "children": [
+            {
+                "id": "roulei",
+                "label": "肉类"
+            },
+            {
+                "id": "shuichan",
+                "label": "水产"
+            },
+            {
+                "id": "liaoli",
+                "label": "料理"
+            },
+            {
+                "id": "shucai",
+                "label": "蔬菜"
+            }
+        ]
+    },
+    {
+        "id": "jiazhuang",
+        "label": "家装",
+        "children": [
+            {
+                "id": "jiaju",
+                "label": "家具"
+            },
+            {
+                "id": "wujin",
+                "label": "五金"
+            },
+            {
+                "id": "jiancai",
+                "label": "建材"
+            }
+        ]
+    }
+]

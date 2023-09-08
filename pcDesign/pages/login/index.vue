@@ -115,9 +115,10 @@ export default defineComponent({
         keyEnter() {
             let that = this;
             document.onkeypress = function (e) {
-                let evt = e || event;
+                let evt: any = e || event;
                 let keycode = evt.keyCode ? evt.keyCode : evt.which;
                 // console.log('keycode',keycode,'---',evt);
+
                 if (keycode == 13) {
                     let login = document.getElementById('login');
                     // console.log('#login',login);
@@ -134,15 +135,9 @@ export default defineComponent({
         },
         rapidRegistration(value) {
             if (value == 'register') {
-                if (refreshWeb.state == 'init') {
-                    this.$router.push({ path: '/register/index' });
-                } else {
-                    this.$message.error('加载游戏中,稍后为你进入快速注册！');
-                    sessionStorage.setItem('register', 'up');
-                }
+                this.$router.push({ path: '/register/index' });
             } else if (value == 'line') {
                 this.$message.success("敬请期待！");
-                // this.$router.push({path: '/login/line'});
             }
         },
         signIn(res) {
@@ -229,7 +224,7 @@ export default defineComponent({
 <style lang="less" scoped>
 #login {
     width: 100%;
-    height: 750px;
+    height: 100%;
     padding-bottom: 115px;
     overflow: hidden;
     .mixin_image(url('./img/bg_denglu.jpg'));
@@ -239,11 +234,11 @@ export default defineComponent({
     @color_hover: #f85e0b; //hover
     @color_stroke: #143597;
 
-    /deep/input:-webkit-autofill {
+    :deep(input:-webkit-autofill) {
         background-color: none !important;
     }
 
-    /deep/input {
+    :deep(input) {
         background-color: none !important;
         background: none;
     }

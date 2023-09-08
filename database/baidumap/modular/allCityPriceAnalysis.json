@@ -1,0 +1,76 @@
+{
+    "result": "S",
+    "msg": null,
+    "data": [
+        {
+            "CITY_NAME": "成都市",
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "REMOVAL_RATE_YTD": 55.60000000,
+            "REMOVAL_RATE_ALL": 36.70000000,
+            "project_id": "541CC9D0-B2C9-4898-9B8F-D7340164F5EA",
+            "project_SALEname": "成都彭州美的碧桂园观澜府",
+            "project_lat": 30.93020023007514400000,
+            "project_long": 103.94580360002918000000,
+            "deal_PRICE": "7596.50000000",
+            "mom_rate": "0.4"
+        },
+        {
+            "CITY_NAME": "眉山市",
+            "CITY_ID": "c79b8a2fd0f311e8bbf60a58ac1401a5",
+            "REMOVAL_RATE_YTD": 30.10000000,
+            "REMOVAL_RATE_ALL": 37.10000000,
+            "project_id": "5F073828-2048-424C-B4D7-0947B4451237",
+            "project_SALEname": "眉山仁寿美的云溪郡",
+            "project_lat": 30.01664271000000000000,
+            "project_long": 104.19884090000000000000,
+            "deal_PRICE": "8284.45000000",
+            "mom_rate": "-6.5"
+        },
+        {
+            "CITY_NAME": "眉山市",
+            "CITY_ID": "c79b8a2fd0f311e8bbf60a58ac1401a5",
+            "REMOVAL_RATE_YTD": 40.80000000,
+            "REMOVAL_RATE_ALL": 13.10000000,
+            "project_id": "8702BE57-0F14-4777-A5D1-22DA6F632CAD",
+            "project_SALEname": "眉山仁寿美的金辉郡",
+            "project_lat": 30.01690080000000000000,
+            "project_long": 104.19937990000000000000,
+            "deal_PRICE": "8318.33000000",
+            "mom_rate": "-0.3"
+        },
+        {
+            "CITY_NAME": "成都市",
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "project_id": "B0C4D46D-5943-48E0-A5B4-E72BB42FD043",
+            "project_SALEname": "成都美的·澜桥郡",
+            "project_lat": 30.85101190000000000000,
+            "project_long": 104.30806500000000000000,
+            "deal_PRICE": "",
+            "mom_rate": ""
+        },
+        {
+            "CITY_NAME": "乐山市",
+            "CITY_ID": "c79b7c42d0f311e8bbf60a58ac1401a5",
+            "REMOVAL_RATE_YTD": 42.70000000,
+            "REMOVAL_RATE_ALL": 24.80000000,
+            "project_id": "C572EBB6-ED7D-4124-8A82-E3CAEC8AA1F0",
+            "project_SALEname": "乐山美的珺御府",
+            "project_lat": 29.62775705000000000000,
+            "project_long": 103.73730110000000000000,
+            "deal_PRICE": "6526.27000000",
+            "mom_rate": "-0.1"
+        },
+        {
+            "CITY_NAME": "成都市",
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "REMOVAL_RATE_YTD": 35.60000000,
+            "REMOVAL_RATE_ALL": 37.60000000,
+            "project_id": "CB58C24A-61E4-4A5A-BF86-38AF02B6D07F",
+            "project_SALEname": "成都美的新城公园天下",
+            "project_lat": 30.89786220000000000000,
+            "project_long": 104.24327110000000000000,
+            "deal_PRICE": "7995.81000000",
+            "mom_rate": "0.9"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "result": "S",
+    "msg": null,
+    "data": [
+        {
+            "mom_rate": 0.4,
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "project_SALEname": "成都彭州美的碧桂园观澜府",
+            "project_id": "541CC9D0-B2C9-4898-9B8F-D7340164F5EA",
+            "REMOVAL_RATE_YTD": 55.60000000,
+            "project_lat": 30.93020023007514400000,
+            "CITY_NAME": "成都市",
+            "deal_PRICE": 7596.50000000,
+            "REMOVAL_RATE_ALL": 36.70000000,
+            "project_long": 103.94580360002918000000
+        },
+        {
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "project_SALEname": "成都美的·澜桥郡",
+            "project_id": "B0C4D46D-5943-48E0-A5B4-E72BB42FD043",
+            "project_lat": 30.85101190000000000000,
+            "CITY_NAME": "成都市",
+            "project_long": 104.30806500000000000000
+        },
+        {
+            "mom_rate": 0.9,
+            "CITY_ID": "c79b4c26d0f311e8bbf60a58ac1401a5",
+            "project_SALEname": "成都美的新城公园天下",
+            "project_id": "CB58C24A-61E4-4A5A-BF86-38AF02B6D07F",
+            "REMOVAL_RATE_YTD": 35.60000000,
+            "project_lat": 30.89786220000000000000,
+            "CITY_NAME": "成都市",
+            "deal_PRICE": 7995.81000000,
+            "REMOVAL_RATE_ALL": 37.60000000,
+            "project_long": 104.24327110000000000000
+        }
+    ]
+}

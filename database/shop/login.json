@@ -1,0 +1,13 @@
+{
+    "code": 200,
+    "user_info": {
+        "token": "TOKEN_e323d630c0cce7e74c7a9093a88007ye",
+        "nickname": "hello kitty",
+        "avatar_img": "ex.jpg",
+        "sex": "男",
+        "vip": 8,
+        "store_id": 12,
+        "user_id": 56
+    },
+    "message": "登录成功"
+}
