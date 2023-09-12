@@ -82,6 +82,7 @@ export default defineComponent({
         // }
     },
     created() {
+        console.log('--login-that.$store-', this.$store);
         // this.$cookies.remove("tokenPcClient");// 登录页面，删除token缓存
 
         // this.catchMice();
@@ -159,11 +160,12 @@ export default defineComponent({
             }
 
             that.$apihttp({
-                url: process.env.core_url + '/sky/user/login',
+                url: '/sky/user/login',
                 method: 'post',
                 params: params
             }).then((res) => {
                 console.log('--login--', res);
+                
                 if (res.code == "200") {
                     that.$cookies.set("tokenPcClient", res.data.token, "1d");
                     /*
@@ -172,7 +174,7 @@ export default defineComponent({
                      */
                     that.$store.dispatch('routerApple').then(function (value) {
                         console.log("--then结束--");
-                        that.$router.addRoutes(value);
+                        that.$router.addRoute(value);
                         // 记住密码
                         if (that.remember_checked) {
                             that.$means.setCookie('remember_account', that.account_number, 30);

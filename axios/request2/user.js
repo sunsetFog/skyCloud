@@ -3,7 +3,7 @@ import request from '@/explore/api/http'
 
 export function login(params) {
   return request({
-    url: process.env.core_url + '/sky/shop/list',
+    url: '/sky/shop/list',
     method: 'post',
     data: params
   })
