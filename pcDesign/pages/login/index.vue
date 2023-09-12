@@ -168,10 +168,7 @@ export default defineComponent({
                 
                 if (res.code == "200") {
                     that.$cookies.set("tokenPcClient", res.data.token, "1d");
-                    /*
-                        study: 动态添加路由
-                        登录时调用
-                     */
+                    // study: 动态添加路由
                     that.$store.dispatch('routerApple').then(function (value) {
                         console.log("--then结束--");
                         that.$router.addRoute(value);
@@ -183,7 +180,8 @@ export default defineComponent({
                             that.$means.deleteCookie('remember_account');
                             that.$means.deleteCookie('remember_password');
                         }
-                        that.$router.push({ path: '/home/index' });
+                        // that.$router.push({ path: '/home/index' });
+                        that.$router.push({ path: '/home/world/world' });
                     })
                 }
             }).catch((err) => {

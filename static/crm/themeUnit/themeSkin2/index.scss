@@ -1,0 +1,33 @@
+// 白天主题---默认主题---就是用不着@include theme-daylight() {}
+@mixin theme-daylight() {
+    [data-theme='daylight'] & {
+        // 编译后：html > ***
+        @content;
+    }
+}
+
+// 黑夜主题
+@mixin theme-night() {
+    [data-theme='night'] & {
+        @content;
+    }
+}
+
+@mixin theme-macaron() {
+    [data-theme='macaron'] & {
+        @content;
+    }
+}
+
+
+
+// 清除浮动影响
+@mixin bob-clear-after() {
+    &::after {
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        content: '.';
+    }
+}
