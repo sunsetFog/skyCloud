@@ -170,18 +170,24 @@ export default defineComponent({
                     that.$cookies.set("tokenPcClient", res.data.token, "1d");
                     // study: 动态添加路由
                     that.$store.dispatch('routerApple').then(function (value) {
-                        console.log("--then结束--");
-                        that.$router.addRoute(value);
-                        // 记住密码
-                        if (that.remember_checked) {
-                            that.$means.setCookie('remember_account', that.account_number, 30);
-                            that.$means.setCookie('remember_password', that.password_number, 30, true);
-                        } else {
-                            that.$means.deleteCookie('remember_account');
-                            that.$means.deleteCookie('remember_password');
+                        console.log("--then结束-1-", value);
+                        // vue3差异化：批量添加路由不能传数组
+                        for (let i = 0; i < value.length; i++) {
+                            const item = value[i];
+                            that.$router.addRoute(item);
                         }
-                        // that.$router.push({ path: '/home/index' });
-                        that.$router.push({ path: '/home/world/world' });
+                        // that.$router.addRoute(value);
+                        console.log("--then结束-2-", that.$router.getRoutes());
+                        // 记住密码
+                        // if (that.remember_checked) {
+                        //     that.$means.setCookie('remember_account', that.account_number, 30);
+                        //     that.$means.setCookie('remember_password', that.password_number, 30, true);
+                        // } else {
+                        //     that.$means.deleteCookie('remember_account');
+                        //     that.$means.deleteCookie('remember_password');
+                        // }
+                        that.$router.push({ path: '/home/index' });
+                        // that.$router.push({ path: '/home/world/world' });
                     })
                 }
             }).catch((err) => {
