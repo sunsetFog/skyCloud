@@ -1,7 +1,7 @@
 <template>
     <section id="error">
         <p>
-            <i class="el-icon-error"></i>
+            <el-icon><Error /></el-icon>
             404&nbsp;找不到该页，请检查您输入的网址是否正确！
         </p>
     </section>

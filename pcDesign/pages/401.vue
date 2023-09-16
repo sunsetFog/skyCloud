@@ -1,7 +1,7 @@
 <template>
     <section id="noPermission">
         <p>
-            <i class="el-icon-error"></i>
+            <el-icon><Error /></el-icon>
             401&nbsp;抱歉,您没有权限访问该页面！
         </p>
     </section>
