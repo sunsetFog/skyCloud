@@ -167,7 +167,7 @@ export default defineComponent({
                 console.log('--login--', res);
                 
                 if (res.code == "200") {
-                    that.$cookies.set("tokenPcClient", res.data.token, "1d");
+                    that.$cookies.set(process.env.VUE_APP_TOKEN_KEY, res.data.token, "1d");
                     // study: 动态添加路由
                     that.$store.dispatch('routerApple').then(function (value) {
                         console.log("--then结束-1-", value);
@@ -179,13 +179,13 @@ export default defineComponent({
                         // that.$router.addRoute(value);
                         console.log("--then结束-2-", that.$router.getRoutes());
                         // 记住密码
-                        // if (that.remember_checked) {
-                        //     that.$means.setCookie('remember_account', that.account_number, 30);
-                        //     that.$means.setCookie('remember_password', that.password_number, 30, true);
-                        // } else {
-                        //     that.$means.deleteCookie('remember_account');
-                        //     that.$means.deleteCookie('remember_password');
-                        // }
+                        if (that.remember_checked) {
+                            that.$means.setCookie('remember_account', that.account_number, 30);
+                            that.$means.setCookie('remember_password', that.password_number, 30, true);
+                        } else {
+                            that.$means.deleteCookie('remember_account');
+                            that.$means.deleteCookie('remember_password');
+                        }
                         that.$router.push({ path: '/home/index' });
                         // that.$router.push({ path: '/home/world/world' });
                     })
