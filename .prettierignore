@@ -1,0 +1,6 @@
+# VSCode格式化配置，忽略文件
+build
+config
+node_modules
+static
+dist
