@@ -16,7 +16,7 @@
                         </div>
                         <div class="password-enter">
                             <span>密码:</span>
-                            <!-- 
+                            <!--
                                 浏览器自动填充？
                                     name="username"和name="password"
                                     autocomplete="new-password"禁止浏览器自动填充到表单
@@ -165,19 +165,17 @@ export default defineComponent({
                 params: params
             }).then((res) => {
                 console.log('--login--', res);
-                
+
                 if (res.code == "200") {
                     that.$cookies.set(process.env.VUE_APP_TOKEN_KEY, res.data.token, "1d");
                     // study: 动态添加路由
                     that.$store.dispatch('routerApple').then(function (value) {
-                        console.log("--then结束-1-", value);
                         // vue3差异化：批量添加路由不能传数组
                         for (let i = 0; i < value.length; i++) {
                             const item = value[i];
                             that.$router.addRoute(item);
                         }
                         // that.$router.addRoute(value);
-                        console.log("--then结束-2-", that.$router.getRoutes());
                         // 记住密码
                         if (that.remember_checked) {
                             that.$means.setCookie('remember_account', that.account_number, 30);
@@ -186,7 +184,8 @@ export default defineComponent({
                             that.$means.deleteCookie('remember_account');
                             that.$means.deleteCookie('remember_password');
                         }
-                        that.$router.push({ path: '/home/index' });
+                        // that.$router.push({ path: '/home/index' });
+                        that.$router.push({ path: '/home/homeIndex/index' });
                         // that.$router.push({ path: '/home/world/world' });
                     })
                 }

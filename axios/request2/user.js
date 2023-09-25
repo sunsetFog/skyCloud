@@ -1,4 +1,4 @@
-import request from '@/explore/api/http'
+import request from '@sky/axios/request2/http'
 
 
 export function login(params) {

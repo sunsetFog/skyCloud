@@ -1,0 +1,262 @@
+
+/*
+多个组件共同样式文件
+*/
+
+#home-index{
+    .theme-picture{
+        .el-carousel__container{
+            height: 500px;
+        }
+    }
+    .game-contain{
+        .el-carousel__container{
+            height: 740px;
+        }
+        .el-carousel__arrow--left{
+            width: 60px;
+            height: 60px;
+            .mixin_image(url('~@sky/static/picture/home/left_nomal.png'));
+            .el-icon-arrow-left{
+                display: none;
+            }
+        }
+        .el-carousel__arrow--left:hover{
+            .mixin_image(url('~@sky/static/picture/home/left_hover.png'));
+        }
+        .el-carousel__arrow--right{
+            width: 60px;
+            height: 60px;
+            .mixin_image(url('~@sky/static/picture/home/right_nomal.png'));
+            .el-icon-arrow-right{
+                display: none;
+            }
+        }
+        .el-carousel__arrow--right:hover{
+            .mixin_image(url('~@sky/static/picture/home/right_hover.png'));
+        }
+    }
+}
+
+#game-recharge,#game-withdrawal,#add-bank,#manage-bank,#add-alipay,#manage-alipay,#know,#mail,#notice,#consult,#login-password,#withdrawal-password,#safe-deposit,#portrait,#recharge-record{
+    .el-dialog{
+        background: none;
+    }
+    .el-dialog__header{
+        background: @color_indigo;
+        padding: 20px;
+        color: @color_white;
+        font-size: @font_size20;
+        font-weight: 600;
+        border: 1px solid @color_blueviolet;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        overflow: hidden;
+        .el-dialog__headerbtn{
+            top: 20px;
+            width: 25px;
+            height: 25px;
+            i{
+                color: @color_white;
+            }
+        }
+    }
+    .el-dialog__body,.el-dialog__footer{
+        background: @color_purple;
+        border-left: 1px solid @color_blueviolet;
+        border-right: 1px solid @color_blueviolet;
+        padding: 0px 0px 0px 0px;
+    }
+    .el-dialog__footer{
+        border-bottom: 1px solid @color_blueviolet;
+        padding: 0px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+#game-withdrawal,#add-bank,#manage-bank,#add-alipay,#manage-alipay{
+    .el-input__inner{
+        width: 280px;
+        height: 44px;
+        background-color: @color_indigo;
+        color: @color_blueviolet;
+        border: 1px solid @color_blueviolet;
+        font-size: @font_size18;
+    }
+}
+#crux{
+    .sex-select{
+        .el-select{
+            float: left;
+            .el-input__inner{
+                width: 100px;
+                height: 28px;
+                background-color: @color_indigo;
+                color: @color_blueviolet;
+                border: 1px solid @color_blueviolet;
+            }
+            .el-input--mini,.el-input__icon{
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+#know{
+    .el-dialog__header{
+        display: none;
+    }
+    .el-dialog__body{
+        border-top: 1px solid @color_blueviolet;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+}
+
+.el-message-box{
+    width: 520px;
+    background-color: @color_purple;
+    border: 1px solid @color_blueviolet;
+    .el-message-box__header{
+        .el-message-box__title,.el-message-box__close{
+            color: @color_white;
+        }
+    }
+    .el-message-box__content{
+        padding: 40px 15px;
+        .el-message-box__message{
+            color: @color_white;
+        }
+    }
+    .el-message-box__btns{
+        .el-button:nth-of-type(1){
+            .mixin_button(auto,auto,@color_white2,@color_blueviolet);
+            border: 1px solid @color_blueviolet;
+        }
+        .el-button:nth-of-type(1):hover{
+            background: @color_white2_hover;
+        }
+        .el-button:nth-of-type(2){
+            .mixin_button(auto,auto,@color_indigo,@color_blueviolet);
+            border: 1px solid @color_blueviolet;
+        }
+        .el-button:nth-of-type(2):hover{
+            background: @color_indigo_hover;
+        }
+    }
+}
+
+#mail,#notice{
+    .el-pagination{
+        float: right;
+        .el-pagination__total{
+            color: @color_blueviolet;
+        }
+        .el-input__inner{
+            background: @color_indigo;
+            border: 1px solid @color_blueviolet;
+            color: @color_blueviolet;
+            border-color: @color_blueviolet;
+        }
+        .el-input__inner:focus{
+            border-color: @color_blueviolet;
+        }
+        .el-input.is-focus .el-input__inner{
+            border-color: @color_blueviolet;
+        }
+        .btn-prev,.btn-next{
+            background: @color_indigo;
+            .el-icon{
+                color: @color_white;
+            }
+        }
+        button:disabled {
+            background-color: @color_indigo;
+            .el-icon{
+                color: #9a9696;
+            }
+        }
+        button:hover{
+            color: @color_white;
+        }
+        .el-pager{
+            li{
+                background: @color_indigo;
+                color: @color_white;
+            }
+            li.active{
+                color: @color_blueviolet;
+            }
+        }
+        .el-pagination__jump{
+            color: @color_blueviolet;
+        }
+    }
+}
+
+
+
+#management{
+    .el-menu{
+        border: none;
+    }
+    .el-scrollbar{
+        .el-scrollbar__wrap{
+            max-height: 1155px;
+        }
+    }
+}
+
+
+// @media only screen and (max-width: 1200px){
+// }
+
+
+
+
+
+
+
+
+
+
+#chessCards,#agent,#profit,#lotteryReport,#electronicSports{
+    .el-input__inner{
+        background-color: @color_indigo;
+        color: @color_gray;
+        border: 1px solid @color_blueviolet;
+    }
+    .el-range-editor--mini .el-range-separator{
+        width: 22px;
+        color: @color_white;
+    }
+    .el-date-editor .el-range__icon{
+        color: @color_white;
+    }
+    .el-date-editor .el-range__close-icon{
+        color: @color_white;
+    }
+}
+
+#lottery{
+    .el-tabs__item{
+        padding: 0px 10px;
+    }
+    .el-tabs__item.is-active,.el-tabs__item:hover{
+        color: #e4150d;
+    }
+    .el-tabs__active-bar{
+        background-color: #e4150d;
+    }
+}
+
+#player_information{
+    .el-progress svg path:first-child{
+        stroke: #513663;
+    }
+}
+
+
+
+
