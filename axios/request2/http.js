@@ -1,9 +1,16 @@
 import axios from 'axios'
 // import { Message, MessageBox } from 'element-ui'
-import { ElMessage } from 'element-plus'
+const isApp = process.env.VUE_APP_TOKEN_KEY == 'tokenAppClient';
+
+
+
+
+
+
 
 import router from '@/router' // 用于路由跳转 router.push({path: '/login'})
 import VueCookies from 'vue-cookies'
+
 // 创建axios实例
 const service = axios.create({
     baseURL: process.env.VUE_APP_BASE_URL, // 请求域名设置
@@ -27,11 +34,12 @@ service.interceptors.request.use(config => {
     return Promise.reject(error)
 })
 
+
 // 接口拦截器 (可以控制成功回调和失败回调)
 service.interceptors.response.use(response => {
     // console.log('后台返回的数据', response);
     if (response.data.data === 'checkToken') {
-        ElMessage.error('登陆过期！');
+        // ElMessage.error('登陆过期！');
         return Promise.reject(response); // 失败回调,捕捉异常
     } else {
         return response.data; // 成功回调
@@ -58,7 +66,7 @@ service.interceptors.response.use(response => {
     //     }
     // }
 }, error => {
-    ElMessage({ message: error.message, type: 'error', duration: 5000 })
+    // ElMessage({ message: error.message, type: 'error', duration: 5000 })
     return Promise.reject(error)
 })
 
