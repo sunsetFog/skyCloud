@@ -5,6 +5,7 @@
   "dependencies": {
     "@goodgeek/vue-json-schema-form": "^1.9.5",
     "@lljj/vue-json-schema-form": "^1.18.0",
+    "@lucky-canvas/vue": "^0.1.11",
     "animate.css": "^4.1.1",
     "axios": "^1.5.0",
     "clipboard": "^2.0.11",
@@ -29,7 +30,6 @@
     "vue-cookies": "^1.8.3",
     "vue-cropper": "^0.6.4",
     "vue-i18n": "^9.4.0",
-    "vue-luck-draw": "^3.4.11",
     "vue-qr": "^4.0.9",
     "vue-router": "^4.0.3",
     "vuedraggable": "^2.24.3",
