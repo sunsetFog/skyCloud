@@ -20,62 +20,62 @@ Mock.setup({
  * 查询该全部数据
  * @param { store_id: 12, current_page: 1, page_size: 10 } 店铺id
  */
-Mock.mock(process.env.mock_url + "/store/goods-list", "post", shopAPI.purchase);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/goods-list", "post", shopAPI.purchase);
 /**
  * 搜索数据
  * @param { search_value: 12 } 店铺id
  */
-Mock.mock(process.env.mock_url + "/store/search", "post", shopAPI.search);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/search", "post", shopAPI.search);
 /**
  * 查询该单条数据
  * @param { goods_id: '' }  商品id
  */
-Mock.mock(process.env.mock_url + "/store/goods-detail", "post", shopAPI.isSingle);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/goods-detail", "post", shopAPI.isSingle);
 /**
  * 数据的删除操作
  * @param { goods_id: '' }  商品id
  */
-Mock.mock(process.env.mock_url + "/store/destroy-goods", "get", shopAPI.isDelete);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/destroy-goods", "get", shopAPI.isDelete);
 /**
  * 数据的添加操作
  * @param 看param 传http的参数
  */
-Mock.mock(process.env.mock_url + "/store/add-goods", "post", shopAPI.isAdd);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/add-goods", "post", shopAPI.isAdd);
 /**
  * 数据的修改操作
  * @param 看param 传http的参数
  */
-Mock.mock(process.env.mock_url + "/store/edit-goods", "post", shopAPI.isUpdate);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/edit-goods", "post", shopAPI.isUpdate);
 /**
  * 查询分类数据
  * @param { store_id: 12 } 店铺id
  */
-Mock.mock(process.env.mock_url + "/store/goods/get-category", "post", shopAPI.classify);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/goods/get-category", "post", shopAPI.classify);
 /**
  * 登录
  * @param { username: '', password: '' }
  */
-Mock.mock(process.env.mock_url + "/shop/login", "post", shopAPI.loginAi);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/shop/login", "post", shopAPI.loginAi);
 
 /**
  * mock.vue调用的接口
  * @param {}
  */
-Mock.mock(process.env.mock_url + "/store/price-list", "post", mapAPI.mapList);
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/store/price-list", "post", mapAPI.mapList);
 
 
 
 import getOCRTemplate from './attachment/getOCRTemplate.json'
 import uniRecognized from './attachment/uniRecognized.json'
 import getRegInvoiceResult from './attachment/getRegInvoiceResult.json'
-Mock.mock(process.env.mock_url + "/ifin-expense/ocrTemplates/getOCRTemplate", "post", function (options) {
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/ifin-expense/ocrTemplates/getOCRTemplate", "post", function (options) {
     return getOCRTemplate
 });
-Mock.mock(process.env.mock_url + "/ifin-expense/oieOcr/uniRecognized", "post", function (options) {
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/ifin-expense/oieOcr/uniRecognized", "post", function (options) {
     // let json = JSON.parse(options.body);报错Unexpected token o in JSON at position 1
     return uniRecognized
 });
-Mock.mock(process.env.mock_url + "/ifin-expense/ocr/getRegInvoiceResult", "post", function (options) {
+Mock.mock(process.env.VUE_APP_MOCK_URL + "/ifin-expense/ocr/getRegInvoiceResult", "post", function (options) {
     return getRegInvoiceResult
 });
 
