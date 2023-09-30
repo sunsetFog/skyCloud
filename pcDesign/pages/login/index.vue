@@ -184,8 +184,12 @@ export default defineComponent({
                             that.$means.deleteCookie('remember_account');
                             that.$means.deleteCookie('remember_password');
                         }
-                        // that.$router.push({ path: '/home/index' });
-                        that.$router.push({ path: '/home/homeIndex/index' });
+                        if (process.env.VUE_APP_TOKEN_KEY == 'tokenAdminClient') {
+                            that.$router.push({ path: '/home/index' });
+                        } else if (process.env.VUE_APP_TOKEN_KEY == 'tokenPcClient') {
+                            that.$router.push({ path: '/home/homeIndex/index' });
+                        }
+
                         // that.$router.push({ path: '/home/world/world' });
                     })
                 }

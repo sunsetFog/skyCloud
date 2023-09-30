@@ -1,4 +1,5 @@
-import echarts from 'echarts'
+// import echarts from 'echarts'
+import * as echarts from 'echarts'
 export default {
     /**
      * echarts颜色渐变函数
