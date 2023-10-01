@@ -2,7 +2,7 @@
 # 编辑器统一代码风格：由于习惯的不同，导致他们用的编辑器五花八门，有vscode,有webstorm,有sublime,等等
 # 修改这个文件要重启vscode才有效果
 
-
+# 666
 # 告诉EditorConfig插件，这是根文件，不用继续往上查找
 root = true
 
