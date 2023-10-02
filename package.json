@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node init.js"
+    "init": "node init.js"
   },
   "dependencies": {
     "@goodgeek/vue-json-schema-form": "^1.9.5",

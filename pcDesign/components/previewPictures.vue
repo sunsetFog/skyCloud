@@ -5,7 +5,6 @@
                 :style="{ width: imgwh, height: imgwh }"
                 v-for="(item,index) in photoList"
                 :src="item"
-                v-if="item"
                 :key="index"
             />
         </viewer>
@@ -18,9 +17,18 @@ vue-photo-preview
 https://www.jianshu.com/p/775fb3784692
 
 main.js全局引入了
+v-viewer 目前还不支持 Vue 3
+
+兼容 Vue 3 的图片预览组件,比如:
+- vue-image-viewer:https://github.com/kevindesousa/vue-image-viewer
+- vue3-viewer:https://github.com/Miofly/vue3-viewer
+
 */
+// import Viewer from 'v-viewer';
+// import 'viewerjs/dist/viewer.css';
 export default {
     name: "previewPictures",
+    // components: { Viewer },
     props: {
         photoList: {
             type: Array,
