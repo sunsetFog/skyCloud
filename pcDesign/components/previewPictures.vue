@@ -26,9 +26,9 @@ export default {
             type: Array,
             default: function() {
                 return [
-                    require('@sky/static/reportForms/image/AheadVenus.png'),
-                    require('@sky/static/reportForms/image/sale.png'),
-                    require('@sky/static/reportForms/image/invoice.png')
+                    require('@sky/static/image1/AheadVenus.png'),
+                    require('@sky/static/image1/sale.png'),
+                    require('@sky/static/image1/invoice.png')
                 ]
             }
         },
