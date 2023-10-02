@@ -2,7 +2,7 @@
 <template>
   <section id="register">
       <div class="entertainment">
-          <img class="register-logo" src="@sky/static/picture/register/logo.png"/>
+          <img class="register-logo" src="./img/logo.png"/>
           <div class="containter">
               <div class="heart-content">
                     <div class="back-login">
@@ -51,7 +51,7 @@ export default{
             new_password: '',
             verify_time: 60,
             verify_active: false,
-            to_back: {point: require('@sky/static/picture/register/jiantou.png'),color: '#c53fe1'}
+            to_back: {point: require('./img/jiantou.png'),color: '#c53fe1'}
         }
     },
     created(){
@@ -139,11 +139,11 @@ export default{
             }
         },
         fixedOver(){
-            this.to_back.point = require('@sky/static/picture/register/jiantou_hover.png');
+            this.to_back.point = require('./img/jiantou_hover.png');
             this.to_back.color = '#eb87ff';
         },
         fixedOut(){
-            this.to_back.point = require('@sky/static/picture/register/jiantou.png');
+            this.to_back.point = require('./img/jiantou.png');
             this.to_back.color = '#c53fe1';
         },
         toBack(){
@@ -159,7 +159,7 @@ export default{
     height: 750px;
     padding-bottom: 115px;
     overflow: hidden;
-    .mixin_image(url('~@sky/static/picture/register/bg01.jpg'));
+    .mixin_image(url('./img/bg01.jpg'));
     .entertainment{
         width: 100%;
         height: 100%;
@@ -172,7 +172,7 @@ export default{
         }
         .containter{
             .mixin_center(600px,550px);
-            .mixin_image(url('~@sky/static/picture/register/frame01.png'));
+            .mixin_image(url('./img/frame01.png'));
             padding: 20px 40px 0px 40px;
             .heart-content{
                 .mixin_float(100%,100%,left);
@@ -210,7 +210,7 @@ export default{
                     width: 100%;
                     height: 50px;
                     margin-bottom: 11px;
-                    .mixin_image(url('~@sky/static/picture/register/frame02.png'));
+                    .mixin_image(url('./img/frame02.png'));
                     input{
                         .mixin_input(100%,100%);
                         background: none;
@@ -225,21 +225,21 @@ export default{
                     button{
                         .mixin_button(100px,50px,none,#7d500f);
                         float: right;
-                        .mixin_image(url('~@sky/static/picture/register/button03.png'));
+                        .mixin_image(url('./img/button03.png'));
                     }
                     button:hover{
-                        .mixin_image(url('~@sky/static/picture/register/button04.png'));
+                        .mixin_image(url('./img/button04.png'));
                     }
                 }
                 .submit{
                     .mixin_div(100%,50px,none,#174308,center);
-                    .mixin_image(url('~@sky/static/picture/register/button01.png'));
+                    .mixin_image(url('./img/button01.png'));
                     font-size: @font_size18;
                     margin-top: 35px;
                     cursor: pointer;
                 }
                 .submit:hover{
-                    .mixin_image(url('~@sky/static/picture/register/button02.png'));
+                    .mixin_image(url('./img/button02.png'));
                 }
             }
         }
