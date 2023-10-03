@@ -20,9 +20,9 @@ const install = function (Vue) {
                 return
             }
             // 登录时，缓存的后端数据
-            let buttonPermissions = JSON.parse(sessionStorage.getItem('buttonPermissions')) || [];
-            for(let i=0;i<buttonPermissions.length;i++){
-                let item = buttonPermissions[i];
+            let permsList = JSON.parse(sessionStorage.getItem('permsList')) || [];
+            for(let i=0;i<permsList.length;i++){
+                let item = permsList[i];
                 // 循环判断后端数据是否存在指令绑定值
                 if(item.perms == key){
                     if(item.disabled){
