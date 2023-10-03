@@ -14,8 +14,11 @@ import axios from 'axios';
 import type { AxiosInstance } from 'axios'; // axios里面有对应的第三方库的类型
 import type { InRequestConfig } from './type';
 
-import { ElLoading } from 'element-plus'; // 进行导入element的loading的加载事件使用
+// import { ElLoading } from 'element-plus'; // 进行导入element的loading的加载事件使用
+// @ts-ignore
+import type { ElLoading } from 'element-plus';
 // loading的类型，会在安装的使用安装到文件中
+// @ts-ignore
 import { LoadingInstance } from 'element-plus/lib/components/loading/src/loading'
 
 
@@ -41,6 +44,7 @@ class InRequest{
         console.log('拦截器: 请求成功拦截', config);
         // 是否添加loading的引用
         if (this.showLoading) {
+            // @ts-ignore
           this.loading = ElLoading.service({
             lock: true,
             text: '正在请求数据....',
