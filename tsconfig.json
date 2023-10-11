@@ -1,3 +1,20 @@
+/*
+编译TypeScript的配置文件
+tsconfig.json 配置参考(有其他开发规范): https://lq782655835.github.io/blogs/project/ts-tsconfig.html
+
+在文件开头添加，当前文件不检查
+// @ts-nocheck
+
+该行代码上加，忽略此行类型检查
+// @ts-ignore
+
+断言，关闭该字段类型检查
+as any
+
+声明未使用的变量不检查
+在变量名前加下划线 _text
+
+*/
 {
   "compilerOptions": {
     "target": "esnext",
