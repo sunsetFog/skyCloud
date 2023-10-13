@@ -2,9 +2,21 @@ const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
 
 /*
-???
-vue3 vue.config.js configureWebpack sass-resources-loader全局引入less
-vue3 vue.config.js pluginOptions 全局引入less
+
+某功能自定义webpack
+通过 configureWebpack 或 chainWebpack 对已有的 webpack 配置进行修改
+
+完全自定义 webpack 配置 --- 未采纳
+// webpack.config.js
+module.exports = {
+  // webpack 配置
+}
+vue.config.js 中设定使用
+// vue.config.js
+module.exports = {
+  // 使用自定义配置
+  webpack: require('./webpack.config.js')
+}
 
 */
 
@@ -13,11 +25,11 @@ module.exports = defineConfig({
         port: process.env.VUE_APP_PORT,
         proxy: {
             '/api': {
-              target: 'http://localhost:8062',
-              ws: true,
-              changeOrigin: true
-            }
-        }
+                target: 'http://localhost:8062',
+                ws: true,
+                changeOrigin: true,
+            },
+        },
     },
     transpileDependencies: true,
     lintOnSave: false, // 关闭这些未使用变量/方法的警告
@@ -54,11 +66,18 @@ module.exports = defineConfig({
                 )}";`,
             },
             // 引入vw适配文件
-            postcss: process.env.VUE_APP_ADAPTER == 'vw' ? {
-                postcssOptions: {
-                    config: './postcss.config.js'
-                }
-            } : {}
+            postcss:
+                process.env.VUE_APP_ADAPTER == 'vw'
+                    ? {
+                          postcssOptions: {
+                              config: './postcss.config.js',
+                          },
+                      }
+                    : {},
         },
+    },
+    // config链式操作 (高级)
+    chainWebpack: (config) => {
+
     },
 });
