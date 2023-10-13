@@ -53,6 +53,12 @@ module.exports = defineConfig({
                     '../../styles/scssVariable.scss',
                 )}";`,
             },
+            // 引入vw适配文件
+            postcss: process.env.VUE_APP_ADAPTER == 'vw' ? {
+                postcssOptions: {
+                    config: './postcss.config.js'
+                }
+            } : {}
         },
     },
 });

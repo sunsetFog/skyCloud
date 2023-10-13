@@ -45,6 +45,9 @@ copyWay('./.eslintignore', './packages/adminSystem/.eslintignore');
 copyWay('./.eslintignore', './packages/pcWebsite/.eslintignore');
 copyWay('./.eslintignore', './packages/mobileApp/.eslintignore');
 
+copyWay('./.postcssrc.js', './packages/mobileApp/.postcssrc.js');
+copyWay('./postcss.config.js', './packages/mobileApp/postcss.config.js');
+
 // copyWay('./docker', './packages/adminSystem/docker');
 // copyWay('./docker', './packages/pcWebsite/docker');
 // copyWay('./docker', './packages/mobileApp/docker');
