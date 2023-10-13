@@ -64,14 +64,7 @@ const comic = {
     },
     //时间戳转时间  https://www.cnblogs.com/zhaojunhao/p/9630315.html
     getLocalTime(nS) { // ns是10位准确，13位不准确
-        return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");     
-    },
-    //dom定义高度
-    overallHeight(value){
-        let overallApp = document.getElementById(value);
-        if(overallApp!=null){
-            overallApp.style.height = document.body.clientHeight+'px';
-        }
+        return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");
     },
     // 浏览器信息
     browserInfo(){

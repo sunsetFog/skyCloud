@@ -74,13 +74,6 @@ export default defineComponent({
             readonly: true
         }
     },
-    mounted() {
-        // var that = this;
-        // that.$means.overallHeight('login');
-        // window.onresize = function temp1() {
-        //     that.$means.overallHeight('login');
-        // }
-    },
     created() {
         console.log('--login-that.$store-', this.$store);
         // this.$cookies.remove("tokenPcClient");// 登录页面，删除token缓存

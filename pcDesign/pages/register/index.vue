@@ -57,13 +57,6 @@ export default{
     created(){
         this.registerEnter();
     },
-    mounted(){
-        var that = this;
-        that.$means.overallHeight('register');
-        window.onresize = function temp7(){
-            that.$means.overallHeight('register');
-        }
-    },
     watch: {
         account_number(cur,old){
             if(/[^\d]/g.test(cur)){
@@ -156,7 +149,7 @@ export default{
 <style lang="less" scoped>
 #register{
     width: 100%;
-    height: 750px;
+    height: 100%;
     padding-bottom: 115px;
     overflow: hidden;
     .mixin_image(url('./img/bg01.jpg'));
