@@ -20,6 +20,10 @@ module.exports = {
   }
 }
 
+使用：
+屏宽：100vw
+(345px / 375) * 100 = 92vw
+
 */
 module.exports = {
     plugins: {
