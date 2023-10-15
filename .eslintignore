@@ -1,2 +1,6 @@
-@goodgeek
+# ESLint 中需要忽略的文件
+
 # src  这里写src名能去掉全局校验
+
+node_modules
+dist
