@@ -1,74 +1,112 @@
-
 const fs = require('fs');
-function copyWay(source, target) {
-    fs.unlink(target, () => {
-      fs.copyFile(source, target, (err) => {
-        if (err) throw err;
+const path = require('path');
+function copyWay1(source, target) {
+    try {
+        fs.unlinkSync(target);
+    } catch (err) {
+        console.log('Delete failed!');
+    }
+
+    try {
+        fs.copyFileSync(source, target);
         console.log('Copy completed!');
-      });
-    });
+    } catch (err) {
+        console.log('Copy failed!');
+    }
 }
 
-copyWay('./vue.config.js', './packages/adminSystem/vue.config.js');
-copyWay('./vue.config.js', './packages/pcWebsite/vue.config.js');
-copyWay('./vue.config.js', './packages/mobileApp/vue.config.js');
+function copyDir(srcDir, destDir) {
+    fs.mkdirSync(destDir, { recursive: true });
+    const files = fs.readdirSync(srcDir);
 
-copyWay('./.gitignore', './packages/adminSystem/.gitignore');
-copyWay('./.gitignore', './packages/pcWebsite/.gitignore');
-copyWay('./.gitignore', './packages/mobileApp/.gitignore');
-copyWay('./.gitignore', './packages/mobxSky/.gitignore');
+    for (let file of files) {
+        const srcPath = path.join(srcDir, file);
+        const destPath = path.join(destDir, file);
 
-copyWay('./.editorconfig', './packages/adminSystem/.editorconfig');
-copyWay('./.editorconfig', './packages/pcWebsite/.editorconfig');
-copyWay('./.editorconfig', './packages/mobileApp/.editorconfig');
-copyWay('./.editorconfig', './packages/mobxSky/.editorconfig');
+        const stat = fs.statSync(srcPath);
 
-copyWay('./.prettierignore', './packages/adminSystem/.prettierignore');
-copyWay('./.prettierignore', './packages/pcWebsite/.prettierignore');
-copyWay('./.prettierignore', './packages/mobileApp/.prettierignore');
-copyWay('./.prettierignore', './packages/mobxSky/.prettierignore');
+        if (stat.isDirectory()) {
+            copyDir(srcPath, destPath);
+        } else {
+            fs.copyFileSync(srcPath, destPath);
+        }
+    }
+}
 
-copyWay('./tsconfig.json', './packages/adminSystem/tsconfig.json');
-copyWay('./tsconfig.json', './packages/pcWebsite/tsconfig.json');
-copyWay('./tsconfig.json', './packages/mobileApp/tsconfig.json');
-copyWay('./tsconfig.json', './packages/mobxSky/tsconfig.json');
+function copyWay2(source, target) {
+    try {
+        fs.rmSync(target, { recursive: true });
+    } catch (err) {
+        console.log('Delete failed!');
+    }
 
-copyWay('./.stylelintignore', './packages/adminSystem/.stylelintignore');
-copyWay('./.stylelintignore', './packages/pcWebsite/.stylelintignore');
-copyWay('./.stylelintignore', './packages/mobileApp/.stylelintignore');
-copyWay('./.stylelintignore', './packages/mobxSky/.stylelintignore');
+    try {
+        copyDir(source, target);
+        console.log('Copy completed!');
+    } catch (err) {
+        console.log('Copy failed!');
+    }
+}
 
-copyWay('./.stylelintrc.js', './packages/adminSystem/.stylelintrc.js');
-copyWay('./.stylelintrc.js', './packages/pcWebsite/.stylelintrc.js');
-copyWay('./.stylelintrc.js', './packages/mobileApp/.stylelintrc.js');
-copyWay('./.stylelintrc.js', './packages/mobxSky/.stylelintrc.js');
+copyWay1('./vue.config.js', './packages/adminSystem/vue.config.js');
+copyWay1('./vue.config.js', './packages/pcWebsite/vue.config.js');
+copyWay1('./vue.config.js', './packages/mobileApp/vue.config.js');
 
-copyWay('./.npmrc', './packages/adminSystem/.npmrc');
-copyWay('./.npmrc', './packages/pcWebsite/.npmrc');
-copyWay('./.npmrc', './packages/mobileApp/.npmrc');
-copyWay('./.npmrc', './packages/mobxSky/.npmrc');
+copyWay1('./.gitignore', './packages/adminSystem/.gitignore');
+copyWay1('./.gitignore', './packages/pcWebsite/.gitignore');
+copyWay1('./.gitignore', './packages/mobileApp/.gitignore');
+copyWay1('./.gitignore', './packages/mobxSky/.gitignore');
 
-copyWay('./.eslintignore', './packages/adminSystem/.eslintignore');
-copyWay('./.eslintignore', './packages/pcWebsite/.eslintignore');
-copyWay('./.eslintignore', './packages/mobileApp/.eslintignore');
-copyWay('./.eslintignore', './packages/mobxSky/.eslintignore');
+copyWay1('./.editorconfig', './packages/adminSystem/.editorconfig');
+copyWay1('./.editorconfig', './packages/pcWebsite/.editorconfig');
+copyWay1('./.editorconfig', './packages/mobileApp/.editorconfig');
+copyWay1('./.editorconfig', './packages/mobxSky/.editorconfig');
 
-copyWay('./.eslintrc.js', './packages/adminSystem/.eslintrc.js');
-copyWay('./.eslintrc.js', './packages/pcWebsite/.eslintrc.js');
-copyWay('./.eslintrc.js', './packages/mobileApp/.eslintrc.js');
-// copyWay('./.eslintrc.js', './packages/mobxSky/.eslintrc.js');
+copyWay1('./.prettierignore', './packages/adminSystem/.prettierignore');
+copyWay1('./.prettierignore', './packages/pcWebsite/.prettierignore');
+copyWay1('./.prettierignore', './packages/mobileApp/.prettierignore');
+copyWay1('./.prettierignore', './packages/mobxSky/.prettierignore');
 
-copyWay('./.postcssrc.js', './packages/mobileApp/.postcssrc.js');
-copyWay('./postcss.config.js', './packages/mobileApp/postcss.config.js');
-// copyWay('./postcss.config.js', './packages/mobxSky/postcss.config.js');
+copyWay1('./tsconfig.json', './packages/adminSystem/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/pcWebsite/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/mobileApp/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/mobxSky/tsconfig.json');
 
-// copyWay('./babel.config.js', './packages/mobileApp/babel.config.js');
-// copyWay('./.babelrc.js', './packages/mobxSky/.babelrc.js');
+copyWay1('./.stylelintignore', './packages/adminSystem/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/pcWebsite/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/mobileApp/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/mobxSky/.stylelintignore');
 
-// copyWay('./docker', './packages/adminSystem/docker');
-// copyWay('./docker', './packages/pcWebsite/docker');
-// copyWay('./docker', './packages/mobileApp/docker');
+copyWay1('./.stylelintrc.js', './packages/adminSystem/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/pcWebsite/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/mobileApp/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/mobxSky/.stylelintrc.js');
 
+copyWay1('./.npmrc', './packages/adminSystem/.npmrc');
+copyWay1('./.npmrc', './packages/pcWebsite/.npmrc');
+copyWay1('./.npmrc', './packages/mobileApp/.npmrc');
+copyWay1('./.npmrc', './packages/mobxSky/.npmrc');
 
+copyWay1('./.eslintignore', './packages/adminSystem/.eslintignore');
+copyWay1('./.eslintignore', './packages/pcWebsite/.eslintignore');
+copyWay1('./.eslintignore', './packages/mobileApp/.eslintignore');
+copyWay1('./.eslintignore', './packages/mobxSky/.eslintignore');
 
+copyWay1('./.eslintrc.js', './packages/adminSystem/.eslintrc.js');
+copyWay1('./.eslintrc.js', './packages/pcWebsite/.eslintrc.js');
+copyWay1('./.eslintrc.js', './packages/mobileApp/.eslintrc.js');
+// copyWay1('./.eslintrc.js', './packages/mobxSky/.eslintrc.js');
 
+copyWay1('./.postcssrc.js', './packages/mobileApp/.postcssrc.js');
+copyWay1('./postcss.config.js', './packages/mobileApp/postcss.config.js');
+// copyWay1('./postcss.config.js', './packages/mobxSky/postcss.config.js');
+
+// copyWay1('./babel.config.js', './packages/mobileApp/babel.config.js');
+// copyWay1('./.babelrc.js', './packages/mobxSky/.babelrc.js');
+
+// copyWay2('./docker', './packages/adminSystem/docker');
+// copyWay2('./docker', './packages/pcWebsite/docker');
+// copyWay2('./docker', './packages/mobileApp/docker');
+
+copyWay2('./@higherOrder', './packages/mobxSky/src/@sky/@higherOrder');
+copyWay2('./@library', './packages/mobxSky/src/@sky/@library');

@@ -5,6 +5,13 @@ const path = require('path');
 
 某功能自定义webpack
 通过 configureWebpack 或 chainWebpack 对已有的 webpack 配置进行修改
+configureWebpack比较清晰，建议
+chainWebpack链式配置要熟练才好，不建议
+
+npm install -D postcss-preset-env
+
+
+
 
 完全自定义 webpack 配置 --- 未采纳
 // webpack.config.js
@@ -19,6 +26,32 @@ module.exports = {
 }
 
 */
+function cssLoaders(importLoaders) {
+    return [
+        {
+            loader: 'css-loader',
+            options: {
+                importLoaders: importLoaders,
+                esModule: false,
+                sourceMap: true,
+                localsConvention: 'camelCaseOnly',
+                modules: {
+                    localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                },
+            },
+        },
+        // {
+        //     loader: 'postcss-loader',
+        //     options: {
+        //         postcssOptions: {
+        //             plugins: [
+        //                 require('postcss-preset-env')
+        //             ],
+        //         },
+        //     },
+        // },
+    ];
+}
 
 module.exports = defineConfig({
     devServer: {
@@ -41,6 +74,48 @@ module.exports = defineConfig({
                 '@sky': path.join(__dirname, '../../'),
                 '@root': path.join(__dirname),
             },
+        },
+        module: {
+            rules: [
+                // {
+                //     test: /\.css$/,
+                //     use: [
+                //         'vue-style-loader',
+                //         {
+                //             loader: 'css-loader',
+                //             options: {
+                //                 modules: {
+                //                     localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                //                 },
+                //             },
+                //         },
+                //     ],
+                // },
+                // {
+                //     test: /\.css$/,
+                //     use: [
+                //         // 'vue-style-loader',
+                //         // 'style-loader',
+                //         cssLoaders(1)
+                //     ],
+                // },
+                // {
+                //     test: /\.scss$/,
+                //     use: [
+                //         // 'vue-style-loader',
+                //         cssLoaders(2),
+                //         'sass-loader',
+                //     ],
+                // },
+                // {
+                //     test: /\.less$/,
+                //     use: [
+                //         // 'vue-style-loader',
+                //         cssLoaders(2),
+                //         'less-loader',
+                //     ],
+                // },
+            ],
         },
     },
     /*
@@ -78,6 +153,19 @@ module.exports = defineConfig({
     },
     // config链式操作 (高级)
     chainWebpack: (config) => {
-
+        //     config.module
+        //   .rule('vue')
+        //   .use('vue-loader')
+        //   .loader('vue-loader')
+        //     config.module.rule('css')
+        //   .oneOf('vue')
+        //   .use('css-loader')
+        //     .loader('css-loader')
+        //     .options({
+        //       modules: {
+        //         exportGlobals: true,
+        //         localIdentName: '[path][name]__[local]--[hash:base64:5]'
+        //       }
+        //     })
     },
 });
