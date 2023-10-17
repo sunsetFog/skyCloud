@@ -108,5 +108,5 @@ copyWay1('./postcss.config.js', './packages/mobileApp/postcss.config.js');
 // copyWay2('./docker', './packages/pcWebsite/docker');
 // copyWay2('./docker', './packages/mobileApp/docker');
 
-copyWay2('./@higherOrder', './packages/mobxSky/src/@sky/@higherOrder');
-copyWay2('./@library', './packages/mobxSky/src/@sky/@library');
+copyWay2('./@higherOrder', './packages/mobxSky/src/@energy/@higherOrder');
+copyWay2('./@library', './packages/mobxSky/src/@energy/@library');
