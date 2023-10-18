@@ -27,6 +27,7 @@ https://zh-hans.reactjs.org/docs/jsx-in-depth.html
 
 
 
+
 crm的登陆页面弃用了
 
 npm install less less-loader -D
@@ -68,7 +69,7 @@ rainbow.config.globalProperties
 Vue3 没有 iview的UI组件
 
 
-process.env.core_url +
+process.env.core_url + 
 替换空
 
 
@@ -114,47 +115,11 @@ import * as Icons from '@element-plus/icons-vue'
 在 Vue 3 中,this.$set 方法已被删除
 用this赋值
 
-slot="header"
-变
-#header
 
-slot="reference"
-#reference
 
-slot="footer"
-#footer
 
-slot="apple"
-#apple
-
-slot="append"
-#append
-
-slot="prepend"
-#prepend
-
-slot="suffix"
-#suffix
-
+插槽变了
 v-slot 只能在组件和 <template> 上使用
-<section #footer
-<section slot="footer"
-
-<section #header
-<section slot="header"
-
-<div #footer
-<div slot="footer"
-
-<div class="user-box" #reference>
-<div class="user-box" slot="reference">
-
-<div #suffix>
-<div slot="suffix">
-
-<span #reference>
-<span slot="reference">
-
 slot-scope="scope"
 变
 v-slot="scope"
@@ -271,7 +236,7 @@ import * as echarts from 'echarts'
 
 
 在 Vue 3 中,过滤器已经被移除了
-filters:
+全局删filters:
 改使用方法过滤
 
 
@@ -289,6 +254,38 @@ npm install vue-json-schema-form
 v-viewer 目前还不支持 Vue 3
 
 Css 计算问题
+
+element-ui
+改为
+element-plus
+
+size="mini"
+变
+size="small"
+
+type="text"
+改为
+link
+
+
+<keep-alive>
+  <router-view></router-view>
+</keep-alive>
+改为
+<router-view v-slot="{ Component }">
+  <keep-alive>
+    <component :is="Component" />
+  </keep-alive>  
+</router-view>
+
+
+在 React 项目中引入不了src 目录之外的组件
+
+没有变量
+$eventBus
+
+
+
 
 
 

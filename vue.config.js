@@ -10,6 +10,7 @@ chainWebpack链式配置要熟练才好，不建议
 
 npm install -D postcss-preset-env
 
+vue3 loader: 'css-loader'用configureWebpack配置类名localIdentName
 
 
 
