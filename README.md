@@ -23,9 +23,23 @@ JSX作用：变量值是标签    例如：JSX标签 const element = <h1>Hello</
 https://zh-hans.reactjs.org/docs/introducing-jsx.html
 https://zh-hans.reactjs.org/docs/jsx-in-depth.html
 
+# 用不了yarn的原因？因为没有使用 Yarn 管理 monorepo 工作空间类型的项目
+用yarn server:dev需要有yarn.lock文件，重新yarn install就自动生成yarn.lock文件了
 
+Yarn 官方文档
+https://yarn.bootcss.com/docs/workspaces/
 
+父的package.json
+工作空间配置中没有声明 packages/adminSystem 这个子目录
+"workspaces": [
+    "packages/*",
+    "packages/adminSystem"
+],
+子的package.json
+name名不能重复
 
+作用：
+统一的依赖管理:根目录的 package.json 可以集中管理所有 workspace 包的依赖,使用 yarn install 一步安装所有包的依赖
 
 
 crm的登陆页面弃用了
