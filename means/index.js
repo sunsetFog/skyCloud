@@ -1,26 +1,34 @@
-import frog from './modular/frog'
-import echart from './modular/echart'
-import accumulation01 from './modular/accumulation01'
-import regs from './modular/regular'
+import regExpUnit__frog from './modular/regExpUnit/frog'
+import echartUnit__echart from './modular/echartUnit/echart'
+import browserunit__1 from './modular/browserunit/1'
+import regExpUnit__regular from './modular/regExpUnit/regular'
 import callback from './modular/callback'
-import indexDb from './modular/indexDb'
-import themeSkin from './modular/themeSkin'
-import cookies from './modular/cookies'
-import date from './modular/date'
-import regExp from './modular/regExp'
+import cacheUnit__indexDb from './modular/cacheUnit/indexDb'
+import domUnit__themeSkin from './modular/domUnit/themeSkin'
+import cacheUnit__cookies from './modular/cacheUnit/cookies'
+import dateUnit__date from './modular/dateUnit/date'
+import regExpUnit__regExp from './modular/regExpUnit/regExp'
+import stringUnit__strSpace from './modular/stringUnit/strSpace'
+import stringUnit__1 from './modular/stringUnit/1'
+import domUnit__1 from './modular/domUnit/1'
+
+
 /*
     全局方法
  */
 const comic = { // es6合并对象
-    ...frog,
-    ...echart,
-    ...accumulation01,
-    ...regs,
+    ...regExpUnit__frog,
+    ...echartUnit__echart,
+    ...browserunit__1,
+    ...regExpUnit__regular,
     ...callback,
-    ...indexDb,
-    ...themeSkin,
-    ...cookies,
-    ...date,
-    ...regExp
+    ...cacheUnit__indexDb,
+    ...domUnit__themeSkin,
+    ...cacheUnit__cookies,
+    ...dateUnit__date,
+    ...regExpUnit__regExp,
+    ...stringUnit__strSpace,
+    ...domUnit__1,
+    ...stringUnit__1
 }
 export default comic

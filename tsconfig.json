@@ -27,6 +27,32 @@ as any
   // 这里是非严格模式
 })();
 
+error TS2339: Property 'id' does not exist on type '{}'.
+this.saveObj4.id;
+
+private saveObj4 = {};
+变
+private saveObj4 = {} as any;
+
+
+error TS2339: Property 'value' does not exist on type 'unknown'.
+this.inputRef5.current!.value
+private inputRef1 = createRef();
+变
+private inputRef1 = createRef<HTMLInputElement>();
+
+
+error TS2339: Property 'validateFields' does not exist on type 'unknown'.
+this.formRef1.current!.validateFields()
+private formRef1 = createRef();
+变
+private formRef1 = createRef<HTMLFormElement>();
+需要 antd Form 的实例
+error TS2322: Type 'RefObject<unknown>' is not assignable to type 'Ref<FormInstance<any>>'.
+import { FormInstance } from 'antd/lib/form';
+private formRef1 = createRef<FormInstance>();
+
+
 */
 {
   "compilerOptions": {
