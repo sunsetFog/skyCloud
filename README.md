@@ -41,6 +41,41 @@ name名不能重复
 作用：
 统一的依赖管理:根目录的 package.json 可以集中管理所有 workspace 包的依赖,使用 yarn install 一步安装所有包的依赖
 
+# env配置环境变量
+.env  所有环境的变量 --- 不需要配置也生效
+.env.dev  开发环境的变量
+.env.prod  生产环境的变量
+
+优先级 .env < .env.production < .env.development
+变量必须以 VUE_APP_ 开头
+
+在package.json配置运行命令
+"server": "vue-cli-service serve",
+"build": "vue-cli-service build",
+改为
+"server:dev": "vue-cli-service serve --mode dev",
+"build:dev": "vue-cli-service build --mode prod"
+
+cross-env跨平台设置环境变量的工具，不需要也没影响
+npm install cross-env -D
+"server:dev": "cross-env platform=bd vue-cli-service serve --mode dev",
+"build:dev": "cross-env platform=tb vue-cli-service build --mode prod"
+此时生成两个属性 process.env.NODE_ENV 和 process.env.platform
+
+使用:
+    process.env.*   直接打印process会报错，要完整写法
+    process.env.platform 在node环境运行的，打印会undefined
+
+关联  NODE_ENV=dev  ->  .env.dev        NODE_ENV=prod  ->  .env.prod
+
+作用：可以设置环境和平台，一个皮肤对应一个平台，也可以一个平台多个皮肤
+
+
+
+
+
+
+
 
 crm的登陆页面弃用了
 

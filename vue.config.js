@@ -1,6 +1,6 @@
 const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
-
+const webpack = require('webpack')
 /*
 
 某功能自定义webpack
@@ -68,6 +68,12 @@ module.exports = defineConfig({
     transpileDependencies: true,
     lintOnSave: false, // 关闭这些未使用变量/方法的警告
     configureWebpack: {
+        plugins: [
+            // 通过 DefinePlugin 来配置全局变量
+            new webpack.DefinePlugin({
+                root_platform: JSON.stringify(process.env.platform),
+            })
+        ],
         resolve: {
             // 配置路径映射/路径别名   tsconfig.json里也要配置，曾遇到main.ts出现找不到路径别名
             alias: {
@@ -131,14 +137,14 @@ module.exports = defineConfig({
             less: {
                 additionalData: `@import "${path.resolve(
                     __dirname,
-                    '../../styles/lessVariable.less',
+                    `../../styles/platform/${process.env.platform}/lessVariable.less`,
                 )}";`,
             },
             // vue3 全局scss变量
             scss: {
                 additionalData: `@import "${path.resolve(
                     __dirname,
-                    '../../styles/scssVariable.scss',
+                    `../../styles/platform/${process.env.platform}/scssVariable.scss`,
                 )}";`,
             },
             // 引入vw适配文件
