@@ -1,15 +1,15 @@
-@import '~@sky/styles/themeUnit/themeSkin2/index.scss';
+@import '~@sky/styles/themeUnit/themeSkin/index.scss';
 
-// bd
-@mixin platform-bd() {
-    @if $platform =='bd' {
-        @content;
-    }
-}
+@import '~@sky/styles/platform/index.scss';
 
-// tb
-@mixin platform-tb() {
-    @if $platform =='tb' {
-        @content;
+
+// 清除浮动影响
+@mixin bob-clear-after() {
+    &::after {
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        content: '.';
     }
 }

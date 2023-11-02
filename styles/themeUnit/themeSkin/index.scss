@@ -1,0 +1,23 @@
+// 白天主题
+@mixin theme-light() {
+    [data-theme='light'] & {
+        // 编译后：html > ***
+        @content;
+    }
+}
+
+// 黑夜主题
+@mixin theme-night() {
+    [data-theme='night'] & {
+        @content;
+    }
+}
+
+// 马卡龙主题
+@mixin theme-macaron() {
+    [data-theme='macaron'] & {
+        @content;
+    }
+}
+
+

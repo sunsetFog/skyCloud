@@ -1,0 +1,13 @@
+// bd
+@mixin platform-bd() {
+    @if $platform =='bd' {
+        @content;
+    }
+}
+
+// tb
+@mixin platform-tb() {
+    @if $platform =='tb' {
+        @content;
+    }
+}

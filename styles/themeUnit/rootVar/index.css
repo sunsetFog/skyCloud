@@ -4,6 +4,6 @@ study: 皮肤切换
 这里加载样式
 vue项目皮肤切换方案：https://blog.csdn.net/qq_26003101/article/details/114134455
 */
-@import "theme-black.less";
-@import "theme-white.less";
-@import "theme-blue.less";
+@import "theme-light.css";
+@import "theme-night.css";
+@import "theme-macaron.css";

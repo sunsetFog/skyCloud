@@ -2,7 +2,7 @@
 css变量
 :root是一个伪类，表示文档根元素，非IE及ie8及以上浏览器都支持，在:root中声明相当于全局属性，只要当前页面引用了:root segment所在文件，都可以使用var()来引用
 */
-
+@import '~@sky/styles/themeUnit/rootVar/index.css';
 :root {
     /* base color
     -------------------------- */
