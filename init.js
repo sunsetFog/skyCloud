@@ -110,3 +110,6 @@ copyWay1('./postcss.config.js', './packages/mobileApp/postcss.config.js');
 
 copyWay2('./@higherOrder', './packages/mobxSky/src/@energy/@higherOrder');
 copyWay2('./@library', './packages/mobxSky/src/@energy/@library');
+
+copyWay2('./@appDesign', './packages/mobxSky/src/@energy/@appDesign');
+copyWay2('./@pcDesign', './packages/mobxSky/src/@energy/@pcDesign');
