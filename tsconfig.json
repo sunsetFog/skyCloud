@@ -14,6 +14,9 @@ as any
 声明未使用的变量不检查
 在变量名前加下划线 _text
 
+name!
+非空断言操作符!来告诉编译器，我们确定name不会为null或undefined
+
 设置特定文件为非严格模式
 文件开头加上:
 'use sloppy';

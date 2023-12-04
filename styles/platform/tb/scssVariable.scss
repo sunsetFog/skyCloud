@@ -2,6 +2,12 @@
 
 // 平台名称
 $platform: 'tb';
+/*
+scss里使用
+@if $platform == 'tb' {
+
+}
+*/
 
 @import './colour.scss';
 
