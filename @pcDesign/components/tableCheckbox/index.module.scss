@@ -1,0 +1,19 @@
+.tableCheckbox {
+    width: 100%;
+    .theadBox, .tbodyBox {
+        width: 100%;
+        ul {
+            width: 100%;
+            display: flex;
+            li {
+                flex-grow: 1;
+                flex-shrink: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 4px;
+                border: 0.5px dashed yellowgreen;
+            }
+        }
+    }
+}

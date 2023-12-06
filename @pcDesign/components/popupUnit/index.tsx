@@ -24,10 +24,7 @@ function PopupUnit(props: any) {
     }
   };
 
-  const bodyRef = useRef() as any;
-  useEffect(() => {
-    bodyRef.current = document.body;
-  });
+  const bodyRef = useRef(document.body) as any;
   return (
     <>
       <button onClick={showWay0}>
