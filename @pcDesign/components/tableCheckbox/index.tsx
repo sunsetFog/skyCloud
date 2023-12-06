@@ -10,7 +10,11 @@ import { changeWay } from './utlis';
 interface ExtendedInputProps extends InputHTMLAttributes<HTMLInputElement> {
     keys: string;
 }
-
+/*
+为啥不用table标签？
+tr margin失效
+tr border苹果手机失效
+*/
 function tableCheckbox(props: any) {
     const { columnList, tableData } = props;
 

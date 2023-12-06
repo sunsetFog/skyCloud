@@ -12,7 +12,18 @@
                 justify-content: center;
                 align-items: center;
                 padding: 4px;
-                border: 0.5px dashed yellowgreen;
+                border-right: 0.5px dashed yellowgreen;
+                border-bottom: 0.5px dashed yellowgreen;
+            }
+            li:nth-of-type(1) {
+                border-left: 0.5px dashed yellowgreen;
+            }
+        }
+    }
+    .theadBox {
+        ul {
+            li {
+                border-top: 0.5px dashed yellowgreen;
             }
         }
     }
