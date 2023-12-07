@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, InputHTMLAttributes } from 'react';
 import { observer } from 'mobx-react';
 // component
 import { compose } from 'redux';
 // scss
 import styles from './index.module.scss';
 
-import { changeWay } from './utlis';
+import { changeWay } from './utils.ts';
 
 interface ExtendedInputProps extends InputHTMLAttributes<HTMLInputElement> {
     keys: string;

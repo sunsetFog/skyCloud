@@ -83,6 +83,8 @@ private formRef1 = createRef<FormInstance>();
     "esModuleInterop": true,
     // 允许从没有设置默认导出的模块中默认导入
     "allowSyntheticDefaultImports": true,
+    // 可以使用文件扩展名
+    "allowImportingTsExtensions": true,
     // 是否使用 Object.defineProperty 定义类字段
     "useDefineForClassFields": true,
     // 生成单独的 sourcemap 文件，可以映射回原始的源代码,方便调试
