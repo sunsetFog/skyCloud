@@ -5,7 +5,7 @@ import { compose } from 'redux';
 // scss
 import styles from './index.module.scss';
 
-import { changeWay } from './utils.ts';
+import { changeWay } from './utils';
 
 interface ExtendedInputProps extends InputHTMLAttributes<HTMLInputElement> {
     keys: string;
