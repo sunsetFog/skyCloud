@@ -5,6 +5,9 @@ import AES from 'crypto-js/aes';
 import encUtf8 from 'crypto-js/enc-utf8';
 import pkcs7 from 'crypto-js/pad-pkcs7';
 
+const secretPhrase = 'xzaNI7snBdRFa2MLPDaK1duMTx89vaqc';
+const secretIv = 'mltqgzVTJLGSS2TQ';
+
 // md5 用户密码加密
 export const md5Encrypt = (word) => {
     let _encrypt = String(word).toLowerCase();
@@ -39,8 +42,6 @@ export function getSign(name, code) {
 }
 
 export function pkcs7Encrypt(text) {
-    const secretPhrase = 'xzaNI7snBdRFa2MLPDaK1duMTx89vaqc';
-    const secretIv = 'mltqgzVTJLGSS2TQ';
     if (!text) {
         return text;
     }
@@ -68,7 +69,7 @@ export function decryptByToken(text) {
     }).toString(encUtf8);
 }
 
-export function encrypt(plainText: string, secret?: string): string {
+export function encryptWay1(plainText: string, secret?: string): string {
     return AES.encrypt(plainText, secret || '').toString();
 }
 // 解密方法
@@ -84,7 +85,7 @@ export function decrypt(text) {
     }).toString(encUtf8);
 }
 // 加密方法
-export function encrypt(text) {
+export function encryptWay2(text) {
     if (!text) {
         return text;
     }

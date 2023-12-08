@@ -9,7 +9,7 @@ function websocketUnit(Component: any) {
     const WrapperComponent = (props) => {
         // 创建websocket连接
         async function initWebsocket() {
-            let queryString = {
+            let queryString: any = {
                 wsToken: "pkcs7Encrypt(wsToken)",// 加密的token
                 clientType: 'h5',// 移动端 或 PC端
                 version: 2,// 版本号
@@ -18,7 +18,7 @@ function websocketUnit(Component: any) {
             queryString = new URLSearchParams(queryString).toString();
             console.log("--webSocket-参数--", queryString)
             // 判断http 或 https
-            let isSSL = /https/i.test(location.protocol);
+            let isSSL: any = /https/i.test(location.protocol);
             // https对应wss，http对应ws
             isSSL = isSSL ? 'wss' : 'ws';
             // 域名
