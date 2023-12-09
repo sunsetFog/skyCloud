@@ -12,3 +12,20 @@ scss里使用
 @import './colour.scss';
 
 
+@mixin bd-button-bg() {
+    color: #249cfc;
+    cursor: pointer;
+    background: linear-gradient(180deg, #fff 27.36%, #d4e4f3 74.94%, #f2f8fc 100%);
+    border: 0.5px solid #d5e7f9;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 #c8ddef, 0 2px 6px #d5e7f9, inset 0 -2px 4px #fff, inset 0 2px 4px #e9f3fd;
+}
+
+@mixin bd-button-active-bg() {
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(180deg, #81d1ff 3.57%, #1771f9 65.65%, #41afff 97.36%);
+    border: 1px solid #65b5ff;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 #309bfd, 0 4px 8px #b5daff, inset 0 -2px 8px #91caff;
+}

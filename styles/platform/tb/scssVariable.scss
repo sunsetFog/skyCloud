@@ -11,3 +11,21 @@ scss里使用
 
 @import './colour.scss';
 
+
+@mixin bd-button-bg() {
+    color: #7e92bd;
+    border-radius: 6px;
+    background-image: linear-gradient(0deg, #dbe7f9 0%, #f0f6ff 57%, #fff 100%);
+    border: 1px solid #b6c4d9;
+    box-shadow: 0 1px 0 0 rgb(255 255 255 / 50%), inset 0 -5px 5px 0 rgb(255 255 255 / 80%),
+        inset 0 5px 5px 3px rgb(255 255 255 / 90%);
+}
+
+@mixin bd-button-active-bg() {
+    color: #7f6245;
+    border-radius: 6px;
+    background-image: linear-gradient(180deg, #fbf2e8 8%, #d6b38a 64%, #ecd3b7 95%);
+    border: 1px solid #d9b790;
+    box-shadow: inset 0 -2px 5px 0 rgb(255 255 255 / 58%), inset -2px 0 5px 0 rgb(255 255 255 / 88%),
+        inset 2px 0 5px 0 rgb(255 255 255 / 88%);
+}
