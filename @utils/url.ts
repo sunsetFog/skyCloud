@@ -1,4 +1,3 @@
-
 /*
 js将对象序列化为 URL 查询字符串
 
@@ -8,7 +7,7 @@ js将对象序列化为 URL 查询字符串
 */
 export const urlObjToStr = (obj) => {
     return new URLSearchParams(obj).toString();
-}
+};
 
 /*
 js解析 URL 查询字符串为对象
@@ -24,4 +23,12 @@ export const urlStrToObj = (str) => {
         params[key] = value;
     });
     return params;
-}
+};
+/*
+获取url上的参数
+
+window.location.search 返回当前页面的 URL 查询字符串部分，例如 ?token=abc123&user=John
+*/
+export const urlParams = (key) => {
+    return new URLSearchParams(window.location.search).get(key);
+};
