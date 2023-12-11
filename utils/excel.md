@@ -65,7 +65,7 @@ git submodule foreach --recursive git checkout -b feature/ivory-KY-0000 origin/m
 自定义的 Git 钩子脚本，用于在执行 Git 提交（commit）操作之前，对子模块进行一些操作或检查
 submodule-pre-commit.sh
 
-切换和基于远程 master 创建任务分支
+切换和基于远程 master 创建本地任务分支
 git checkout -b feature/ivory-KY-1001 origin/master
 将本地分支推送到远程仓库，-u 将本地分支与远程分支建立追踪关系
 git push -u origin feature/ivory-KY-1001
@@ -76,3 +76,18 @@ git checkout -b feature/ivory-KY-1002 origin/master
 git branch --set-upstream-to=origin/feature/ivory-KY-1001
 git pull 时，拉取远程分支 origin/feature/ivory-KY-1001
 git push 时，推送远程分支 origin/feature/ivory-KY-1001
+
+submodule-pre-commit.sh
+
+删除子模块
+
+删除子模块文件夹
+$ git rm --cached test
+$ rm -rf test
+
+删除.gitmodules 文件夹中相关子模块信息
+
+删除.git/config 文件夹中的相关子模块信息
+
+删除.git 文件夹中的相关子模块文件
+rm -rf .git/modules/test
