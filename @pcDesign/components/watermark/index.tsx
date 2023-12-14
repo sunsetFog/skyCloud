@@ -8,7 +8,7 @@ import html2canvas from 'html2canvas';
 function watermark(props: any) {
     const { children } = props;
     //元素转成图片
-    const convertCanvasToImage = (dom: any) => {
+    const convertCanvasToImage = (dom: any, width: any) => {
         html2canvas(dom, {
             backgroundColor: 'transparent',
             // 转换为图片
@@ -16,12 +16,12 @@ function watermark(props: any) {
         }).then((canvas: { toDataURL: (arg0: string) => any }) => {
             // imgUrl 是图片的 base64格式 代码 png 格式
             let imgUrl = canvas.toDataURL('image/png');
-            console.log('imgUrl', imgUrl);
+            // console.log('imgUrl', imgUrl);
             let swanDraw = document.getElementById('swanDraw');
             swanDraw.style.backgroundImage = `url(${imgUrl})`;
             swanDraw.style.backgroundRepeat = `repeat`;
-            swanDraw.style.backgroundSize = `160px 105px`;
-            // swanDraw.style.backgroundSize = `35% 20%`;
+            let widApt = width + width * 0.04;
+            swanDraw.style.backgroundSize = `${widApt}px ${widApt * 0.55}px`;
             swanDraw.style.pointerEvents = `none`;
         });
     };
@@ -30,8 +30,8 @@ function watermark(props: any) {
         // peach.innerHTML = '2023-12-13 15:45';
         let petalDraw = document.getElementById('petalDraw');
         petalDraw.style.top = petalDraw?.clientHeight * -2 + 'px';
-        console.log('--petalDraw--', petalDraw);
-        convertCanvasToImage(petalDraw);
+        // console.log('--petalDraw--', petalDraw?.clientWidth, petalDraw?.clientHeight);
+        convertCanvasToImage(petalDraw, petalDraw?.clientWidth);
     }, []);
     return (
         <section className={styles.watermarkUnit}>

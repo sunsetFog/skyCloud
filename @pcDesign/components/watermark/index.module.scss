@@ -9,7 +9,6 @@
         left: 0;
         top: 0;
         overflow: hidden;
-
         div {
             width: fit-content;
             opacity: 0.8;
@@ -18,7 +17,7 @@
             background: transparent;
             transform: rotate(-20deg);
             pointer-events: none;
-            padding: 10px 0 40px 0;
+            padding: 10px 120px 40px 0;
             position: absolute;
             left: 0px;
         }
