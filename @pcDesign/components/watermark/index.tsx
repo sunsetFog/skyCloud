@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import styles from './index.module.scss';
 import html2canvas from 'html2canvas';
+import dayjs from "dayjs";
 /*
     水印
     适用于防止信息盗用
+    移动端把图宽调为375，然后转rem就ok了
+    根据用户名加密，解密是盗版的证据
 */
 function watermark(props: any) {
-    const { children } = props;
     //元素转成图片
     const convertCanvasToImage = (dom: any, width: any) => {
         html2canvas(dom, {
@@ -34,12 +36,11 @@ function watermark(props: any) {
         convertCanvasToImage(petalDraw, petalDraw?.clientWidth);
     }, []);
     return (
-        <section className={styles.watermarkUnit}>
-            {children}
-            <main className={styles.watermarkBox} id='swanDraw'>
-                <div id='petalDraw'>admin_2023-12-13 15:45</div>
-            </main>
-        </section>
+        <div className={styles.watermarkUnit}>
+            <div className={styles.watermarkBox} id='swanDraw'>
+                <div id='petalDraw'>admin_{dayjs().format('YYYY-MM-DD HH:mm')}</div>
+            </div>
+        </div>
     );
 }
 

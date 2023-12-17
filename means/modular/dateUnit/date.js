@@ -28,7 +28,7 @@ export default {
             end: ym + "-" + lastDay + " 23:59:59",
         };
     },
-    //当前时间转时间戳（精确到毫秒）
+    //当前时间转时间戳（精确到毫秒）--- 唯一值
     timeStamp(){
         return new Date().getTime();
     },
@@ -36,4 +36,8 @@ export default {
     getLocalTime(nS) { // ns是10位准确，13位不准确
         return new Date(parseInt(nS) * 1000).toLocaleString().replace(/年|月/g, "-").replace(/日/g, " ");
     },
+    // 当前时间
+    currentTime(pattern = 'YYYY-MM-DD HH:mm:ss') {
+        return dayjs().format(pattern);
+    }
 };
