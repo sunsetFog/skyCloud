@@ -114,3 +114,7 @@ copyWay2('./@appDesign', './packages/mobxSky/src/@energy/@appDesign');
 copyWay2('./@pcDesign', './packages/mobxSky/src/@energy/@pcDesign');
 copyWay2('./@utils', './packages/mobxSky/src/@energy/@utils');
 copyWay2('./styles', './packages/mobxSky/src/@energy/styles');
+
+copyWay1('./static/favicon.ico', './packages/adminSystem/public/favicon.ico');
+copyWay1('./static/favicon.ico', './packages/pcWebsite/public/favicon.ico');
+copyWay1('./static/favicon.ico', './packages/mobileApp/public/favicon.ico');

@@ -1,6 +1,6 @@
 const { defineConfig } = require('@vue/cli-service');
 const path = require('path');
-const webpack = require('webpack')
+const webpack = require('webpack');
 /*
 
 某功能自定义webpack
@@ -72,7 +72,7 @@ module.exports = defineConfig({
             // 通过 DefinePlugin 来配置全局变量
             new webpack.DefinePlugin({
                 root_platform: JSON.stringify(process.env.platform),
-            })
+            }),
         ],
         resolve: {
             // 配置路径映射/路径别名   tsconfig.json里也要配置，曾遇到main.ts出现找不到路径别名
