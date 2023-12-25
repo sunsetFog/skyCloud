@@ -157,7 +157,8 @@ export default {
         position: relative;
 
         .register-logo {
-            .mixin_img(374px; 310px);
+            width: 374px;
+            height: 310px;
             position: absolute;
             left: 0px;
             bottom: 0px;
@@ -169,7 +170,9 @@ export default {
             padding: 20px 40px 0px 40px;
 
             .heart-content {
-                .mixin_float(100%, 100%, left);
+                width: 100%;
+                height: 100%;
+                float: left;
 
                 .back-login {
                     width: 100%;
@@ -186,7 +189,8 @@ export default {
                         top: -10px;
 
                         img {
-                            .mixin_img(18px, 18px);
+                            width: 18px;
+                            height: 18px;
                             float: left;
                             margin: 5px 10px 5px 0px;
                         }

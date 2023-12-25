@@ -35,14 +35,14 @@ less全局变量
 .mixin_button(@width, @height, @background, @color) {
     width: @width;
     height: @height;
-    text-align: center;
-    line-height: @height;
     background: @background;
     color: @color;
     cursor: pointer;
     outline: none;
     border: none;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mixin_div(@width, @height, @background, @color, @center) {
@@ -52,7 +52,6 @@ less全局变量
     line-height: @height;
     background: @background;
     color: @color;
-    overflow: hidden;
 }
 
 .mixin_span(@width, @height, @background, @color, @center) {
@@ -63,7 +62,6 @@ less全局变量
     line-height: @height;
     background: @background;
     color: @color;
-    overflow: hidden;
 }
 
 .mixin_li(@width, @height) {
@@ -88,18 +86,7 @@ less全局变量
     overflow: hidden;
 }
 
-.mixin_float(@width, @height, @float) {
-    width: @width;
-    height: @height;
-    float: @float;
-}
 
-.mixin_img(@width, @height) {
-    width: @width;
-    height: @height;
-    vertical-align: middle;
-    border: none;
-}
 
 // 背景图片
 .mixin_image(@url) {

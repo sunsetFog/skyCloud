@@ -250,7 +250,8 @@ export default defineComponent({
         position: relative;
 
         .login-logo {
-            .mixin_img(790px; 170px);
+            width: 790px;
+            height: 170px;
             position: absolute;
             top: 10px;
             left: 50%;
@@ -258,7 +259,8 @@ export default defineComponent({
         }
 
         .big-fish {
-            .mixin_img(326px; 387px);
+            width: 326px;
+            height: 387px;
             position: absolute;
             left: 0px;
             bottom: 0px;
@@ -322,7 +324,9 @@ export default defineComponent({
                     }
 
                     div {
-                        .mixin_float(70px, 50px, right);
+                        width: 70px;
+                        height: 50px;
+                        float: right;
                         cursor: pointer;
 
                         .zhengyan {
@@ -371,7 +375,8 @@ export default defineComponent({
                         cursor: pointer;
 
                         img {
-                            .mixin_img(13px, 13px);
+                            width: 13px;
+                            height: 13px;
                             float: left;
                         }
                     }
