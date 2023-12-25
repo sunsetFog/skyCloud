@@ -1,22 +1,24 @@
 <template>
-    <section id="login">
-        <div class="entertainment">
-            <img class="login-logo" src="./img/logo2.png" />
-            <img class="big-fish" src="./img/fish.png" />
-            <div class="sign-frame">
-                <div class="code-and-service">
-                    <span @click="customerService()"></span>
-                </div>
-                <div class="form-information">
-                    <form>
-                        <div class="account">
-                            <span>账号:</span>
-                            <input style="background: none;backgroundColor: none !important;" v-model.trim="account_number"
-                                maxlength="20" placeholder="请输入账号" name="username" autocomplete="new-password"/>
-                        </div>
-                        <div class="password-enter">
-                            <span>密码:</span>
-                            <!--
+    <Layout1>
+        <section id="loginUnit">
+            <div class="entertainment">
+                <img class="login-logo" src="./img/logo2.png" />
+                <img class="big-fish" src="./img/fish.png" />
+                <div class="sign-frame">
+                    <div class="code-and-service">
+                        <span @click="customerService()"></span>
+                    </div>
+                    <div class="form-information">
+                        <form>
+                            <div class="account">
+                                <span>账号:</span>
+                                <input style="background: none;backgroundColor: none !important;"
+                                    v-model.trim="account_number" maxlength="20" placeholder="请输入账号" name="username"
+                                    autocomplete="new-password" />
+                            </div>
+                            <div class="password-enter">
+                                <span>密码:</span>
+                                <!--
                                 浏览器自动填充？
                                     name="username"和name="password"
                                     autocomplete="new-password"禁止浏览器自动填充到表单
@@ -27,44 +29,41 @@
                                     方式1: 密码input输入框加@keyup.enter.native="signIn"，但是要获取焦点
                                     方式2: 监听键盘事件
                             -->
-                            <input :type="eyeType" maxlength="12" v-model.trim="password_number" placeholder="请输入登陆密码"
-                                name="password" autocomplete="new-password" :readonly="readonly" @focus="readonly = false"
-                                @blur="readonly = true"/>
-                            <div @click="eyeMeans">
-                                <img v-if="eyeType == 'text'" class="zhengyan" src="./img/zhengyan.png" />
-                                <img v-else class="biyan" src="./img/biyan.png" />
+                                <input :type="eyeType" maxlength="12" v-model.trim="password_number" placeholder="请输入登陆密码"
+                                    name="password" autocomplete="new-password" :readonly="readonly"
+                                    @focus="readonly = false" @blur="readonly = true" />
+                                <div @click="eyeMeans">
+                                    <img v-if="eyeType == 'text'" class="zhengyan" src="./img/zhengyan.png" />
+                                    <img v-else class="biyan" src="./img/biyan.png" />
+                                </div>
                             </div>
+                        </form>
+                        <div class="remember-and-forget">
+                            <div class="rectangle" @click="remember_checked = !remember_checked"><img
+                                    v-show="remember_checked" src="./img/jizhu.png" /></div>
+                            <span>记住密码</span>
+                            <!-- <span @click="forgetPassword">忘记密码</span> -->
                         </div>
-                    </form>
-                    <div class="remember-and-forget">
-                        <div class="rectangle" @click="remember_checked = !remember_checked"><img v-show="remember_checked"
-                                src="./img/jizhu.png" /></div>
-                        <span>记住密码</span>
-                        <!-- <span @click="forgetPassword">忘记密码</span> -->
+                        <div class="login-register">
+                            <span @click="signIn"></span>
+                            <span @click="rapidRegistration('register')"></span>
+                        </div>
+                        <div class="recommend"><span></span><span>推荐最优路线</span><span></span></div>
+                        <div class="optimal" @click="rapidRegistration('line')"></div>
                     </div>
-                    <div class="login-register">
-                        <span @click="signIn"></span>
-                        <span @click="rapidRegistration('register')"></span>
-                    </div>
-                    <div class="recommend"><span></span><span>推荐最优路线</span><span></span></div>
-                    <div class="optimal" @click="rapidRegistration('line')"></div>
                 </div>
+
             </div>
-
-        </div>
-
-        <footers></footers>
-    </section>
+        </section>
+    </Layout1>
 </template>
 
 <script lang="ts">
 import {
     defineComponent
 } from "vue";
-import footers from '@sky/pcDesign/components/footer/index.vue';
 export default defineComponent({
-    name: 'login',
-    components: { footers },
+    name: 'loginUnit',
     data() {
         return {
             account_number: '',// 登陆账号
@@ -224,12 +223,12 @@ export default defineComponent({
 </script>
 
 <style lang="less" scoped>
-#login {
+#loginUnit {
     width: 100%;
     height: 100%;
-    padding-bottom: 115px;
-    overflow: hidden;
-    .mixin_image(url('./img/bg_denglu.jpg'));
+    background-image: url('./img/bg_denglu.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% calc(100% + 115px);
     @color_violet: #3d1351; //字体
     @color_label: #dbcbb7; //字体
     @color_green: #0f991a; //按钮背景
