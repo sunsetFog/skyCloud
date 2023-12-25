@@ -303,7 +303,7 @@ export default defineComponent({
                     width: 100%;
                     height: 50px;
                     .mixin_image(url('./img/juxingkuang.png'));
-                    color: @color_white;
+                    color: #ffffff;
                     border-radius: 4px;
                     border: 1px solid #b1923f;
 
@@ -320,7 +320,7 @@ export default defineComponent({
                         background: none;
                         float: left;
                         color: @color_label;
-                        font-size: @font_size20;
+                        font-size: 20px;
                     }
 
                     div {
@@ -361,8 +361,7 @@ export default defineComponent({
                     width: 100%;
                     height: 35px;
                     position: relative;
-                    font-size: @font_size16;
-
+                    font-size: 16px;
                     .rectangle {
                         width: 18px;
                         height: 18px;
@@ -455,7 +454,7 @@ export default defineComponent({
                         position: absolute;
                         left: 137px;
                         top: 0px;
-                        font-size: @font_size17;
+                        font-size: 17px;
                         overflow: hidden;
                     }
 

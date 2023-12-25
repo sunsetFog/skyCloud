@@ -33,18 +33,18 @@ export default defineComponent({
             width: 100%;
             height: 45px;
             line-height: 45px;
-            font-size: @font_size12;
+            font-size: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
 
             span:nth-of-type(1) {
-                .mixin_span(auto, 45px, none, @color_white, left);
+                .mixin_span(auto, 45px, none, #ffffff, left);
                 float: left;
             }
 
             span:nth-of-type(2) {
-                .mixin_span(auto, 45px, none, @color_white, left);
+                .mixin_span(auto, 45px, none, #ffffff, left);
                 float: left;
                 margin-left: 55px;
             }

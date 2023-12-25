@@ -198,15 +198,15 @@ export default {
                         span {
                             .mixin_span(auto, 30px, none, #c53fe1, left);
                             float: left;
-                            font-size: @font_size18;
+                            font-size: 18px;
                         }
                     }
                 }
 
                 label {
-                    .mixin_div(100%, 35px, none, @color_white, left);
+                    .mixin_div(100%, 35px, none, #ffffff, left);
                     display: block;
-                    font-size: @font_size18;
+                    font-size: 18px;
                     margin-top: 5px;
                 }
 
@@ -220,7 +220,7 @@ export default {
                         .mixin_input(100%, 100%);
                         background: none;
                         color: #b699dd;
-                        font-size: @font_size18;
+                        font-size: 18px;
                     }
                 }
 
@@ -243,7 +243,7 @@ export default {
                 .submit {
                     .mixin_div(100%, 50px, none, #174308, center);
                     .mixin_image(url('./img/button01.png'));
-                    font-size: @font_size18;
+                    font-size: 18px;
                     margin-top: 35px;
                     cursor: pointer;
                 }

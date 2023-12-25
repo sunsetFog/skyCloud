@@ -1,45 +1,12 @@
 /*
 less全局变量
-
 */
-
-@color_tone1: #f5d276;
-
-
-@color_white: #ffffff; //白色字体
-@color_blueviolet: #b00cb3; //边框或字体颜色
-
-@color_indigo: #1b041d; //按钮内容背景
-@color_tone20: #291037;
-@color_purple: #2e163d; //center内容背景色
-
-@color_indigo_hover: #2d0730; //按钮hover
-@color_white2: #d4c3b2; //按钮背景
-@color_white2_hover: #eceacc; //按钮hover
-@color_input: #866789; //input字体
-
-@color_gray: #dbcbb7; //center标题字体颜色
-@color_darkgray: #513663; //center标题背景
-@color_yellow: #d4c3b2; //支付按钮背景***
-@color_dimgray: #735885; //center说明字体
-
-@font_size12: 12px;
-@font_size16: 16px;
-@font_size17: 17px;
-@font_size18: 18px;
-@font_size20: 20px;
-@font_size21: 21px;
-@font_size22: 22px;
-@font_size24: 24px;
 
 .mixin_button(@width, @height, @background, @color) {
     width: @width;
     height: @height;
     background: @background;
     color: @color;
-    cursor: pointer;
-    outline: none;
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +37,6 @@ less全局变量
     float: left;
     text-align: center;
     line-height: @height;
-    list-style: none;
 }
 
 .mixin_input(@width, @height) {
@@ -79,14 +45,7 @@ less全局变量
     text-align: left;
     line-height: @height;
     text-indent: 10px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    vertical-align: middle;
-    overflow: hidden;
 }
-
-
 
 // 背景图片
 .mixin_image(@url) {
@@ -107,13 +66,13 @@ less全局变量
 
 // -------------------------------------------
 
-@color_edge: #D5D5D5; //边框线
-@color_lv: #2AB795; //绿色字体
-@color_huise: #9F9F9F; //灰色字体
-@color_beijing: #F8F8F8; //灰色背景
-@color_qianlan: #EEEEEE; // 浅蓝背景
-@color_hong: #FA2D41; // 鲜红字体
-@color_qianqing: #E6E5EB; // 浅清背景
+// @color_edge: #D5D5D5; //边框线
+// @color_lv: #2AB795; //绿色字体
+// @color_huise: #9F9F9F; //灰色字体
+// @color_beijing: #F8F8F8; //灰色背景
+// @color_qianlan: #EEEEEE; // 浅蓝背景
+// @color_hong: #FA2D41; // 鲜红字体
+// @color_qianqing: #E6E5EB; // 浅清背景
 
 
 
@@ -123,82 +82,82 @@ less全局变量
 // ---------------------------------------
 
 // 基础色
-@primary-color-30: #f2f9ff;
-@primary-color-50: #e9f5ff;
-@primary-color-100: #bde1fe;
-@primary-color-200: #91cefe;
-@primary-color-300: #66bafd;
-@primary-color-400: #3aa6fc;
-@primary-color-500: #249cfc;
-@primary-color-600: #208ce3;
-@primary-color-700: #196db0;
-@primary-color-800: #124e7e;
-@primary-color-900: #0b2f4c;
-@primary-color-950: #041019;
+// @primary-color-30: #f2f9ff;
+// @primary-color-50: #e9f5ff;
+// @primary-color-100: #bde1fe;
+// @primary-color-200: #91cefe;
+// @primary-color-300: #66bafd;
+// @primary-color-400: #3aa6fc;
+// @primary-color-500: #249cfc;
+// @primary-color-600: #208ce3;
+// @primary-color-700: #196db0;
+// @primary-color-800: #124e7e;
+// @primary-color-900: #0b2f4c;
+// @primary-color-950: #041019;
 // 中性色
-@neutral-color-30: #fff;
-@neutral-color-50: #ecedf1;
-@neutral-color-100: #c5cad6;
-@neutral-color-200: #9fa7ba;
-@neutral-color-300: #79849e;
-@neutral-color-400: #657391;
-@neutral-color-500: #3f5075;
-@neutral-color-600: #32405e;
-@neutral-color-700: #2c3852;
-@neutral-color-800: #20283b;
-@neutral-color-900: #131823;
-@neutral-color-950: #000;
+// @neutral-color-30: #fff;
+// @neutral-color-50: #ecedf1;
+// @neutral-color-100: #c5cad6;
+// @neutral-color-200: #9fa7ba;
+// @neutral-color-300: #79849e;
+// @neutral-color-400: #657391;
+// @neutral-color-500: #3f5075;
+// @neutral-color-600: #32405e;
+// @neutral-color-700: #2c3852;
+// @neutral-color-800: #20283b;
+// @neutral-color-900: #131823;
+// @neutral-color-950: #000;
 // 中性色-2
-@dneutral-color-50: #f7f9fc;
-@dneutral-color-100: #e7eef6;
-@dneutral-color-200: #d7e2ef;
-@dneutral-color-300: #c7d7e9;
-@dneutral-color-400: #b7cce3;
-@dneutral-color-500: #afc6e0;
-@dneutral-color-600: #9eb2ca;
-@dneutral-color-700: #7b8b9d;
-@dneutral-color-800: #586370;
-@dneutral-color-900: #353b43;
+// @dneutral-color-50: #f7f9fc;
+// @dneutral-color-100: #e7eef6;
+// @dneutral-color-200: #d7e2ef;
+// @dneutral-color-300: #c7d7e9;
+// @dneutral-color-400: #b7cce3;
+// @dneutral-color-500: #afc6e0;
+// @dneutral-color-600: #9eb2ca;
+// @dneutral-color-700: #7b8b9d;
+// @dneutral-color-800: #586370;
+// @dneutral-color-900: #353b43;
 // 警告色
-@danger-color-50: #fef6f6;
-@danger-color-100: #fde0e0;
-@danger-color-200: #fbc1c1;
-@danger-color-300: #f9a3a3;
-@danger-color-400: #f78484;
-@danger-color-500: #f56565;
-@danger-color-600: #c45151;
-@danger-color-700: #933d3d;
-@danger-color-800: #622828;
-@danger-color-900: #311414;
+// @danger-color-50: #fef6f6;
+// @danger-color-100: #fde0e0;
+// @danger-color-200: #fbc1c1;
+// @danger-color-300: #f9a3a3;
+// @danger-color-400: #f78484;
+// @danger-color-500: #f56565;
+// @danger-color-600: #c45151;
+// @danger-color-700: #933d3d;
+// @danger-color-800: #622828;
+// @danger-color-900: #311414;
 // 成功色
-@success-color-50: #f4fbf7;
-@success-color-100: #daf1e4;
-@success-color-200: #b6e4c9;
-@success-color-300: #91d6ae;
-@success-color-400: #6dc993;
-@success-color-500: #48bb78;
-@success-color-600: #3a9660;
-@success-color-700: #2b7048;
-@success-color-800: #1d4b30;
-@success-color-900: #0e2518;
+// @success-color-50: #f4fbf7;
+// @success-color-100: #daf1e4;
+// @success-color-200: #b6e4c9;
+// @success-color-300: #91d6ae;
+// @success-color-400: #6dc993;
+// @success-color-500: #48bb78;
+// @success-color-600: #3a9660;
+// @success-color-700: #2b7048;
+// @success-color-800: #1d4b30;
+// @success-color-900: #0e2518;
 // 警告色
-@warning-color-50: #fef8f3;
-@warning-color-100: #fbe7d7;
-@warning-color-200: #f8d0af;
-@warning-color-300: #f4b886;
-@warning-color-400: #f1a15e;
-@warning-color-500: #ed8936;
-@warning-color-600: #be6e2b;
-@warning-color-700: #8e5220;
-@warning-color-800: #5f3716;
-@warning-color-900: #2f1b0b;
+// @warning-color-50: #fef8f3;
+// @warning-color-100: #fbe7d7;
+// @warning-color-200: #f8d0af;
+// @warning-color-300: #f4b886;
+// @warning-color-400: #f1a15e;
+// @warning-color-500: #ed8936;
+// @warning-color-600: #be6e2b;
+// @warning-color-700: #8e5220;
+// @warning-color-800: #5f3716;
+// @warning-color-900: #2f1b0b;
 
-@primary-gradient-color: radial-gradient(85.99% 191.66% at 50% -32.28%,
-        #b6e9ff 0%,
-        #73d5ff 26.77%,
-        #20a0ff 45.96%,
-        #3d72fa 66.67%,
-        #20a0ff 100%);
+// @primary-gradient-color: radial-gradient(85.99% 191.66% at 50% -32.28%,
+//         #b6e9ff 0%,
+//         #73d5ff 26.77%,
+//         #20a0ff 45.96%,
+//         #3d72fa 66.67%,
+//         #20a0ff 100%);
 
 
 
