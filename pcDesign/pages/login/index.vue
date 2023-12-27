@@ -308,7 +308,12 @@ export default defineComponent({
                     border: 1px solid #b1923f;
 
                     span {
-                        .mixin_span(20%, 50px, none, @color_label, left);
+                        width: 20%;
+                        height: 50px;
+                        display: inline-block;
+                        text-align: left;
+                        line-height: 50px;
+                        color: @color_label;
                         font-size: 24px;
                         float: left;
                         font-weight: 600;
@@ -316,7 +321,11 @@ export default defineComponent({
                     }
 
                     input {
-                        .mixin_input(260px, 48px);
+                        width: 260px;
+                        height: 48px;
+                        text-align: left;
+                        line-height: 48px;
+                        text-indent: 10px;
                         background: none;
                         float: left;
                         color: @color_label;
@@ -362,6 +371,7 @@ export default defineComponent({
                     height: 35px;
                     position: relative;
                     font-size: 16px;
+
                     .rectangle {
                         width: 18px;
                         height: 18px;
@@ -381,14 +391,24 @@ export default defineComponent({
                     }
 
                     span:nth-of-type(1) {
-                        .mixin_span(auto, 35px, none, @color_violet, center);
+                        width: auto;
+                        height: 35px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 35px;
+                        color: @color_violet;
                         position: absolute;
                         top: 0px;
                         left: 30px;
                     }
 
                     span:nth-of-type(2) {
-                        .mixin_span(auto, 25px, none, @color_violet, center);
+                        width: auto;
+                        height: 25px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 25px;
+                        color: @color_violet;
                         position: absolute;
                         top: 50%;
                         right: 0px;
@@ -410,7 +430,12 @@ export default defineComponent({
                     }
 
                     span:nth-of-type(1) {
-                        .mixin_span(48%, 50px, none, white, center);
+                        width: 48%;
+                        height: 50px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 50px;
+                        color: white;
                         float: left;
                         border-radius: 4px;
                         font-size: 16px;
@@ -423,7 +448,12 @@ export default defineComponent({
                     }
 
                     span:nth-of-type(2) {
-                        .mixin_span(48%, 50px, none, white, center);
+                        width: 48%;
+                        height: 50px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 50px;
+                        color: white;
                         float: right;
                         border-radius: 4px;
                         font-size: 16px;
@@ -437,12 +467,21 @@ export default defineComponent({
                 }
 
                 .recommend {
-                    .mixin_div(100%, 50px, none, @color_violet, center);
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    color: @color_violet;
                     margin: 6px 0px 6px 0px;
                     position: relative;
 
                     span:nth-of-type(1) {
-                        .mixin_span(75px, 10px, none, @color_violet, left);
+                        width: 75px;
+                        height: 10px;
+                        display: inline-block;
+                        text-align: left;
+                        line-height: 10px;
+                        color: @color_violet;
                         position: absolute;
                         left: 62px;
                         top: 15px;
@@ -450,7 +489,12 @@ export default defineComponent({
                     }
 
                     span:nth-of-type(2) {
-                        .mixin_span(125px, 50px, none, @color_violet, center);
+                        width: 125px;
+                        height: 50px;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 50px;
+                        color: @color_violet;
                         position: absolute;
                         left: 137px;
                         top: 0px;
@@ -459,7 +503,12 @@ export default defineComponent({
                     }
 
                     span:nth-of-type(3) {
-                        .mixin_span(75px, 10px, none, @color_violet, left);
+                        width: 75px;
+                        height: 10px;
+                        display: inline-block;
+                        text-align: left;
+                        line-height: 10px;
+                        color: @color_violet;
                         position: absolute;
                         left: 262px;
                         top: 15px;

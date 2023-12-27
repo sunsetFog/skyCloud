@@ -23,6 +23,7 @@ export default defineComponent({
 #footerUnit {
     width: 100%;
     .mixin_image(url('./img/diceng.png'));
+
     .contain-center {
         width: 1200px;
         height: 100%;
@@ -39,12 +40,22 @@ export default defineComponent({
             align-items: center;
 
             span:nth-of-type(1) {
-                .mixin_span(auto, 45px, none, #ffffff, left);
+                width: auto;
+                height: 45px;
+                display: inline-block;
+                text-align: left;
+                line-height: 45px;
+                color: #ffffff;
                 float: left;
             }
 
             span:nth-of-type(2) {
-                .mixin_span(auto, 45px, none, #ffffff, left);
+                width: auto;
+                height: 45px;
+                display: inline-block;
+                text-align: left;
+                line-height: 45px;
+                color: #ffffff;
                 float: left;
                 margin-left: 55px;
             }

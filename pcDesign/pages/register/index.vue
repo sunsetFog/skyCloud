@@ -196,7 +196,12 @@ export default {
                         }
 
                         span {
-                            .mixin_span(auto, 30px, none, #c53fe1, left);
+                            width: auto;
+                            height: 30px;
+                            display: inline-block;
+                            text-align: left;
+                            line-height: 30px;
+                            color: #c53fe1;
                             float: left;
                             font-size: 18px;
                         }
@@ -204,7 +209,11 @@ export default {
                 }
 
                 label {
-                    .mixin_div(100%, 35px, none, #ffffff, left);
+                    width: 100%;
+                    height: 35px;
+                    text-align: left;
+                    line-height: 35px;
+                    color: #ffffff;
                     display: block;
                     font-size: 18px;
                     margin-top: 5px;
@@ -217,7 +226,11 @@ export default {
                     .mixin_image(url('./img/frame02.png'));
 
                     input {
-                        .mixin_input(100%, 100%);
+                        width: 100%;
+                        height: 100%;
+                        text-align: left;
+                        line-height: 100%;
+                        text-indent: 10px;
                         background: none;
                         color: #b699dd;
                         font-size: 18px;
@@ -241,7 +254,11 @@ export default {
                 }
 
                 .submit {
-                    .mixin_div(100%, 50px, none, #174308, center);
+                    width: 100%;
+                    height: 50px;
+                    text-align: center;
+                    line-height: 50px;
+                    color: #174308;
                     .mixin_image(url('./img/button01.png'));
                     font-size: 18px;
                     margin-top: 35px;
@@ -256,4 +273,5 @@ export default {
     }
 
 
-}</style>
+}
+</style>
