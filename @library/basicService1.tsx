@@ -3,8 +3,10 @@ import React, {Component} from 'react';
 import { HashRouter as Router, Route, Switch, Redirect, Link, NavLink, withRouter } from 'react-router-dom';
 
 
-
-class BasicService extends Component {
+/*
+    作用：提供公共方法和基础服务
+*/
+class BasicService1 extends Component {
 
     state = {
         pumpkin: '南瓜'
@@ -16,14 +18,6 @@ class BasicService extends Component {
 
     pumpkin2 = '南瓜2'
 
-    render() {
-
-      return (
-        <section>
-            +++基础架构+++
-        </section>
-      );
-    }
 }
 
-export default BasicService
+export default BasicService1
