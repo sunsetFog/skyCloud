@@ -2,20 +2,20 @@
 import React, {Component} from 'react';
 // 不能引入状态管理
 
-import { HashRouter as Router, Route, Switch, Redirect, Link, NavLink, withRouter } from 'react-router-dom';
-
 import FormService2 from './formService2'
-
 /*
     使用场景：form表单和table表格一起时
 */
 class TableService3 extends FormService2 {
 
     state = {
-        cabbage: '白菜'
+        cabbage: '白菜',
+        pumpkin: '南瓜',
+        modalVisible: false
     }
 
     constructor(props) {
+        console.log("-okk-3-", props);
         super(props);
     }
 

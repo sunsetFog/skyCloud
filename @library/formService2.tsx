@@ -2,10 +2,8 @@
 import React, {Component, createRef} from 'react';
 // 不能引入状态管理
 
-import { HashRouter as Router, Route, Switch, Redirect, Link, NavLink, withRouter } from 'react-router-dom';
-
 import BasicService1 from './basicService1';
-
+import { FormInstance } from 'antd/es/form'
 /*
     使用场景：
         1.弹窗表单时
@@ -16,11 +14,13 @@ import BasicService1 from './basicService1';
 class FormService2 extends BasicService1 {
 
     state = {
+        pumpkin: '南瓜',
         // 弹窗表单：开关
         modalVisible: false
     }
 
     constructor(props) {
+        console.log("-okk-2-", props);
         super(props);
     }
 

@@ -32,3 +32,7 @@ FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memor
 npm install -g increase-memory-limit
 根目录下：
 increase-memory-limit
+
+yarn upgrade react-router-dom@latest
+
+npm install react-router-dom@latest
