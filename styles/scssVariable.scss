@@ -10,6 +10,27 @@
         height: 0;
         clear: both;
         visibility: hidden;
-        content: '.';
+        content: '';
     }
 }
+// 单行：css文字溢出隐藏为三个点...
+@mixin line-clamp1() {
+    overflow: hidden;
+    text-overflow: ellipsis;// 显示省略符号 ... 来代表被修剪的文本。
+    white-space: nowrap;//文本强制不换行
+}
+// 多行：css文字溢出隐藏为三个点...
+@mixin line-clamps($num) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;// 流体盒模型
+    -webkit-line-clamp: $num;// 设置显示的行数
+    -webkit-box-orient: vertical;// 垂直
+}
+// 盒子或文字，水平居中和垂直居中
+@mixin horizontal-and-vertical-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

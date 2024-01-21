@@ -32,11 +32,11 @@ class FormService2 extends BasicService1 {
 
     // 表单校验
     onValidateForm = () => {
-      this.formRef.current.validateFields().then((form) => {
+      this.formRef.current?.validateFields().then((form) => {
         this.onHttpApi(form)
       })
     }
-    // 弹窗表单：打开弹窗，form重置
+    // 弹窗表单：打开弹窗，初始化form重置
     onOpenModal = (obj = {}) => {
         this.setState({ modalVisible: true, ...obj }, () => {
             // 在 setState 的回调函数中执行对 DOM 的操作
@@ -51,12 +51,12 @@ class FormService2 extends BasicService1 {
 
     // 获取表单数据
     getModalForm = () => {
-        return this.formRef.current ? this.formRef.current.getFieldsValue() : {}
+        return this.formRef.current ? this.formRef.current?.getFieldsValue() : {}
     }
 
     // 设置表单数据
     setModalForm = (obj) => {
-        this.formRef.current.setFieldsValue(obj)
+        this.formRef.current?.setFieldsValue(obj)
     }
 
     // 重置表单

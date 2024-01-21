@@ -36,3 +36,20 @@ increase-memory-limit
 yarn upgrade react-router-dom@latest
 
 npm install react-router-dom@latest
+
+
+## Commit Message 规范
+
+项目已经集成 husky 和 commitlint,会在 commit 前检查 commit message 是否符合规范。
+
+一般常用的类别有：
+
+- feat：新功能（feature）
+- fix：修补 bug
+- docs：文档（documentation）
+- style： 格式（不影响代码运行的变动）
+- refactor：重构（即不是新增功能，也不是修改 bug 的代码变动）
+- test：增加测试
+- chore：构建过程或辅助工具的变动
+
+详细规范请参考 [规范说明](http://jira.hnxmny.com:8090/pages/viewpage.action?pageId=36461323)
