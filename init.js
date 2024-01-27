@@ -108,11 +108,7 @@ copyWay1('./postcss.config.js', './packages/mobileApp/postcss.config.js');
 // copyWay2('./docker', './packages/pcWebsite/docker');
 // copyWay2('./docker', './packages/mobileApp/docker');
 
-copyWay2('./@higherOrder', './packages/mobxSky/src/@energy/@higherOrder');
-copyWay2('./@library', './packages/mobxSky/src/@energy/@library');
-copyWay2('./@appDesign', './packages/mobxSky/src/@energy/@appDesign');
-copyWay2('./@pcDesign', './packages/mobxSky/src/@energy/@pcDesign');
-copyWay2('./@utils', './packages/mobxSky/src/@energy/@utils');
+copyWay2('./ivoryDesign', './packages/mobxSky/src/@energy/ivoryDesign');
 copyWay2('./styles', './packages/mobxSky/src/@energy/styles');
 
 copyWay1('./static/favicon.ico', './packages/adminSystem/public/favicon.ico');

@@ -8,12 +8,6 @@ import FormService2 from './formService2'
 */
 class TableService3 extends FormService2 {
 
-    state = {
-        cabbage: '白菜',
-        pumpkin: '南瓜',
-        modalVisible: false
-    }
-
     constructor(props) {
         console.log("-okk-3-", props);
         super(props);

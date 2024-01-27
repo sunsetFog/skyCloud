@@ -4,9 +4,9 @@ import React, {Component} from 'react';
     作用：提供公共方法和基础服务
 */
 class BasicService1 extends Component {
-
+    // 别写state, 继承要重写的
     state = {
-        pumpkin: '南瓜'
+
     }
 
     constructor(props) {

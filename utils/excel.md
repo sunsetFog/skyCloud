@@ -63,15 +63,17 @@ git submodule foreach --recursive git pull
 
 
 登陆？
+rafaelDesign
 rafaelAdmin
 rafaelClientWeb
-rafaelClientH5
+rafaelClientApp
 
+ivoryDesign
 ivoryAdmin
 ivoryClientWeb
 ivoryClientH5
 
 ivoryAgentWeb
-ivoryAgentH5
+ivoryAgentApp
 
 
