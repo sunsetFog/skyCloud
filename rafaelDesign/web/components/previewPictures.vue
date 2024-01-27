@@ -34,9 +34,9 @@ export default {
             type: Array,
             default: function() {
                 return [
-                    require('@sky/static/image1/AheadVenus.png'),
-                    require('@sky/static/image1/sale.png'),
-                    require('@sky/static/image1/invoice.png')
+                    require('@sky/rafaelDesign/static/image1/AheadVenus.png'),
+                    require('@sky/rafaelDesign/static/image1/sale.png'),
+                    require('@sky/rafaelDesign/static/image1/invoice.png')
                 ]
             }
         },

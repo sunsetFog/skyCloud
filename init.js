@@ -111,6 +111,6 @@ copyWay1('./postcss.config.js', './packages/mobileApp/postcss.config.js');
 copyWay2('./ivoryDesign', './packages/mobxSky/src/@energy/ivoryDesign');
 copyWay2('./styles', './packages/mobxSky/src/@energy/styles');
 
-copyWay1('./static/favicon.ico', './packages/adminSystem/public/favicon.ico');
-copyWay1('./static/favicon.ico', './packages/pcWebsite/public/favicon.ico');
-copyWay1('./static/favicon.ico', './packages/mobileApp/public/favicon.ico');
+copyWay1('./rafaelDesign/static/favicon.ico', './packages/adminSystem/public/favicon.ico');
+copyWay1('./rafaelDesign/static/favicon.ico', './packages/pcWebsite/public/favicon.ico');
+copyWay1('./rafaelDesign/static/favicon.ico', './packages/mobileApp/public/favicon.ico');

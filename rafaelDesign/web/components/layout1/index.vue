@@ -14,7 +14,7 @@
 import {
     defineComponent
 } from "vue";
-import footers from '@sky/pcDesign/components/footer/index.vue';
+import footers from '@sky/rafaelDesign/web/components/footer/index.vue';
 export default defineComponent({
     name: 'layout1',
     components: { footers },

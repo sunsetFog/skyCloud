@@ -9,7 +9,7 @@ class Voice { // class 的特性
     this.DOM = document.createElement('audio');
   }
   playAudio (name) {
-    this.DOM.src = require(`@sky/static/audio/${name}`);
+    this.DOM.src = require(`@sky/rafaelDesign/static/audio/${name}`);
     this.DOM.play();
     // this.DOM.pause(); 暂停
     console.log('audio+++', this.DOM);
