@@ -53,3 +53,25 @@ npm install react-router-dom@latest
 - chore：构建过程或辅助工具的变动
 
 详细规范请参考 [规范说明](http://jira.hnxmny.com:8090/pages/viewpage.action?pageId=36461323)
+
+
+这两个不更新代码？
+子模块切换分支origin/master
+git submodule update
+这个才更新
+git submodule foreach --recursive git pull
+
+
+登陆？
+rafaelAdmin
+rafaelClientWeb
+rafaelClientH5
+
+ivoryAdmin
+ivoryClientWeb
+ivoryClientH5
+
+ivoryAgentWeb
+ivoryAgentH5
+
+
