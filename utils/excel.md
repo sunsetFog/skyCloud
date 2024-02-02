@@ -76,4 +76,15 @@ ivoryAgentApp
 
 14.18.0
 
+清除npm的缓存
+npm cache clean --force
+
+node node-sass sass-loader 版本对应问题
+npm uninstall sass-loader
+
+volta install node@16.18.1
+volta pin node@16.18.1
+node 16.18.1
+npm i node-sass@6.0.1 sass-loader@10.2.0 --save-dev
+
 
