@@ -333,8 +333,12 @@ link
 没有变量
 $eventBus
 
+git lfs install
+
+git clone --recurse-submodules https://
 
 
+git submodule update --init --remote --recursive --force
 
 
 
