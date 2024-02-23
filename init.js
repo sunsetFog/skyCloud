@@ -48,69 +48,69 @@ function copyWay2(source, target) {
     }
 }
 
-copyWay1('./vue.config.js', './packages/adminSystem/vue.config.js');
-copyWay1('./vue.config.js', './packages/pcWebsite/vue.config.js');
-copyWay1('./vue.config.js', './packages/mobileApp/vue.config.js');
+copyWay1('./vue.config.js', './packages/rafaelAdmin/vue.config.js');
+copyWay1('./vue.config.js', './packages/rafaelClientWeb/vue.config.js');
+copyWay1('./vue.config.js', './packages/rafaelClientApp/vue.config.js');
 
-copyWay1('./.gitignore', './packages/adminSystem/.gitignore');
-copyWay1('./.gitignore', './packages/pcWebsite/.gitignore');
-copyWay1('./.gitignore', './packages/mobileApp/.gitignore');
-copyWay1('./.gitignore', './packages/mobxSky/.gitignore');
+copyWay1('./.gitignore', './packages/rafaelAdmin/.gitignore');
+copyWay1('./.gitignore', './packages/rafaelClientWeb/.gitignore');
+copyWay1('./.gitignore', './packages/rafaelClientApp/.gitignore');
+copyWay1('./.gitignore', './packages/ivoryAdmin/.gitignore');
 
-copyWay1('./.editorconfig', './packages/adminSystem/.editorconfig');
-copyWay1('./.editorconfig', './packages/pcWebsite/.editorconfig');
-copyWay1('./.editorconfig', './packages/mobileApp/.editorconfig');
-copyWay1('./.editorconfig', './packages/mobxSky/.editorconfig');
+copyWay1('./.editorconfig', './packages/rafaelAdmin/.editorconfig');
+copyWay1('./.editorconfig', './packages/rafaelClientWeb/.editorconfig');
+copyWay1('./.editorconfig', './packages/rafaelClientApp/.editorconfig');
+copyWay1('./.editorconfig', './packages/ivoryAdmin/.editorconfig');
 
-copyWay1('./.prettierignore', './packages/adminSystem/.prettierignore');
-copyWay1('./.prettierignore', './packages/pcWebsite/.prettierignore');
-copyWay1('./.prettierignore', './packages/mobileApp/.prettierignore');
-copyWay1('./.prettierignore', './packages/mobxSky/.prettierignore');
+copyWay1('./.prettierignore', './packages/rafaelAdmin/.prettierignore');
+copyWay1('./.prettierignore', './packages/rafaelClientWeb/.prettierignore');
+copyWay1('./.prettierignore', './packages/rafaelClientApp/.prettierignore');
+copyWay1('./.prettierignore', './packages/ivoryAdmin/.prettierignore');
 
-copyWay1('./tsconfig.json', './packages/adminSystem/tsconfig.json');
-copyWay1('./tsconfig.json', './packages/pcWebsite/tsconfig.json');
-copyWay1('./tsconfig.json', './packages/mobileApp/tsconfig.json');
-copyWay1('./tsconfig.json', './packages/mobxSky/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/rafaelAdmin/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/rafaelClientWeb/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/rafaelClientApp/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/ivoryAdmin/tsconfig.json');
 
-copyWay1('./.stylelintignore', './packages/adminSystem/.stylelintignore');
-copyWay1('./.stylelintignore', './packages/pcWebsite/.stylelintignore');
-copyWay1('./.stylelintignore', './packages/mobileApp/.stylelintignore');
-copyWay1('./.stylelintignore', './packages/mobxSky/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/rafaelAdmin/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/rafaelClientWeb/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/rafaelClientApp/.stylelintignore');
+copyWay1('./.stylelintignore', './packages/ivoryAdmin/.stylelintignore');
 
-copyWay1('./.stylelintrc.js', './packages/adminSystem/.stylelintrc.js');
-copyWay1('./.stylelintrc.js', './packages/pcWebsite/.stylelintrc.js');
-copyWay1('./.stylelintrc.js', './packages/mobileApp/.stylelintrc.js');
-copyWay1('./.stylelintrc.js', './packages/mobxSky/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/rafaelAdmin/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/rafaelClientWeb/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/rafaelClientApp/.stylelintrc.js');
+copyWay1('./.stylelintrc.js', './packages/ivoryAdmin/.stylelintrc.js');
 
-copyWay1('./.npmrc', './packages/adminSystem/.npmrc');
-copyWay1('./.npmrc', './packages/pcWebsite/.npmrc');
-copyWay1('./.npmrc', './packages/mobileApp/.npmrc');
-copyWay1('./.npmrc', './packages/mobxSky/.npmrc');
+copyWay1('./.npmrc', './packages/rafaelAdmin/.npmrc');
+copyWay1('./.npmrc', './packages/rafaelClientWeb/.npmrc');
+copyWay1('./.npmrc', './packages/rafaelClientApp/.npmrc');
+copyWay1('./.npmrc', './packages/ivoryAdmin/.npmrc');
 
-copyWay1('./.eslintignore', './packages/adminSystem/.eslintignore');
-copyWay1('./.eslintignore', './packages/pcWebsite/.eslintignore');
-copyWay1('./.eslintignore', './packages/mobileApp/.eslintignore');
-copyWay1('./.eslintignore', './packages/mobxSky/.eslintignore');
+copyWay1('./.eslintignore', './packages/rafaelAdmin/.eslintignore');
+copyWay1('./.eslintignore', './packages/rafaelClientWeb/.eslintignore');
+copyWay1('./.eslintignore', './packages/rafaelClientApp/.eslintignore');
+copyWay1('./.eslintignore', './packages/ivoryAdmin/.eslintignore');
 
-copyWay1('./.eslintrc.js', './packages/adminSystem/.eslintrc.js');
-copyWay1('./.eslintrc.js', './packages/pcWebsite/.eslintrc.js');
-copyWay1('./.eslintrc.js', './packages/mobileApp/.eslintrc.js');
-// copyWay1('./.eslintrc.js', './packages/mobxSky/.eslintrc.js');
+copyWay1('./.eslintrc.js', './packages/rafaelAdmin/.eslintrc.js');
+copyWay1('./.eslintrc.js', './packages/rafaelClientWeb/.eslintrc.js');
+copyWay1('./.eslintrc.js', './packages/rafaelClientApp/.eslintrc.js');
+// copyWay1('./.eslintrc.js', './packages/ivoryAdmin/.eslintrc.js');
 
-copyWay1('./.postcssrc.js', './packages/mobileApp/.postcssrc.js');
-copyWay1('./postcss.config.js', './packages/mobileApp/postcss.config.js');
-// copyWay1('./postcss.config.js', './packages/mobxSky/postcss.config.js');
+copyWay1('./.postcssrc.js', './packages/rafaelClientApp/.postcssrc.js');
+copyWay1('./postcss.config.js', './packages/rafaelClientApp/postcss.config.js');
+// copyWay1('./postcss.config.js', './packages/ivoryAdmin/postcss.config.js');
 
-// copyWay1('./babel.config.js', './packages/mobileApp/babel.config.js');
-// copyWay1('./.babelrc.js', './packages/mobxSky/.babelrc.js');
+// copyWay1('./babel.config.js', './packages/rafaelClientApp/babel.config.js');
+// copyWay1('./.babelrc.js', './packages/ivoryAdmin/.babelrc.js');
 
-// copyWay2('./docker', './packages/adminSystem/docker');
-// copyWay2('./docker', './packages/pcWebsite/docker');
-// copyWay2('./docker', './packages/mobileApp/docker');
+// copyWay2('./docker', './packages/rafaelAdmin/docker');
+// copyWay2('./docker', './packages/rafaelClientWeb/docker');
+// copyWay2('./docker', './packages/rafaelClientApp/docker');
 
-copyWay2('./ivoryDesign', './packages/mobxSky/src/@energy/ivoryDesign');
-copyWay2('./styles', './packages/mobxSky/src/@energy/styles');
+copyWay2('./ivoryDesign', './packages/ivoryAdmin/src/@energy/ivoryDesign');
+copyWay2('./styles', './packages/ivoryAdmin/src/@energy/styles');
 
-copyWay1('./rafaelDesign/static/favicon.ico', './packages/adminSystem/public/favicon.ico');
-copyWay1('./rafaelDesign/static/favicon.ico', './packages/pcWebsite/public/favicon.ico');
-copyWay1('./rafaelDesign/static/favicon.ico', './packages/mobileApp/public/favicon.ico');
+copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelAdmin/public/favicon.ico');
+copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelClientWeb/public/favicon.ico');
+copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelClientApp/public/favicon.ico');
