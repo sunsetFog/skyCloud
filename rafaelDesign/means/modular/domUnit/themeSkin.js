@@ -1,6 +1,7 @@
 /*
 study: 皮肤切换
  */
+import store from '@/store';
 export default {
     // 刷新皮肤保持不变
     initTheme() {
@@ -8,6 +9,7 @@ export default {
         this.changeTheme(type);
     },
     changeTheme(type) {
+        store.commit('themeWay', type)
         sessionStorage.setItem('theme_skin', type);
         // 修改html标签的类名
         document.documentElement.className = type;
