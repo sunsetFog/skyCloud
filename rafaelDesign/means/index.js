@@ -4,7 +4,6 @@ import browserunit__1 from './modular/browserunit/1'
 import regExpUnit__regular from './modular/regExpUnit/regular'
 import callback from './modular/callback'
 import cacheUnit__indexDb from './modular/cacheUnit/indexDb'
-import domUnit__themeSkin from './modular/domUnit/themeSkin'
 import cacheUnit__cookies from './modular/cacheUnit/cookies'
 import dateUnit__date from './modular/dateUnit/date'
 import regExpUnit__regExp from './modular/regExpUnit/regExp'
@@ -23,7 +22,6 @@ const comic = { // es6合并对象
     ...regExpUnit__regular,
     ...callback,
     ...cacheUnit__indexDb,
-    ...domUnit__themeSkin,
     ...cacheUnit__cookies,
     ...dateUnit__date,
     ...regExpUnit__regExp,

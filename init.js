@@ -110,6 +110,7 @@ copyWay1('./postcss.config.js', './packages/rafaelClientApp/postcss.config.js');
 
 copyWay2('./ivoryDesign', './packages/ivoryAdmin/src/@energy/ivoryDesign');
 copyWay2('./styles', './packages/ivoryAdmin/src/@energy/styles');
+copyWay2('./styles', './packages/ivoryClientH5/src/@energy/styles');
 
 copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelAdmin/public/favicon.ico');
 copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelClientWeb/public/favicon.ico');

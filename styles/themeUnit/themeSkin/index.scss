@@ -20,4 +20,18 @@
     }
 }
 
+// 竖屏模式
+@mixin screen-vertical() {
+    :global([data-screen='vertical']) & {
+      @content;
+    }
+}
+
+// 横屏模式
+@mixin screen-horizontal() {
+    :global([data-screen='horizontal']) & {
+      @content;
+    }
+}
+
 
