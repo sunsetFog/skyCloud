@@ -1,6 +1,7 @@
 # 用于配置 Git 中需要被忽略、不提交的文件或目录
 packages/*
 @energy
+vue.config.js
 
 .DS_Store
 node_modules

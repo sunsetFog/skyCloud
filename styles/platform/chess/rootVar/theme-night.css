@@ -1,0 +1,132 @@
+:root.night {
+    /*
+        背景色 backgroud
+    */
+    --background: var(--secondary-900S);
+    --background-950: var(--secondary-950S);
+    --background-white: var(--secondary-900S);
+    --background_skin: var(--secondary-900S);
+    --background-subpage: var(--secondary-900S);
+    --background-secondary10: var(--secondary-950S);
+    --background-secondary50: var(--black);
+    /*
+        描边 border
+    */
+    --border-divide: var(--white-8);
+    --border-divide-alt: var(--white-8);
+    --border-primary: var(--primary-400T);
+    --border-primary-weak: var(--white-8);
+    --border-inverse: var(--white-4);
+    --border-disable: var(--white-4);
+    --border-selection: var(--success-500-Base);
+    --border-separator: var(--white-8);
+    --border-separator-alt: var(--white-20);
+    --border-dvide-alt: var(--white-8);
+    --border-success: var(--success-500-Base);
+    --border-error: var(--error-500-Base);
+    --border-warning: var(--warning-500-Base);
+    --border-selection-sec: var(--white-90);
+    /*
+        图标 - Icon
+     */
+    --icon-primary: var(--primary-400T);
+    --icon-primary-weak: var(--primary-300T);
+    --icon: var(--white-50);
+    --icon-weak: var(--white-30);
+    --icon-subtle: var(--white-30);
+    --icon-subtle-weak: var(--white-50);
+    --icon-secondary950: var(--white-90);
+    --icon-secondary800: var(--white-70);
+    --icon-secondary900: var(--white-50);
+    --icon-disable: var(--white-20);
+    --icon-inverse: var(--white);
+    --icon-success: var(--success-500-Base);
+    --icon-error: var(--error-500-Base);
+    --icon-warning: var(--warning-500-Base);
+    --icon-primary-active: var(--white-90);
+    /*
+        图层色 - Layer
+    */
+    --layer: var(--secondary-900S);
+    --layer-black: rgb(255 255 255 / 20%);
+    --layer-alt: var(--white-8);
+    --layer-alt-weak: var(--white-8);
+    --layer-white: var(--white-4);
+    --layer-primary: var(--primary-400T);
+    --layer-primary-disable: var(--primary-800S);
+    --layer-primary-active: var(--primary-700S);
+    --layer-inverse: var(--white-30);
+    --layer-primary10: var(--white-4);
+    --layer-secondary10: var(--white-4);
+    --layer-input: var(--white);
+    --layer-input-disable: var(--white);
+    --layer-toggle: var(--white-8);
+    --layer-toggle-weak: var(--white-8);
+    --layer-toggle-selected: var(--white-8);
+    --layer-secondary50: var(--white-4);
+    --layer-secondary100: var(--white-8);
+    --layer-secondary500: var(--white-8);
+    --layer-primary50: var(--white-4);
+    --layer-primary100: var(--white-8);
+    --layer-primary200: var(--white-8);
+    --layer-secondary600: var(--white-8);
+    --layer-button: var(--white-8);
+    --layer-button-primay: var(--primary-400T);
+    --layer-button-weak: var(--white-4);
+    --layer-button-primay-weak: var(--primary-700S);
+    --layer-selection-sec: var(--white-90);
+    --layer-active: var(--white-20);
+    --layer-bubble-sender: var(--secondary-800S);
+    --layer-bubble-recipient: var(--primary-800S);
+    --layer-popup: var(--secondary-800S);
+    --layer-popup-alt: var(--secondary-800S);
+    --layer-warning-weak: #feae2b1a;
+    --layer-warning: var(--warning-500-Base);
+    --layer-success: var(--success-500-Base);
+    --layer-success-weak: #00b42a1a;
+    --layer-error: var(--error-500-Base);
+    --layer-error-weak: #f53f3f1a;
+    --layer-tabbar: var(--secondary-900S);
+    --layer-tag: var(--secondary-800S);
+    --layer-itembg: var(--black);
+    --layer-tag-weak: var(--white-30);
+    --layer-navgtion: var(--secondary-900S);
+    --layer-navgtion-weak: var(--white-8);
+    --layer-navgtion-alt: var(--white);
+    --layer-indicator: var(--white-90);
+    --layer-banner: #34364c;
+    /*
+        链接 - link
+    */
+    --link: var(--primary-500-Base);
+    --link-weak: var(--primary-600S);
+    --link-hover: var(--primary-700S);
+    --link-disabled: var(--primary-800S);
+    --skeleton-default: var(--white-8);
+    --skeleton-weak: var(--white-4);
+    /*
+        文字 - text
+    */
+    --text-primary: var(--primary-400T);
+    --text-primary-weak: var(--primary-300T);
+    --text-primary-active: var(--white-90);
+    --text: var(--white-90);
+    --text-banner: var(--black);
+    --text-horizontal: var(--white-50);
+    --text-weak: var(--white-70);
+    --text-subtle: var(--white-50);
+    --text-subtle-weak: var(--white-40);
+    --text-disabled: var(--white-20);
+    --text-placeholder: var(--white-20);
+    --text-inverse: var(--white);
+    --text-inverse-disable: var(--white-30);
+    --text-inverse-weak: var(--white-50);
+    --text-white-weak: var(--white);
+    --text-success: var(--success-500-Base);
+    --text-warning: var(--warning-500-Base);
+    --text-error: var(--error-500-Base);
+    --text-tag: var(--tertiary-600S);
+    --text-vip: rgba(#ebd3a8, 0.8);
+    --text-inverse-table: var(--white-90);
+    --text-inverse-table-weak: var(--white-40);
+}

@@ -1,6 +1,4 @@
-@import '~@sky/styles/themeUnit/themeSkin/index.scss';
 
-@import '~@sky/styles/platform/index.scss';
 
 
 // 清除浮动影响
@@ -28,9 +26,85 @@
     -webkit-box-orient: vertical;// 垂直
 }
 // 盒子或文字，水平居中和垂直居中
-@mixin horizontal-and-vertical-center() {
+@mixin horizontal-and-vertical-center1() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@mixin horizontal-and-vertical-center2($width, $height) {
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin horizontal-and-vertical-center3($width, $height) {
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: calc($height / -2) 0px 0px calc($width / -2);
+}
+
+@mixin btn-opacity-hover() {
+    opacity: 0.6;
+}
+
+// ----------------------------------------------------------
+
+// bd
+@mixin platform-bd() {
+    @if $platform =='bd' {
+        @content;
+    }
+}
+
+// tb
+@mixin platform-tb() {
+    @if $platform =='tb' {
+        @content;
+    }
+}
+
+
+// 白天主题
+@mixin theme-light() {
+    [data-theme='light'] & {
+        // 编译后：html > ***
+        @content;
+    }
+}
+
+// 黑夜主题
+@mixin theme-night() {
+    [data-theme='night'] & {
+        @content;
+    }
+}
+
+// 马卡龙主题
+@mixin theme-macaron() {
+    [data-theme='macaron'] & {
+        @content;
+    }
+}
+
+// 竖屏模式
+@mixin screen-vertical() {
+    :global([data-screen='vertical']) & {
+      @content;
+    }
+}
+
+// 横屏模式
+@mixin screen-horizontal() {
+    :global([data-screen='horizontal']) & {
+      @content;
+    }
+}
+
+
+
 

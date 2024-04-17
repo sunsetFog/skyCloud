@@ -1,0 +1,132 @@
+:root.light{
+    /*
+        背景色 backgroud
+    */
+    --background: var(--white);
+    --background-950: var(--white);
+    --background-white: var(--white);
+    --background_skin: var(--white);
+    --background-subpage: var(--secondary-50T);
+    --background-secondary10: var(--secondary-10T);
+    --background-secondary50: var(--secondary-50T);
+    /*
+        描边 border
+    */
+    --border-divide: var(--secondary-200T);
+    --border-divide-alt: var(--secondary-100T);
+    --border-primary: var(--primary-500-Base);
+    --border-primary-weak: var(--primary-100T);
+    --border-inverse: var(--white);
+    --border-disable: var(--secondary-100T);
+    --border-selection: var(--success-500-Base);
+    --border-separator: var(--secondary-100T);
+    --border-separator-alt: var(--secondary-200T);
+    --border-dvide-alt: var(--secondary-100T);
+    --border-success: var(--success-500-Base);
+    --border-error: var(--error-500-Base);
+    --border-warning: var(--warning-500-Base);
+    --border-selection-sec: var(--black);
+    /*
+        图标 - Icon
+    */
+    --icon-primary: var(--primary-500-Base);
+    --icon-primary-weak: var(--primary-300T);
+    --icon: var(--black);
+    --icon-weak: var(--secondary-500-Base);
+    --icon-subtle: var(--secondary-500-Base);
+    --icon-subtle-weak: var(--secondary-400T);
+    --icon-secondary950: var(--secondary-950S);
+    --icon-secondary800: var(--secondary-800S);
+    --icon-secondary900: var(--secondary-900S);
+    --icon-disable: var(--secondary-200T);
+    --icon-inverse: var(--white);
+    --icon-success: var(--success-500-Base);
+    --icon-error: var(--error-500-Base);
+    --icon-warning: var(--warning-500-Base);
+    --icon-primary-active: var(--primary-600S);
+    /*
+        图层色 - Layer
+    */
+    --layer: var(--white);
+    --layer-black: var(--black);
+    --layer-alt: var(--secondary-10T);
+    --layer-alt-weak: var(--secondary-50T);
+    --layer-white: var(--white);
+    --layer-primary: var(--primary-500-Base);
+    --layer-primary-disable: var(--primary-100T);
+    --layer-primary-active: var(--primary-600S);
+    --layer-inverse: var(--white-30);
+    --layer-primary10: var(--primary-10T);
+    --layer-secondary10: var(--secondary-10T);
+    --layer-input: var(--secondary-10T);
+    --layer-input-disable: var(--white);
+    --layer-toggle: var(--secondary-100T);
+    --layer-toggle-weak: var(--secondary-50T);
+    --layer-toggle-selected: var(--white);
+    --layer-secondary50: var(--secondary-50T);
+    --layer-secondary100: var(--secondary-100T);
+    --layer-secondary500: var(--secondary-500-Base);
+    --layer-primary50: var(--primary-50T);
+    --layer-primary100: var(--primary-100T);
+    --layer-primary200: var(--primary-200T);
+    --layer-secondary600: var(--secondary-600S);
+    --layer-button: var(--secondary-800S);
+    --layer-button-primay: var(--primary-500-Base);
+    --layer-button-weak: var(--secondary-500-Base);
+    --layer-button-primay-weak: var(--primary-400T);
+    --layer-selection-sec: var(--black);
+    --layer-active: var(--primary-100T);
+    --layer-bubble-sender: var(--white);
+    --layer-bubble-recipient: var(--primary-500-Base);
+    --layer-popup: var(--white);
+    --layer-popup-alt: var(--secondary-10T);
+    --layer-warning-weak: var(--warning-100T);
+    --layer-warning: var(--warning-500-Base);
+    --layer-success: var(--success-500-Base);
+    --layer-success-weak: var(--success-100T);
+    --layer-error: var(--error-500-Base);
+    --layer-error-weak: var(--error-100T);
+    --layer-tabbar: var(--secondary-10T);
+    --layer-tag: var(--secondary-800S);
+    --layer-itembg: var(--secondary-900S);
+    --layer-tag-weak: var(--white-30);
+    --layer-navgtion: var(--white);
+    --layer-navgtion-weak: var(--white-8);
+    --layer-navgtion-alt: var(--black);
+    --layer-indicator: var(--white-90);
+    --layer-banner: #34364c;
+    /*
+        链接 - link
+    */
+    --link: var(--primary-500-Base);
+    --link-weak: var(--primary-600S);
+    --link-hover: var(--primary-700S);
+    --link-disabled: var(--primary-200T);
+    --skeleton-default: var(--secondary-100T);
+    --skeleton-weak: var(--secondary-50T);
+    /*
+        文字 - text
+    */
+    --text-primary: var(--primary-500-Base);
+    --text-primary-weak: var(--primary-300T);
+    --text-primary-active: var(--primary-600S);
+    --text: var(--black);
+    --text-banner: var(--black);
+    --text-horizontal: var(--black);
+    --text-weak: var(--secondary-600S);
+    --text-subtle: var(--secondary-500-Base);
+    --text-subtle-weak: var(--secondary-400T);
+    --text-disabled: var(--secondary-300T);
+    --text-placeholder: var(--secondary-200T);
+    --text-inverse: var(--white);
+    --text-inverse-disable: var(--white);
+    --text-inverse-weak: var(--white-50);
+    --text-white-weak: var(--white-50);
+    --text-success: var(--success-500-Base);
+    --text-warning: var(--warning-500-Base);
+    --text-error: var(--error-500-Base);
+    --text-tag: var(--tertiary-500-Base);
+    --text-vip: var(--tertiary-300T);
+    --text-inverse-table: var(--white-90);
+    --text-inverse-table-weak: var(--white-40);
+}
