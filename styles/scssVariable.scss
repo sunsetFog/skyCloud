@@ -51,6 +51,41 @@
 @mixin btn-opacity-hover() {
     opacity: 0.6;
 }
+// 三张图的背景，中间图y重复，为了盒子内容延伸
+@mixin card-bg() {
+    $top-height: 20px;
+    $bottom-height: 20px;
+    position: relative;
+    z-index: 2;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% $top-height, 100% $bottom-height;
+    background-position: left top, left bottom;
+    @include theme-light() {
+        background-image: url('./img/middle1.png'), url('./img/middle3.png');
+    }
+    @include theme-night() {
+        background-image: url('./img/middle1_night.png'), url('./img/middle3_night.png');
+    }
+    &::before {
+        width: 100%;
+        position: absolute;
+        top: $top-height;
+        right: 0;
+        bottom: $bottom-height;
+        left: 0;
+        z-index: 1;
+        content: '';
+        background-repeat: repeat-y;
+        background-position: top left;
+        background-size: 100% auto;
+        @include theme-light() {
+            background-image: url('./img/middle2.png');
+        }
+        @include theme-night() {
+            background-image: url('./img/middle2_night.png');
+        }
+    }
+}
 
 // ----------------------------------------------------------
 
