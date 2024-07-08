@@ -71,6 +71,7 @@ copyWay1('./tsconfig.json', './packages/rafaelAdmin/tsconfig.json');
 copyWay1('./tsconfig.json', './packages/rafaelClientWeb/tsconfig.json');
 copyWay1('./tsconfig.json', './packages/rafaelClientApp/tsconfig.json');
 copyWay1('./tsconfig.json', './packages/ivoryAdmin/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/ivoryClientH5/tsconfig.json');
 
 copyWay1('./.stylelintignore', './packages/rafaelAdmin/.stylelintignore');
 copyWay1('./.stylelintignore', './packages/rafaelClientWeb/.stylelintignore');
@@ -91,6 +92,7 @@ copyWay1('./.eslintignore', './packages/rafaelAdmin/.eslintignore');
 copyWay1('./.eslintignore', './packages/rafaelClientWeb/.eslintignore');
 copyWay1('./.eslintignore', './packages/rafaelClientApp/.eslintignore');
 copyWay1('./.eslintignore', './packages/ivoryAdmin/.eslintignore');
+copyWay1('./.eslintignore', './packages/ivoryClientH5/.eslintignore');
 
 copyWay1('./.eslintrc.js', './packages/rafaelAdmin/.eslintrc.js');
 copyWay1('./.eslintrc.js', './packages/rafaelClientWeb/.eslintrc.js');
@@ -109,6 +111,7 @@ copyWay1('./postcss.config.js', './packages/rafaelClientApp/postcss.config.js');
 // copyWay2('./docker', './packages/rafaelClientApp/docker');
 
 copyWay2('./ivoryDesign', './packages/ivoryAdmin/src/@energy/ivoryDesign');
+copyWay2('./ivoryDesign', './packages/ivoryClientH5/src/@energy/ivoryDesign');
 copyWay2('./styles', './packages/ivoryAdmin/src/@energy/styles');
 copyWay2('./styles', './packages/ivoryClientH5/src/@energy/styles');
 copyWay2('./styles', './packages/ivoryClientWeb/src/@energy/styles');

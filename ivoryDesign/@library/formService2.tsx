@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 import React, {Component, createRef} from 'react';
 // 不能引入状态管理
 

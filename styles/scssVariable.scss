@@ -76,7 +76,7 @@
         z-index: 1;
         content: '';
         background-repeat: repeat-y;
-        background-position: top left;
+        background-position: center top;
         background-size: 100% auto;
         @include theme-light() {
             background-image: url('./img/middle2.png');
