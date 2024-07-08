@@ -1,0 +1,78 @@
+// 新的公共色卡
+$secondary-10: #f8f8f7;
+$secondary-50: #f1f1f3;
+$secondary-100: #e3e4e6;
+$secondary-200: #c8c9ce;
+$secondary-300: #acaeb5;
+$secondary-400: #91939d;
+$secondary-500: #757884;
+$secondary-600: #5e606a;
+$secondary-700: #46484f;
+$secondary-800: #2f3035;
+$secondary-900: #17181a;
+$secondary-950: #0c0c0d;
+
+$success-50: #ecf3eb;
+$success-100: #d9e7d6;
+$success-200: #b3cfad;
+$success-300: #8db785;
+$success-400: #679f5c;
+$success-500: #418733;
+$success-600: #346c29;
+$success-700: #27511f;
+$success-800: #1a3614;
+$success-900: #0d1b0a;
+
+$warning-50: #fdf7ed;
+$warning-100: #fbefdb;
+$warning-200: #f7dfb7;
+$warning-300: #f4ce92;
+$warning-400: #f0be6e;
+$warning-500: #bd8b3b;
+$warning-600: #8e682c;
+$warning-700: #5e461e;
+$warning-800: #2f230f;
+$warning-900: #181107;
+
+$error-50: #faedef;
+$error-100: #f6dade;
+$error-200: #ecb6bd;
+$error-300: #e3919d;
+$error-400: #d96d7c;
+$error-500: #d0485b;
+$error-600: #a63a49;
+$error-700: #7d2b37;
+$error-800: #531d24;
+$error-900: #2a0e12;
+
+$grey-50: #fbfbfb;
+$grey-100: #f2f2f2;
+$grey-200: #eaeaea;
+$grey-300: #d9d9d9;
+$grey-400: #afafaf;
+$grey-500: #8d8d8d;
+$grey-600: #626262;
+$grey-700: #4e4e4e;
+$grey-800: #333;
+$grey-900: #262626;
+$grey-950: #191919;
+
+$white: #fff;
+$white-90: rgb(255 255 255 / 90%);
+$white-80: rgb(255 255 255 / 80%);
+$white-70: rgb(255 255 255 / 70%);
+$white-60: rgb(255 255 255 / 60%);
+$white-50: rgb(255 255 255 / 50%);
+$white-40: rgb(255 255 255 / 40%);
+$white-30: rgb(255 255 255 / 30%);
+$white-20: rgb(255 255 255 / 20%);
+$white-10: rgb(255 255 255 / 10%);
+$white-8: rgb(255 255 255 / 8%);
+$white-5: rgb(255 255 255 / 5%);
+$white-4: rgb(255 255 255 / 4%);
+$white-2: rgb(255 255 255 / 2%);
+$color-default: $secondary-600; // 常规默认颜色
+$color-scene: $secondary-300; // 情景色 - 常用于次要链接、按钮
+$color-scene-minor: $secondary-500; // 情景色 - 常用于次要文字
+$color-mask: rgb(0 0 0 / 60%); // 弹窗遮罩背景颜色
+$color-placeholder: $secondary-300;

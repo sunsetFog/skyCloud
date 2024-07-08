@@ -1,0 +1,108 @@
+:root {
+    /* primary */
+    --primary-10T: #f2f9ff;
+    --primary-50T: #e9f5ff;
+    --primary-100T: #bde1fe;
+    --primary-200T: #91cefe;
+    --primary-300T: #66bafd;
+    --primary-400T: #3aa6fc;
+    --primary-500-Base: #249cfc;
+    --primary-600S: #208ce3;
+    --primary-700S: #196db0;
+    --primary-800S: #124e7e;
+    --primary-900S: #0b2f4c;
+    --primary-950S: #041019;
+    /* secondary */
+    --secondary-10T: #f5f6f8;
+    --secondary-50T: #ecedf1;
+    --secondary-100T: #c5cad6;
+    --secondary-200T: #9fa7ba;
+    --secondary-300T: #79849e;
+    --secondary-400T: #657391;
+    --secondary-500-Base: #3f5075;
+    --secondary-600S: #32405e;
+    --secondary-700S: #2c3852;
+    --secondary-800S: #20283b;
+    --secondary-900S: #131823;
+    --secondary-950S: #0d1017;
+    /* tertiary */
+    --tertiary-10T: #f2f6fb;
+    --tertiary-50T: #e7eef6;
+    --tertiary-100T: #cfd9f9;
+    --tertiary-200T: #acbbfc;
+    --tertiary-300T: #90a3ff;
+    --tertiary-400T: #768dfc;
+    --tertiary-500-Base: #6079f9;
+    --tertiary-600S: #5469d9;
+    --tertiary-700S: #4355b1;
+    --tertiary-800S: #374693;
+    --tertiary-900S: #242e64;
+    --tertiary-950S: #0f1532;
+    /* success */
+    --success-10T: #f4fbf7;
+    --success-50T: #edf8f1;
+    --success-100T: #daf1e4;
+    --success-200T: #b6e4c9;
+    --success-300T: #91d6ae;
+    --success-400T: #6dc993;
+    --success-500-Base: #48bb78;
+    --success-600S: #3a9660;
+    --success-700S: #2b7048;
+    --success-800S: #1d4b30;
+    --success-900S: #163824;
+    --success-950S: #0e2518;
+    /* warning */
+    --warning-10T: #fef8f3;
+    --warning-50T: #fdf3eb;
+    --warning-100T: #fbe7d7;
+    --warning-200T: #f8d0af;
+    --warning-300T: #f4b886;
+    --warning-400T: #f1a15e;
+    --warning-500-Base: #ed8936;
+    --warning-600S: #be6e2b;
+    --warning-700S: #8e5220;
+    --warning-800S: #5f3716;
+    --warning-900S: #472910;
+    --warning-950S: #2f1b0b;
+    /* error */
+    --error-10T: #fef6f6;
+    --error-50T: #fef0f0;
+    --error-100T: #fde0e0;
+    --error-200T: #fbc1c1;
+    --error-300T: #f9a3a3;
+    --error-400T: #f78484;
+    --error-500-Base: #f56565;
+    --error-600S: #c45151;
+    --error-700S: #933d3d;
+    --error-800S: #622828;
+    --error-900S: #4a1e1e;
+    --error-950S: #311414;
+    /* grey */
+    --grey-50: #fbfbfb;
+    --grey-100: #f2f2f2;
+    --grey-200: #eaeaea;
+    --grey-300: #d9d9d9;
+    --grey-400: #afafaf;
+    --grey-500: #8d8d8d;
+    --grey-600: #626262;
+    --grey-700: #4e4e4e;
+    --grey-800: #333;
+    --grey-900: #262626;
+    --grey-950: #191919;
+    --black: #121212;
+    --white: #fff;
+    --white-90: #ffffffe5;
+    --white-80: #fffc;
+    --white-70: #ffffffb2;
+    --white-60: #fff9;
+    --white-50: #ffffff80;
+    --white-40: #fff6;
+    --white-30: #ffffff4d;
+    --white-20: #fff3;
+    --white-10: rgb(255 255 255 / 10%);
+    --white-8: #ffffff14;
+    --white-6: rgb(255 255 255 / 6%);
+    --white-5: rgb(255 255 255 / 5%);
+    --white-4: #ffffff0a;
+    --white-2: #ffffff05;
+}
