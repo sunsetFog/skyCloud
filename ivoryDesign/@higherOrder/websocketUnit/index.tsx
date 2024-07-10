@@ -22,7 +22,7 @@ function websocketUnit(Component: any) {
             // https对应wss，http对应ws
             isSSL = isSSL ? 'wss' : 'ws';
             // 域名
-            let domain = 'goapi.fgry45iy.com';
+            let domain = 'websocket.fgry45iy.com';
             let urlss =  `${isSSL}://${domain}/stream/ws/v2/handshakewt?${queryString}`;
             console.log('--webSocket-url--', urlss);
 
@@ -30,15 +30,16 @@ function websocketUnit(Component: any) {
 
                 // 如果已经创建应用现有实例
 
-                urlss = 'ws://goapi.fgry45iy.com/stream/ws/v2/handshakewt?wsToken=5169e4ee00b09fc8a3592e87fb2b5641865e1cecfa16223c662e0f349e8ba4f08b0e3d0ac4efb39ce3c44268357ab223606d78fe1f377c4357dac8eef2a0efa94340367d4a915e385a1ea2326c339cd55492c836cadab2369890d5bea282b9f08d935e95759c41024287c4bafd193af0&clientType=h5&version=2';
+                urlss = 'ws://websocket.fgry45iy.com/stream/ws/v2/handshakewt?wsToken=b6efc91399925e3a8ce8a6339c2da09d4550f2202d0ea985103c775a020f11a46b1041425480361160ec6db0c02241887e3ac6ff0e4083447de58674f240248cc738bfaaf7169b92567a9b2538b40a8c6146c240698c9120b7b5361323e48dce1e5a3bf4655d64422c79603185d5f21f&clientType=web&version=2';
 
                 if (!instantiate) {
                     instantiate = new WebSocket(urlss);
                 }
+                // 处理连接事件
                 instantiate.onopen = () => {
                     console.info('websocket onopen 已连接');
                 };
-
+                // 接收消息
                 instantiate.onmessage = (event) => {
 
                     if (!event || !event?.data) {
@@ -47,10 +48,12 @@ function websocketUnit(Component: any) {
                     // @ts-ignore
                     const body = formatMessage(event?.data)[0]?.body;
                     console.log('--webSocket-onmessage--', body);
+                    // 用于store存储数据
                     if (!body) {
                         return;
                     }
                 };
+                // 关闭连接
                 instantiate.onclose = (event) => {
                     console.log('--webSocket-onclose--', event?.data);
                     if (event.code !== 4000) {
@@ -58,6 +61,7 @@ function websocketUnit(Component: any) {
                         reject(new Error('websocket连接关闭'));
                     }
                 };
+                // 处理错误
                 instantiate.onerror = (err) => {
                     console.error('websocket onerror 未连接');
                     reject(err);
@@ -70,7 +74,9 @@ function websocketUnit(Component: any) {
 
         // 发送信息
         function onSendMsg(msg: any) {
-            instantiate?.send(msg);
+            if (instantiate.readyState === WebSocket.OPEN) {
+                instantiate?.send(msg);
+            }
         }
         // 清理socket
         function clearSocket() {
