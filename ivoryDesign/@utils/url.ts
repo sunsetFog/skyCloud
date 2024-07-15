@@ -29,6 +29,10 @@ export const urlStrToObj = (str) => {
 
 window.location.search 返回当前页面的 URL 查询字符串部分，例如 ?token=abc123&user=John
 */
-export const urlParams = (key) => {
-    return new URLSearchParams(window.location.search).get(key);
+export const urlParams1 = (key) => {
+    return new URLSearchParams(window?.location?.search).get(key);
+};
+
+export const urlParams2 = (key) => {
+    return new URL(location?.href).searchParams.get(key);
 };
