@@ -1,3 +1,4 @@
+// 文件没使用，似乎不需要
 export class ResponseError extends Error {
     // @ts-ignore
     private code: string | number;

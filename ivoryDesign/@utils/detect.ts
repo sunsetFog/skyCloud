@@ -1,3 +1,4 @@
+// 判断是否浏览器
 export function isBrowser() {
   try {
     return 'location' in window;
