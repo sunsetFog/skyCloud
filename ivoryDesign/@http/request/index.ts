@@ -1,8 +1,8 @@
 import {AjaxCancelError, BusinessError, ConnectionError, trimEnd, trimStart} from 'sunny-js';
 import {errorHandler, replaceErrorMessage} from './errorHandler';
-import {isBrowser} from '@/utils/detect';
-import {replaceTextByPairs} from '@/utils/string';
-import {Events} from '@/utils/eventProxy';
+import {isBrowser} from '@/@energy/ivoryDesign/@utils/detect';
+import {replaceTextByPairs} from '@/@energy/ivoryDesign/@utils/string';
+import {Events} from '@/@energy/ivoryDesign/@utils/eventProxy';
 import {sharedHeaders} from './sharedHeaders';
 // import Toast from '@/components/toast';
 export interface ResponseData<TData = any> {

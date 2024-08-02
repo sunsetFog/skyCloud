@@ -1,5 +1,5 @@
-import { getSessionUserId } from '@/utils/helpers';
-import { getUUID } from '@/utils/fingerprint';
+import { getSessionUserId } from '@/@energy/ivoryDesign/@utils/helpers';
+import { getUUID } from '@/@energy/ivoryDesign/@utils/fingerprint';
 
 export function sharedHeaders(
     path: string,

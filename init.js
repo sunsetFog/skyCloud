@@ -112,6 +112,7 @@ copyWay1('./postcss.config.js', './packages/rafaelClientApp/postcss.config.js');
 
 copyWay2('./ivoryDesign', './packages/ivoryAdmin/src/@energy/ivoryDesign');
 copyWay2('./ivoryDesign', './packages/ivoryClientH5/src/@energy/ivoryDesign');
+copyWay2('./ivoryDesign', './packages/ivoryClientWeb/src/@energy/ivoryDesign');
 copyWay2('./styles', './packages/ivoryAdmin/src/@energy/styles');
 copyWay2('./styles', './packages/ivoryClientH5/src/@energy/styles');
 copyWay2('./styles', './packages/ivoryClientWeb/src/@energy/styles');

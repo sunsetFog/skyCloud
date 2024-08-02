@@ -1,5 +1,5 @@
 import { DOMEvent } from 'sunny-js';
-import { isBrowser } from '@/utils/detect';
+import { isBrowser } from '@/@energy/ivoryDesign/@utils/detect';
 
 export function errorHandler(error: Error) {
   if ('code' in error && isBrowser()) {

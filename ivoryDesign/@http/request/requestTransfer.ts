@@ -2,9 +2,9 @@ import AES from 'crypto-js/aes';
 import enc_utf8 from 'crypto-js/enc-utf8';
 import pkcs7 from 'crypto-js/pad-pkcs7';
 import HmacSHA256 from 'crypto-js/hmac-sha256';
-import { getSessionUserId } from '@/utils/helpers';
-import { getUUID } from '@/utils/fingerprint';
-import { LocalGuestToken } from '@/utils/utils_token';
+import { getSessionUserId } from '@/@energy/ivoryDesign/@utils/helpers';
+import { getUUID } from '@/@energy/ivoryDesign/@utils/fingerprint';
+import { LocalGuestToken } from '@/@energy/ivoryDesign/@utils/utils_token';
 
 export function getVisitHeaders(): any {
     const userToken = LocalGuestToken.getToken();

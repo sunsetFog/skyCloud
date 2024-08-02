@@ -36,3 +36,24 @@ export const urlParams1 = (key) => {
 export const urlParams2 = (key) => {
     return new URL(location?.href).searchParams.get(key);
 };
+
+/*
+获取url所有参数
+*/
+export function getUrlParam(): any {
+    const url = decodeURI(window.location.href);
+    const thisParam = new Object();
+    // 判断是否存在请求的参数
+    if (url.indexOf('?') !== -1) {
+        const str = url.split('?')[1];
+        // 截取所有请求的参数，以数组方式保存
+        const strs = str.split('&');
+        for (let i = 0; i < strs.length; i++) {
+            // 获取该参数名称，值。其中值以unescape()方法解码，有些参数会加密
+            // @ts-ignore
+            thisParam[strs[i].split('=')[0]] = strs[i].split('=')[1];
+        }
+    }
+
+    return thisParam;
+}
