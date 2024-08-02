@@ -1,7 +1,7 @@
 import { DOMEvent } from 'sunny-js';
 import { isBrowser } from '@/@energy/ivoryDesign/@utils/detect';
 
-// 监听异常
+// 监听异常，事件发布与订阅
 export function errorHandler(error: Error) {
   if ('code' in error && isBrowser()) {
     DOMEvent.trigger(`${error.constructor.name}/code/${(error as any).code}`, error);

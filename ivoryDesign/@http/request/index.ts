@@ -4,12 +4,10 @@ https://sunnylabs.github.io/sunny.js/
 提供了一套简单直观的 API
 简单易用的同时,也提供了丰富的功能特性和出色的性能表现
 */
-import {AjaxCancelError, BusinessError, ConnectionError, trimEnd, trimStart} from 'sunny-js';
-import {errorHandler, replaceErrorMessage} from './errorHandler';
-import {isBrowser} from '@/@energy/ivoryDesign/@utils/detect';
-import {replaceTextByPairs} from '@/@energy/ivoryDesign/@utils/string';
-import {sharedHeaders} from './sharedHeaders';
-// import Toast from '@/components/toast';
+import { AjaxCancelError, BusinessError, ConnectionError, trimEnd, trimStart } from 'sunny-js';
+import { errorHandler, replaceErrorMessage } from './error/errorHandler';
+import { isBrowser } from '@/@energy/ivoryDesign/@utils/detect';
+import { sharedHeaders } from './sharedHeaders';
 
 
 // 域名与url拼接
@@ -24,7 +22,7 @@ function withBaseUrl(url: string): string {
             trimEnd(isBrowser() ? '' : process.env.REACT_APP_API_BASE_URL, separator),
             separator,
             // 清除首部空格
-            trimStart(url, separator)
+            trimStart(url, separator),
         ].join('');
     }
 }
@@ -53,40 +51,33 @@ interface RequestInit {
 type FetchOptions = {
     url: string;
     timeout?: number;
+    signal?: any;
+    blob?: boolean;
     // 重连次数
     reconnectCount?: number;
-    replaceTextFun?: (text: string, replacementPairs: Array<string[]>) => any;
-    noToast?: boolean;
-    _res?: boolean;
-    signal?: any;
-    noTextReplace?: boolean;
-    blob?: boolean;
-    withCredentials?: boolean;
-    wType?: number;
-    needVisitToken?: boolean;
 } & RequestInit;
 // 参数选项
 export async function normalizeFetchOptions(params: FetchOptions): Promise<FetchOptions> {
-    let _url: string;
     let _params: RequestInit;
-    let {url, ...rest} = params;
+    let { url, ...rest } = params;
     // 处理headers
     if (rest.headers instanceof Headers) {
         const customHeaders = {} as Record<string, any>;
         rest.headers.forEach((v, k) => (customHeaders[k] = v));
-        rest.headers = Object.assign(await sharedHeaders(url, params?.blob, params?.needVisitToken), customHeaders);
+        // 浅拷贝
+        rest.headers = Object.assign(await sharedHeaders(params?.blob), customHeaders);
     } else {
-        rest.headers = Object.assign(await sharedHeaders(url, params?.blob, params?.needVisitToken), rest.headers);
+        rest.headers = Object.assign(await sharedHeaders(params?.blob), rest.headers);
     }
-    _url = withBaseUrl(url);
-    _params = {...rest};
+    _params = { ...rest };
 
     return {
-        url: _url,
-        ..._params
+        // 处理url
+        url: withBaseUrl(url),
+        ..._params,
     };
 }
-
+// 成功的数据类型
 export interface ResponseData<TData = any> {
     status_code: number;
     code: number | string;
@@ -102,14 +93,9 @@ TResponse是泛型
 在 JavaScript 中,fetch 是一个内置的全局函数,不需要进行任何导入或引用就可以直接使用。
  */
 export async function fetchProxy<TResponse = Response | ResponseData>(
-    params: FetchOptions
+    params: FetchOptions,
 ): Promise<TResponse> {
-    let {
-        url: _url,
-        replaceTextFun = replaceTextByPairs,
-        noTextReplace,
-        ..._params
-    } = await normalizeFetchOptions(params);
+    let { url: _url, ...rest } = await normalizeFetchOptions(params);
     // 请求超时处理
     let timeout = 20000;
     let isTimeout = false;
@@ -124,34 +110,38 @@ export async function fetchProxy<TResponse = Response | ResponseData>(
         // 取消异步
         controller.abort();
     }, timeout);
-    _params.signal = _params.signal || controller.signal;
-    _params.noToast = _params.noToast || false;
+    rest.signal = rest.signal || controller.signal;
 
-    // end
-
-    // console.debug('request', _url, { ..._params });
-    //_params 添加 _res 参数自定义处理返回逻辑
-    // const _res = _params?._res;
-    // delete _params?._res;
-    return fetch(_url, _params)
+    return fetch(_url, rest)
         .then<any>((response: Response) => {
+            // console.log("fetch的response", response);
             // 替换报错信息
             if (!response?.ok) {
                 throw new ConnectionError({
                     status: response?.status,
-                    message: replaceErrorMessage(response?.statusText)
+                    message: replaceErrorMessage(response?.statusText),
                 });
             }
-            // 接口catch回调
-            // return Promise.reject(new BusinessError(*, *, *));
-            // 接口then回调
+
+            let parsedResponse: Promise<ResponseData>;
+            try {
+                parsedResponse = response.text().then((text) => JSON.parse(text));
+            } catch (e) {
+                parsedResponse = response.json();
+            }
+            return parsedResponse.then((data: ResponseData) => {
+                return data;
+                // 接口catch回调
+                // return Promise.reject(new BusinessError(code, message, data));
+            });
+            // 接口then回调，这似乎不需要
             return Promise.resolve(response);
         })
         .catch((error) => {
             // 处理异常
             if (error.name && error.name.toLowerCase().includes('abort')) {
                 error = isTimeout
-                    ? new ConnectionError({status: 0, message: 'timeout'}) // 超时异常
+                    ? new ConnectionError({ status: 0, message: 'timeout' }) // 超时异常
                     : new AjaxCancelError(); // 请求被取消异常
             }
             let isNeedReplace = false;
@@ -194,19 +184,19 @@ function urlEncrypt(url: string, options: any) {
 
 export function get<TResponse>(url: string, options: Omit<FetchOptions, 'url'> = {}) {
     const _url: string = urlEncrypt(url, options);
-    return fetchProxy<TResponse>({url: _url, ...options, method: 'get'});
+    return fetchProxy<TResponse>({ url: _url, ...options, method: 'get' });
 }
 
 export function post<TResponse>(url: string, options: Omit<FetchOptions, 'url'> = {}) {
-    return fetchProxy<TResponse>({url, ...options, method: 'post'});
+    return fetchProxy<TResponse>({ url, ...options, method: 'post' });
 }
 
 export function put<TResponse>(url: string, options: Omit<FetchOptions, 'url'> = {}) {
-    return fetchProxy<TResponse>({url, ...options, method: 'put'});
+    return fetchProxy<TResponse>({ url, ...options, method: 'put' });
 }
 
 export function del<TResponse>(url: string, options: Omit<FetchOptions, 'url'> = {}) {
-    return fetchProxy<TResponse>({url, ...options, method: 'delete'});
+    return fetchProxy<TResponse>({ url, ...options, method: 'delete' });
 }
 
 /**
