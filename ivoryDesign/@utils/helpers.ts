@@ -1,5 +1,5 @@
-import {isBrowser} from '@/@energy/ivoryDesign/@utils/detect';
-import {LocalUserToken} from '@/@energy/ivoryDesign/@utils/utils_token';
+import {isBrowser} from '@/@energy/ivoryDesign/@utils/phone/app';
+
 
 export const _tokenFromURL = isBrowser() && new URLSearchParams(window.location.search).get('token');
 
@@ -53,16 +53,7 @@ export function getSessionUserId() {
     return userInfoSession?.id || null;
 }
 
-/**
- * 判断用户是否登录
- */
-export const isLogin = () => {
-    return LocalUserToken.getToken();
-};
 
-export const token = () => {
-    return _tokenFromURL || LocalUserToken.getToken();
-};
 
 // 保留两位小数，不足两位自动补0
 export function dealNum(val: any) {

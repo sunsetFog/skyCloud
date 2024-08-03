@@ -6,7 +6,7 @@ https://sunnylabs.github.io/sunny.js/
 */
 import { AjaxCancelError, BusinessError, ConnectionError, trimEnd, trimStart } from 'sunny-js';
 import { errorHandler, replaceErrorMessage } from './error/errorHandler';
-import { isBrowser } from '@/@energy/ivoryDesign/@utils/detect';
+import { isBrowser } from '@/@energy/ivoryDesign/@utils/phone/app';
 import { sharedHeaders } from './sharedHeaders';
 
 

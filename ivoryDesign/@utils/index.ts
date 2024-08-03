@@ -1,7 +1,5 @@
 import {getUrlParam} from '@/@energy/ivoryDesign/@utils/url';
-import {getIsApp} from '@/@energy/ivoryDesign/@utils/hybrid';
-import {isAndroid} from '@/@energy/ivoryDesign/@utils/device';
-import {isBrowser} from '@/@energy/ivoryDesign/@utils/detect';
+import {isBrowser, getIsApp, isAndroid} from '@/@energy/ivoryDesign/@utils/phone/app';
 
 /**
  * 解构react的className数组

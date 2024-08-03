@@ -50,7 +50,7 @@ export function decrypt(text = 'mt5SeCFnzcpyoC/MniOI4mrIRgES12czcghsjt9ILQ0=') {
 /*
 获取签名
 
-import { encrypt } from '@/@energy/ivoryDesign/@utils/encryptionAndDecrypt';
+import { encrypt, decrypt } from '@/@energy/ivoryDesign/@utils/security/encryptAndDecrypt';
 接口传参，手机号加密
 encrypt(phone, 'finance')
 
