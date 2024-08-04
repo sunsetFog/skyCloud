@@ -56,6 +56,8 @@ copyWay1('./.gitignore', './packages/rafaelAdmin/.gitignore');
 copyWay1('./.gitignore', './packages/rafaelClientWeb/.gitignore');
 copyWay1('./.gitignore', './packages/rafaelClientApp/.gitignore');
 copyWay1('./.gitignore', './packages/ivoryAdmin/.gitignore');
+copyWay1('./.gitignore', './packages/ivoryClientH5/.gitignore');
+copyWay1('./.gitignore', './packages/ivoryClientWeb/.gitignore');
 
 copyWay1('./.editorconfig', './packages/rafaelAdmin/.editorconfig');
 copyWay1('./.editorconfig', './packages/rafaelClientWeb/.editorconfig');
