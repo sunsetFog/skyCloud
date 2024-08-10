@@ -122,3 +122,5 @@ copyWay2('./styles', './packages/ivoryClientWeb/src/@energy/styles');
 copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelAdmin/public/favicon.ico');
 copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelClientWeb/public/favicon.ico');
 copyWay1('./rafaelDesign/static/favicon.ico', './packages/rafaelClientApp/public/favicon.ico');
+
+copyWay2('./image', './packages/ivoryClientH5/src/@energy/image');

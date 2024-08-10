@@ -51,7 +51,13 @@
 @mixin btn-opacity-hover() {
     opacity: 0.6;
 }
-// 三张图的背景，中间图y重复，为了盒子内容延伸
+/*
+三张图的背景，中间图y重复，为了盒子内容延伸
+
+子盒子要加
+position: relative;
+z-index: 2;
+*/
 @mixin card-bg() {
     $top-height: 20px;
     $bottom-height: 20px;
@@ -61,10 +67,10 @@
     background-size: 100% $top-height, 100% $bottom-height;
     background-position: left top, left bottom;
     @include theme-light() {
-        background-image: url('./img/middle1.png'), url('./img/middle3.png');
+        background-image: url('@/@energy/image/3bg/1/middle1.png'), url('@/@energy/image/3bg/1/middle3.png');
     }
     @include theme-night() {
-        background-image: url('./img/middle1_night.png'), url('./img/middle3_night.png');
+        background-image: url('@/@energy/image/3bg/1/middle1_night.png'), url('@/@energy/image/3bg/1/middle3_night.png');
     }
     &::before {
         width: 100%;
@@ -79,10 +85,10 @@
         background-position: center top;
         background-size: 100% auto;
         @include theme-light() {
-            background-image: url('./img/middle2.png');
+            background-image: url('@/@energy/image/3bg/1/middle2.png');
         }
         @include theme-night() {
-            background-image: url('./img/middle2_night.png');
+            background-image: url('@/@energy/image/3bg/1/middle2_night.png');
         }
     }
 }
