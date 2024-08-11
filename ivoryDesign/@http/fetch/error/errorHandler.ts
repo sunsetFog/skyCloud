@@ -1,5 +1,6 @@
 import { DOMEvent } from 'sunny-js';
-import { isBrowser } from '@/@energy/ivoryDesign/@utils/phone/app';
+import tools from '@/@energy/tools';
+const { isBrowser } = tools;
 
 // 监听异常，事件发布与订阅
 export function errorHandler(error: Error) {

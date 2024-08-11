@@ -1,4 +1,5 @@
-import {isBrowser} from '@/@energy/ivoryDesign/@utils/phone/app';
+import tools from '@/@energy/tools';
+const { isBrowser } = tools;
 
 
 export const _tokenFromURL = isBrowser() && new URLSearchParams(window.location.search).get('token');

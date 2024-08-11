@@ -5,7 +5,7 @@ js将对象序列化为 URL 查询字符串
 变
 'name=John%20Doe&age=30&city=New%20York'
 */
-export const urlObjToStr = (obj) => {
+export const urlObjToStr = (obj: any) => {
     return new URLSearchParams(obj).toString();
 };
 
@@ -16,8 +16,8 @@ js解析 URL 查询字符串为对象
 变
 { name: 'John Doe', age: '30', city: 'New York' }
 */
-export const urlStrToObj = (str) => {
-    const params = {};
+export const urlStrToObj = (str: string) => {
+    const params: any = {};
 
     new URLSearchParams(str).forEach((value, key) => {
         params[key] = value;
@@ -29,12 +29,12 @@ export const urlStrToObj = (str) => {
 
 window.location.search 返回当前页面的 URL 查询字符串部分，例如 ?token=abc123&user=John
 */
-export const urlParams1 = (key) => {
+export const urlParams1 = (key: string) => {
     return new URLSearchParams(window?.location?.search).get(key);
 };
 
-export const urlParams2 = (key) => {
-    return new URL(location?.href).searchParams.get(key);
+export const urlParams2 = (key: string) => {
+    return new URL(window?.location?.href).searchParams.get(key);
 };
 
 /*
@@ -56,4 +56,16 @@ export function getUrlParam(): any {
     }
 
     return thisParam;
+}
+
+export function getQuery (variable: string) { // 获取(url?id=12&name='')的参数
+    let query = window.location.search.substring(1);
+    let vars = query.split("&");
+    for (let i = 0; i < vars.length; i++) {
+        let pair = vars[i].split("=");
+        if (pair[0] === variable) {
+            return pair[1];
+        }
+    }
+    return false;
 }

@@ -12,3 +12,14 @@ export const pxToVwToPx = (num: number): number => {
 export function pxToVw(value: number): number {
     return (value / 390) * 100;
 }
+
+export function pxToRem (num: number) { // 移动端px转rem
+    return num / Number(sessionStorage.getItem('pixelSize'))
+}
+export function remToPx (num: number) { // 移动端rem转px
+    return num * Number(sessionStorage.getItem('pixelSize'))
+}
+
+export function pxToRemToPx(num: number) {
+    return (num / 390) * Number(sessionStorage.getItem('pixelSize'));
+}

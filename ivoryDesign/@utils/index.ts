@@ -1,5 +1,6 @@
-import {getUrlParam} from '@/@energy/ivoryDesign/@utils/url';
-import {isBrowser, getIsApp, isAndroid} from '@/@energy/ivoryDesign/@utils/phone/app';
+
+import tools from '@/@energy/tools';
+const {isBrowser, getIsApp, isAndroid, getUrlParam} = tools;
 
 /**
  * 解构react的className数组

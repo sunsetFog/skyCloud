@@ -3,7 +3,8 @@
 */
 import Fingerprint from 'fingerprintjs2';
 // utils
-import { isBrowser } from '@/@energy/ivoryDesign/@utils/phone/app';
+import tools from '@/@energy/tools';
+const { isBrowser } = tools;
 // store
 // import homeStore from '@/pages/home/index.store';
 
