@@ -1,0 +1,15 @@
+# 为特定类型的文件启用 Git Large File Storage (LFS) 进行管理
+
+# filter=lfs： 这表示应对这些文件类型使用 Git LFS 过滤器。Git LFS 通过将大文件存储在一个单独的存储中，并在仓库中用轻量级指针替换它们来管理大文件。
+
+# diff=lfs： 这告诉 Git 使用 Git LFS 的机制来处理这些大文件的差异（diff）操作。
+
+# merge=lfs： 这配置 Git 在处理这些文件类型的合并时，使用 LFS 的合并驱动程序，以更好地管理大文件的合并。
+
+# -text： 这表明这些文件是二进制文件，不应作为文本处理。这可以防止 Git 试图对这些文件进行诸如自动换行符规范化等文本处理操作。
+
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text

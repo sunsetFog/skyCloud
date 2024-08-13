@@ -13,3 +13,8 @@ export default {
     ...title5,
     ...title6
 }
+/*
+使用
+import tools from '@/@energy/tools';
+const { isBrowser } = tools;
+*/

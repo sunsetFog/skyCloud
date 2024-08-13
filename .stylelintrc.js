@@ -3,7 +3,7 @@ css的检查，stylelint样式规则校验
 提高 CSS 代码质量
 
 配置 git commit 时使用 stylelint 检查样式文件
-npm install --save-dev stylelint husky
+npm install --save-dev stylelint husky stylelint-config-standard
 
 
 .stylelintrc.js 和 stylelint.config.js 都是 stylelint 的配置文件,二者的区别是:
