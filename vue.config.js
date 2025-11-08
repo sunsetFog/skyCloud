@@ -135,11 +135,11 @@ module.exports = defineConfig({
         loaderOptions: {
             // vue3 全局less变量
             less: {
-                additionalData: `@import "../../styles/platform/${process.env.platform}/variable/index.less";`,
+                additionalData: `@import "./src/@energy/styles/platform/${process.env.platform}/variable/index.less";`,
             },
             // vue3 全局scss变量
             scss: {
-                additionalData: `@import "../../styles/platform/${process.env.platform}/variable/index.scss";`,
+                additionalData: `@import "./src/@energy/styles/platform/${process.env.platform}/variable/index.scss";`,
             },
             // 引入vw适配文件
             postcss:

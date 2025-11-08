@@ -1,4 +1,4 @@
-import request from '@sky/rafaelDesign/axios/request2/http'
+import request from '@/@energy/rafaelDesign/axios/request2/http'
 
 
 export function login(params) {

@@ -128,3 +128,16 @@ copyWay2('./image', './packages/ivoryClientH5/src/@energy/image');
 copyWay2('./tools', './packages/ivoryAdmin/src/@energy/tools');
 copyWay2('./tools', './packages/ivoryClientH5/src/@energy/tools');
 copyWay2('./tools', './packages/ivoryClientWeb/src/@energy/tools');
+
+
+
+
+copyWay2('./styles', './packages/rafaelClientWeb/src/@energy/styles');
+copyWay2('./rafaelDesign', './packages/rafaelClientWeb/src/@energy/rafaelDesign');
+
+copyWay2('./styles', './packages/rafaelAdmin/src/@energy/styles');
+copyWay2('./rafaelDesign', './packages/rafaelAdmin/src/@energy/rafaelDesign');
+
+copyWay2('./styles', './packages/rafaelClientApp/src/@energy/styles');
+copyWay2('./rafaelDesign', './packages/rafaelClientApp/src/@energy/rafaelDesign');
+
