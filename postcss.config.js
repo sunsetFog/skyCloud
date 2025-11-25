@@ -1,4 +1,5 @@
 /*
+study: vw
 vw 适配文件，px to vw自动转转换
 
 在 Vue3 项目中可以通过 PostCSS 的 postcss-px-to-viewport 插件来实现 vw 适配

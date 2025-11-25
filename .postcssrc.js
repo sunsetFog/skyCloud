@@ -1,5 +1,5 @@
 /*
-
+study: rem
 px to rem自动转转换
 npm install postcss-pxtorem postcss-import postcss-url --save-dev
 https://github.com/michael-ciniawsky/postcss-load-config

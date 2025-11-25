@@ -141,6 +141,7 @@ module.exports = defineConfig({
             scss: {
                 additionalData: `@import "./src/@energy/styles/platform/${process.env.platform}/variable/index.scss";`,
             },
+            // study: vw
             // 引入vw适配文件
             postcss:
                 process.env.VUE_APP_ADAPTER == 'vw'
