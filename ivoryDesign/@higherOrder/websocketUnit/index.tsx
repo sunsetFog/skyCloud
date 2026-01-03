@@ -5,7 +5,7 @@ import { compose } from 'redux';
 import { formatMessage } from './utils';
 let instantiate: WebSocket | any;
 
-function websocketUnit(Component: any) {
+function WebsocketUnit(Component: any) {
     const WrapperComponent = (props) => {
         // 创建websocket连接
         async function initWebsocket() {
@@ -99,5 +99,5 @@ function websocketUnit(Component: any) {
     return WrapperComponent;
 }
 
-export default websocketUnit;
-// export default compose(observer)(websocketUnit);
+export default WebsocketUnit;
+// export default compose(observer)(WebsocketUnit);
