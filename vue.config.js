@@ -78,7 +78,6 @@ module.exports = defineConfig({
             // 配置路径映射/路径别名   tsconfig.json里也要配置，曾遇到main.ts出现找不到路径别名
             alias: {
                 '@': path.join(__dirname, './src'),
-                '@sky': path.join(__dirname, '../../'),
                 '@root': path.join(__dirname),
             },
         },
@@ -127,9 +126,9 @@ module.exports = defineConfig({
     },
     /*
   main.ts里，加载失败
-  import '@sky/styles/lessVariable.less';
+  import '@/@energy/styles/lessVariable.less';
   app.vue里，加载失败
-  @import '~@sky/styles/lessVariable.less';
+  @import '~@/@energy/styles/lessVariable.less';
   */
     css: {
         loaderOptions: {

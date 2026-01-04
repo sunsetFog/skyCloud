@@ -74,6 +74,7 @@ copyWay1('./tsconfig.json', './packages/rafaelClientWeb/tsconfig.json');
 copyWay1('./tsconfig.json', './packages/rafaelClientApp/tsconfig.json');
 copyWay1('./tsconfig.json', './packages/ivoryAdmin/tsconfig.json');
 copyWay1('./tsconfig.json', './packages/ivoryClientH5/tsconfig.json');
+copyWay1('./tsconfig.json', './packages/ivoryClientWeb/tsconfig.json');
 
 copyWay1('./.stylelintignore', './packages/rafaelAdmin/.stylelintignore');
 copyWay1('./.stylelintignore', './packages/rafaelClientWeb/.stylelintignore');
@@ -129,6 +130,10 @@ copyWay2('./tools', './packages/ivoryAdmin/src/@energy/tools');
 copyWay2('./tools', './packages/ivoryClientH5/src/@energy/tools');
 copyWay2('./tools', './packages/ivoryClientWeb/src/@energy/tools');
 
+copyWay2('./tools', './packages/rafaelAdmin/src/@energy/tools');
+copyWay2('./tools', './packages/rafaelClientApp/src/@energy/tools');
+copyWay2('./tools', './packages/rafaelClientWeb/src/@energy/tools');
+
 
 
 
@@ -140,4 +145,8 @@ copyWay2('./rafaelDesign', './packages/rafaelAdmin/src/@energy/rafaelDesign');
 
 copyWay2('./styles', './packages/rafaelClientApp/src/@energy/styles');
 copyWay2('./rafaelDesign', './packages/rafaelClientApp/src/@energy/rafaelDesign');
+
+
+
+
 
