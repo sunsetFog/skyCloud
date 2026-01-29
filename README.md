@@ -28,6 +28,7 @@ https://zh-hans.reactjs.org/docs/jsx-in-depth.html
 study:
 经验问题
 vue3改版
+bug:
 
 # 用不了yarn的原因？因为没有使用 Yarn 管理 monorepo 工作空间类型的项目
 用yarn server:dev需要有yarn.lock文件，重新yarn install就自动生成yarn.lock文件了
