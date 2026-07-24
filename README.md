@@ -96,6 +96,16 @@ npm install cross-env -D
 详细规范请参考 [规范说明](http://jira.hnxmny.com:8090/pages/viewpage.action?pageId=36461323)
 
 
+调试与性能分析
+
+React Developer Tools
+官方浏览器插件，可查看组件树状结构、检查组件状态/属性、模拟状态变化，是React应用调试的核心工具 
+。
+React Profiler
+性能分析工具，帮助开发者了解组件渲染时长、渲染次数，精准定位性能瓶颈 
+。
+
+
 
 
 

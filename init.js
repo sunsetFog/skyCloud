@@ -149,4 +149,14 @@ copyWay2('./rafaelDesign', './packages/rafaelClientApp/src/@energy/rafaelDesign'
 
 
 
+copyWay2('./image', './packages/ivoryAdmin/src/@energy/image');
+copyWay2('./image', './packages/ivoryClientH5/src/@energy/image');
+copyWay2('./image', './packages/ivoryClientWeb/src/@energy/image');
+copyWay2('./image', './packages/rafaelAdmin/src/@energy/image');
+copyWay2('./image', './packages/rafaelClientApp/src/@energy/image');
+copyWay2('./image', './packages/rafaelClientWeb/src/@energy/image');
+
+
+
+
 

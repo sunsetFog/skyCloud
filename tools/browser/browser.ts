@@ -24,3 +24,28 @@ export function browserInfo() {
 
     return browser;
 }
+
+// 判断用户当前的支付环境（如微信浏览器、支付宝浏览器、Safari、Chrome等），从而适配不同的支付SDK或安全策略
+export function getPaymentEnvironment() {
+    const ua = navigator.userAgent.toLowerCase();
+    let env = '未知环境';
+
+    if (ua.includes('micromessenger')) {
+        env = '微信浏览器';
+        // 可进一步判断微信版本：ua.match(/micromessenger\/(\d+\.\d+)/)
+    } else if (ua.includes('alipayclient')) {
+        env = '支付宝浏览器';
+    } else if (/iphone|ipad|ipod/.test(ua)) {
+        env = 'iOS设备';
+    } else if (ua.includes('android')) {
+        env = 'Android设备';
+    } else if (ua.includes('safari') && !ua.includes('chrome')) {
+        env = 'Safari浏览器';
+    } else if (ua.includes('chrome') && !ua.includes('edg')) {
+        env = 'Chrome浏览器';
+    } else if (ua.includes('edg')) {
+        env = 'Edge浏览器';
+    }
+
+    return env;
+}
